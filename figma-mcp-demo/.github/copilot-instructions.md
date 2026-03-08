@@ -13,6 +13,7 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 #### Colors — Main
 | CSS Custom Property | Value | Figma Variable |
 |---|---|---|
+| `--color-surface-white` | `#ffffff` | `surfaces/surface` |
 | `--color-main-primary` | `#3d67ff` | `main/primary` |
 | `--color-main-on-primary` | `#ffffff` | `main/on-primary` |
 
@@ -31,11 +32,14 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 |---|---|---|
 | `--color-surface-container-low` | `#f6f7f9` | `elevation/surface-container-low` |
 | `--color-surface-container` | `#edeff2` | `elevation/surface-container` |
+| `--color-surface-container-high` | `#e2e4e9` | `elevation/surface-container-high` |
 | `--color-surface-on-surface-weak` | `#4d5a75` | `surfaces/on-surface-weak` |
 
 #### Colors — Outline
 | CSS Custom Property | Value | Figma Variable |
 |---|---|---|
+| `--color-outline` | `#4d5a75` | `outline/outline` |
+| `--color-outline-hover` | `#252b37` | `outline/outline-hover` |
 | `--color-outline-variant` | `#d7dae1` | `outline/outline-variant` |
 | `--color-outline-variant-hover` | `#b1bacb` | `outline/outline-variant-hover` |
 | `--color-outline-variant-active` | `#a3adc2` | `outline/outline-variant-active` |
@@ -46,6 +50,7 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 | CSS Custom Property | Value | Figma Variable |
 |---|---|---|
 | `--color-critical` | `#e5484d` | `status/critical` |
+| `--color-critical-container` | `#ffd6d6` | `system/critical-container` |
 
 #### Spacing
 | CSS Custom Property | Value | Figma Variable |
@@ -59,6 +64,8 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 #### Border Radius
 | CSS Custom Property | Value | Figma Variable |
 |---|---|---|
+| `--radius-2` | `2px` | `border/radius-2` |
+| `--radius-4` | `4px` | `border/radius-4` |
 | `--radius-full` | `999px` | `border/radius-full` |
 
 #### Typography
@@ -66,6 +73,7 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 |---|---|---|
 | `--font-family-body` | `'Inter', sans-serif` | `font-family/body` |
 | `--font-size-14` | `14px` | `font-size/font-size-14` |
+| `--font-weight-regular` | `400` | `font-weight/weight-regular` |
 | `--font-weight-bold` | `700` | `font-weight/weight-bold` |
 | `--line-height-1250` | `20px` | `line-height/height-1250` |
 | `--letter-spacing-normal` | `0px` | `letter-spacing/spacing-normal` |
@@ -189,4 +197,3 @@ src/
 5. **Focus ring** — use `box-shadow` with `--color-outline-focused` (not `outline`).
 6. **Accessibility** — semantic HTML, ARIA attributes (`aria-busy`, `aria-label`, etc.), and visible focus styles.
 7. **Storybook** — add stories for every variant; import tokens via the Storybook preview (already configured).
-

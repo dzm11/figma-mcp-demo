@@ -8,6 +8,8 @@
 
 :root {
   /* ── Colors: Main ──────────────────────────────────────────────────────── */
+  /* Figma: surfaces/surface (white) */
+  --color-surface-white: #ffffff;
   /* Figma: main/primary */
   --color-main-primary: #3d67ff;
   /* Figma: main/on-primary */
@@ -32,10 +34,16 @@
   --color-surface-container-low: #f6f7f9;
   /* Figma: elevation/surface-container */
   --color-surface-container: #edeff2;
+  /* Figma: elevation/surface-container-high */
+  --color-surface-container-high: #e2e4e9;
   /* Figma: surfaces/on-surface-weak */
   --color-surface-on-surface-weak: #4d5a75;
 
   /* ── Colors: Outline ───────────────────────────────────────────────────── */
+  /* Figma: outline/outline */
+  --color-outline: #4d5a75;
+  /* Figma: outline/outline-hover */
+  --color-outline-hover: #252b37;
   /* Figma: outline/outline-variant */
   --color-outline-variant: #d7dae1;
   /* Figma: outline/outline-variant-hover */
@@ -50,6 +58,8 @@
   /* ── Colors: Status ────────────────────────────────────────────────────── */
   /* Figma: status/critical */
   --color-critical: #e5484d;
+  /* Figma: system/critical-container */
+  --color-critical-container: #ffd6d6;
 
   /* ── Spacing ───────────────────────────────────────────────────────────── */
   /* Figma: spacing/space-0 */
@@ -64,6 +74,10 @@
   --spacing-12: 12px;
 
   /* ── Border Radius ─────────────────────────────────────────────────────── */
+  /* Figma: border/radius-2 */
+  --radius-2: 2px;
+  /* Figma: border/radius-4 */
+  --radius-4: 4px;
   /* Figma: border/radius-full */
   --radius-full: 999px;
 
@@ -72,6 +86,8 @@
   --font-family-body: 'Inter', sans-serif;
   /* Figma: font-size/font-size-14 */
   --font-size-14: 14px;
+  /* Figma: font-weight/weight-regular */
+  --font-weight-regular: 400;
   /* Figma: font-weight/weight-bold */
   --font-weight-bold: 700;
   /* Figma: line-height/height-1250 */
