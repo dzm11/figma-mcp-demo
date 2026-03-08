@@ -1,0 +1,253 @@
+.button {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-1250);
+  letter-spacing: var(--letter-spacing-normal);
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0; /* spacing/space-0 per Figma — slots handle their own spacing */
+  outline: none;
+  white-space: nowrap;
+}
+
+/* Icon slot — 20×20px fixed, shown before label */
+.iconSlot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* Text slot — 6px inner horizontal padding per Figma (spacing/space-6) */
+.textSlot {
+  padding: 0 var(--spacing-6);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Disclosure slot — 20×20px chevron, shown after label */
+.disclosureSlot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* ============================================
+   SIZES — outer padding (vertical × horizontal)
+   L: 12px all  |  M: 8px 12px  |  S: 4px 12px
+   ============================================ */
+.size-l {
+  padding: var(--spacing-12);
+}
+
+.size-m {
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.size-s {
+  padding: var(--spacing-4) var(--spacing-12);
+}
+
+/* ============================================
+   TYPE: PRIMARY
+   bg: main/primary #3d67ff  |  text: on-primary white
+   ============================================ */
+.type-primary {
+  background-color: var(--color-main-primary);
+  color: var(--color-main-on-primary);
+}
+
+.type-primary:hover:not(:disabled) {
+  background-color: var(--color-state-primary-hover);
+}
+
+.type-primary:active:not(:disabled) {
+  background-color: var(--color-state-primary-active);
+}
+
+.type-primary:focus-visible:not(:disabled) {
+  background-color: var(--color-main-primary);
+  box-shadow:
+    0 0 0 2px var(--color-main-on-primary),
+    0 0 0 4px var(--color-outline-focused);
+}
+
+.type-primary:disabled {
+  background-color: var(--color-state-primary-disabled);
+  cursor: not-allowed;
+}
+
+.type-primary.critical {
+  background-color: var(--color-critical);
+}
+
+.type-primary.critical:hover:not(:disabled) {
+  background-color: #c8302d;
+}
+
+/* ============================================
+   TYPE: OUTLINED
+   border: main/primary #3d67ff  |  text: main/primary
+   ============================================ */
+.type-outlined {
+  background-color: transparent;
+  color: var(--color-main-primary);
+  border: 1px solid var(--color-main-primary);
+}
+
+.type-outlined:hover:not(:disabled) {
+  background-color: var(--color-surface-container-low);
+  border-color: var(--color-outline-variant-hover);
+}
+
+.type-outlined:active:not(:disabled) {
+  background-color: var(--color-surface-container);
+  border-color: var(--color-outline-variant-active);
+  color: var(--color-state-on-surface-active);
+}
+
+.type-outlined:focus-visible:not(:disabled) {
+  box-shadow:
+    0 0 0 2px var(--color-main-on-primary),
+    0 0 0 4px var(--color-main-primary);
+}
+
+.type-outlined:disabled {
+  border-color: var(--color-outline-variant-disabled);
+  color: var(--color-state-on-surface-disabled);
+  cursor: not-allowed;
+}
+
+.type-outlined.critical {
+  border-color: var(--color-critical);
+  color: var(--color-critical);
+}
+
+/* ============================================
+   TYPE: SECONDARY
+   border: outline/outline-variant #d7dae1  |  text: on-surface-weak #4d5a75
+   ============================================ */
+.type-secondary {
+  background-color: transparent;
+  color: var(--color-surface-on-surface-weak);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.type-secondary:hover:not(:disabled) {
+  background-color: var(--color-surface-container-low);
+  border-color: var(--color-outline-variant-hover);
+}
+
+.type-secondary:active:not(:disabled) {
+  background-color: var(--color-surface-container);
+  border-color: var(--color-outline-variant-active);
+}
+
+.type-secondary:focus-visible:not(:disabled) {
+  border-color: var(--color-outline-focused);
+  box-shadow:
+    0 0 0 2px var(--color-main-on-primary),
+    0 0 0 4px var(--color-outline-focused);
+}
+
+.type-secondary:disabled {
+  border-color: var(--color-outline-variant-disabled);
+  color: var(--color-state-on-surface-disabled);
+  cursor: not-allowed;
+}
+
+/* ============================================
+   TYPE: TERTIARY
+   no border, no bg  |  text: on-surface-weak #4d5a75
+   ============================================ */
+.type-tertiary {
+  background-color: transparent;
+  color: var(--color-surface-on-surface-weak);
+  border: none;
+}
+
+.type-tertiary:hover:not(:disabled) {
+  color: var(--color-state-on-surface-active);
+  background-color: var(--color-surface-container-low);
+}
+
+.type-tertiary:active:not(:disabled) {
+  color: var(--color-state-on-surface-active);
+  background-color: var(--color-surface-container);
+}
+
+.type-tertiary:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-outline-focused);
+}
+
+.type-tertiary:disabled {
+  color: var(--color-state-on-surface-disabled);
+  cursor: not-allowed;
+}
+
+.type-tertiary.critical {
+  color: var(--color-critical);
+}
+
+/* ============================================
+   LOADING STATE — spinner replaces content
+   ============================================ */
+.loading {
+  position: relative;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.loading .iconSlot,
+.loading .textSlot,
+.loading .disclosureSlot {
+  visibility: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.type-primary.loading::after {
+  border-color: var(--color-main-on-primary);
+  border-top-color: transparent;
+}
+
+.type-outlined.loading::after,
+.type-secondary.loading::after,
+.type-tertiary.loading::after {
+  border-color: var(--color-surface-on-surface-weak);
+  border-top-color: transparent;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+

@@ -1,0 +1,81 @@
+/**
+ * Design tokens — sourced from Figma file H3scHHO8gzcKecmO2Sa9aN
+ *
+ * Each variable lists its Figma variable path in a comment.
+ * IMPORTANT: All components MUST use these CSS custom properties.
+ *            Never use hardcoded color, spacing, radius or typography values.
+ */
+
+:root {
+  /* ── Colors: Main ──────────────────────────────────────────────────────── */
+  /* Figma: main/primary */
+  --color-main-primary: #3d67ff;
+  /* Figma: main/on-primary */
+  --color-main-on-primary: #ffffff;
+
+  /* ── Colors: State ─────────────────────────────────────────────────────── */
+  /* Figma: state/primary-hover */
+  --color-state-primary-hover: #3255d4;
+  /* Figma: state/primary-active */
+  --color-state-primary-active: #2844aa;
+  /* Figma: state/primary-disabled */
+  --color-state-primary-disabled: #9eb3ff;
+  /* Figma: state/on-surface-hover */
+  --color-state-on-surface-hover: #4d5a75;
+  /* Figma: state/on-surface-active */
+  --color-state-on-surface-active: #252b37;
+  /* Figma: state/on-surface-disabled */
+  --color-state-on-surface-disabled: #a3adc2;
+
+  /* ── Colors: Surfaces ──────────────────────────────────────────────────── */
+  /* Figma: elevation/surface-container-low */
+  --color-surface-container-low: #f6f7f9;
+  /* Figma: elevation/surface-container */
+  --color-surface-container: #edeff2;
+  /* Figma: surfaces/on-surface-weak */
+  --color-surface-on-surface-weak: #4d5a75;
+
+  /* ── Colors: Outline ───────────────────────────────────────────────────── */
+  /* Figma: outline/outline-variant */
+  --color-outline-variant: #d7dae1;
+  /* Figma: outline/outline-variant-hover */
+  --color-outline-variant-hover: #b1bacb;
+  /* Figma: outline/outline-variant-active */
+  --color-outline-variant-active: #a3adc2;
+  /* Figma: outline/outline-variant-disabled */
+  --color-outline-variant-disabled: #d7dae1;
+  /* Figma: outline/outline-focused */
+  --color-outline-focused: #3255d4;
+
+  /* ── Colors: Status ────────────────────────────────────────────────────── */
+  /* Figma: status/critical */
+  --color-critical: #e5484d;
+
+  /* ── Spacing ───────────────────────────────────────────────────────────── */
+  /* Figma: spacing/space-0 */
+  --spacing-0: 0px;
+  /* Figma: spacing/space-4 */
+  --spacing-4: 4px;
+  /* Figma: spacing/space-6 */
+  --spacing-6: 6px;
+  /* Figma: spacing/space-8 */
+  --spacing-8: 8px;
+  /* Figma: spacing/space-12 */
+  --spacing-12: 12px;
+
+  /* ── Border Radius ─────────────────────────────────────────────────────── */
+  /* Figma: border/radius-full */
+  --radius-full: 999px;
+
+  /* ── Typography ────────────────────────────────────────────────────────── */
+  /* Figma: font-family/body */
+  --font-family-body: 'Inter', sans-serif;
+  /* Figma: font-size/font-size-14 */
+  --font-size-14: 14px;
+  /* Figma: font-weight/weight-bold */
+  --font-weight-bold: 700;
+  /* Figma: line-height/height-1250 */
+  --line-height-1250: 20px;
+  /* Figma: letter-spacing/spacing-normal */
+  --letter-spacing-normal: 0px;
+}
