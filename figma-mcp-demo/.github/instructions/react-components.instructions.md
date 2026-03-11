@@ -8,6 +8,32 @@ Apply these rules to every component created or edited in `src/components/`.
 
 ---
 
+## 0. Figma MCP workflow (required steps — do not skip)
+
+Every time a component is implemented from a Figma selection, follow this exact sequence:
+
+1. **`get_design_context`** — fetch the structured representation for the node
+2. If the response is too large or truncated, run **`get_metadata`** first to get the high-level node map, then re-fetch only the required node(s) with `get_design_context`
+3. **`get_screenshot`** — get a visual reference of the exact variant being implemented
+4. Only after steps 1–3: download any assets and start implementation
+5. Translate the output (React + Tailwind) into this project's CSS Modules + token conventions — never ship Tailwind classes
+6. **Validate 1:1** against the Figma screenshot for look and behaviour before marking complete
+
+### Asset handling rules
+
+- If the Figma MCP server returns a `localhost` source for an image or SVG, **use that source directly** — do not re-export or recreate it
+- **Never** install or import new icon packages — all icon assets come from the Figma payload as inline SVG
+- **Never** use placeholder images or colours when a real asset source is provided
+
+### Selection size
+
+- Implement one component at a time — do not select entire screens
+- If a selection feels slow or produces incomplete output, reduce it to a single component or logical section
+
+---
+
+---
+
 ## 1. File structure
 
 Every component lives in its own folder with exactly four files:
@@ -21,6 +47,12 @@ src/components/ComponentName/
 ```
 
 Never put multiple components in one file. Never put types inline in `.tsx`.
+
+### Primitives vs. compositions
+
+- **Primitives** (`Button`, `Checkbox`, `InlineError`) — cannot be broken down into smaller design-system components; implement in `src/components/`
+- **Compositions** — arrangements of primitives into larger patterns (e.g. form groups, cards); import and reuse existing primitives rather than duplicating their markup or styles
+- Always check whether an existing component covers the need before creating a new one
 
 ---
 
@@ -110,6 +142,8 @@ useEffect(() => {
 
 ## 6. Accessibility
 
+Follow WCAG 2.1 AA as a minimum baseline.
+
 - Use semantic HTML elements (`<button>`, `<input>`, `<label>`, `<p>`, etc.)
 - Add `aria-busy={true}` for loading states on interactive elements
 - Add `role="alert"` on dynamically injected error messages
@@ -117,6 +151,8 @@ useEffect(() => {
 - Decorative icons: `aria-hidden="true"` on wrapping `<span>` or `<svg>`
 - Focus rings: `box-shadow` with `--color-outline-focused`, never suppress `:focus-visible`
 - Disabled: use the HTML `disabled` attribute (not `aria-disabled` alone) so `:disabled` CSS works
+- Colour contrast: text and interactive elements must meet 4.5:1 (normal text) / 3:1 (large text) ratio
+- Never rely on colour alone to communicate state — pair with text, icon, or shape changes
 
 ---
 
@@ -184,3 +220,7 @@ export const Default: Story = { args: { children: 'Label' } };
 | Business logic in JSX | Derive variables above the `return` |
 | `outline` for focus | `box-shadow` with `--color-outline-focused` |
 | External icon libraries | Inline SVG with `currentColor` |
+| Tailwind classes from MCP output | Translate to CSS Module + token variables |
+| Duplicating existing component markup | Import and reuse existing primitives |
+| Placeholder assets when MCP returns a source | Use the MCP-provided localhost source directly |
+| Shipping without visual check | Validate against Figma screenshot before done |
