@@ -86,14 +86,98 @@
   /* ── Typography ────────────────────────────────────────────────────────── */
   /* Figma: font-family/body */
   --font-family-body: 'Inter', sans-serif;
+  /* Figma: font-size/font-size-10 */
+  --font-size-10: 10px;
   /* Figma: font-size/font-size-14 */
   --font-size-14: 14px;
   /* Figma: font-weight/weight-regular */
   --font-weight-regular: 400;
   /* Figma: font-weight/weight-bold */
   --font-weight-bold: 700;
+  /* Figma: line-height/height-1000 */
+  --line-height-1000: 16px;
   /* Figma: line-height/height-1250 */
   --line-height-1250: 20px;
   /* Figma: letter-spacing/spacing-normal */
   --letter-spacing-normal: 0px;
+
+  /* ── Label: strong backgrounds (isStrong=true) ─────────────────────────── */
+  /* Figma: label/red */
+  --label-red: #e5484d;
+  /* Figma: label/gray */
+  --label-gray: #808080;
+  /* Figma: label/yellow */
+  --label-yellow: #ffb224;
+  /* Figma: label/green */
+  --label-green: #45a557;
+  /* Figma: label/black */
+  --label-black: #000000;
+  /* Figma: label/orange */
+  --label-orange: #fd541b;
+  /* Figma: label/blue */
+  --label-blue: #0072f5;
+  /* Figma: label/purple */
+  --label-purple: #8e4ec6;
+  /* Figma: label/teal */
+  --label-teal: #12a594;
+
+  /* ── Label: container backgrounds (isStrong=false) ─────────────────────── */
+  /* Figma: label/red-container */
+  --label-red-container: #ffd6d6;
+  /* Figma: label/gray-container */
+  --label-gray-container: #e6e6e6;
+  /* Figma: label/yellow-container */
+  --label-yellow-container: #ffe7d6;
+  /* Figma: label/green-container */
+  --label-green-container: #e3f2e5;
+  /* Figma: label/black-container */
+  --label-black-container: #aeaeae;
+  /* Figma: label/orange-container */
+  --label-orange-container: #ffe1d6;
+  /* Figma: label/blue-container */
+  --label-blue-container: #d6e7ff;
+  /* Figma: label/purple-container */
+  --label-purple-container: #ede0f5;
+  /* Figma: label/teal-container */
+  --label-teal-container: #dbfaf7;
+
+  /* ── Label: on-strong text (isStrong=true) ──────────────────────────────── */
+  /* Figma: label/on-red */
+  --label-on-red: #fff0f0;
+  /* Figma: label/on-gray */
+  --label-on-gray: #ffffff;
+  /* Figma: label/on-yellow */
+  --label-on-yellow: #843700;
+  /* Figma: label/on-green */
+  --label-on-green: #f4faf5;
+  /* Figma: label/on-black */
+  --label-on-black: #ffffff;
+  /* Figma: label/on-orange */
+  --label-on-orange: #fff4f0;
+  /* Figma: label/on-blue */
+  --label-on-blue: #f0f6ff;
+  /* Figma: label/on-purple */
+  --label-on-purple: #f8f3fb;
+  /* Figma: label/on-teal */
+  --label-on-teal: #f1fdfc;
+
+  /* ── Label: on-container text (isStrong=false) ──────────────────────────── */
+  /* Figma: label/on-red-container */
+  --label-on-red-container: #e5484d;
+  /* Figma: label/on-gray-container */
+  --label-on-gray-container: #666666;
+  /* Figma: label/on-yellow-container */
+  --label-on-yellow-container: #843700;
+  /* Figma: label/on-green-container */
+  --label-on-green-container: #45a557;
+  /* Figma: label/on-black-container */
+  --label-on-black-container: #333333;
+  /* Figma: label/on-orange-container */
+  --label-on-orange-container: #fd541b;
+  /* Figma: label/on-blue-container */
+  --label-on-blue-container: #0072f5;
+  /* Figma: label/on-purple-container */
+  --label-on-purple-container: #8e4ec6;
+  /* Figma: label/on-teal-container */
+  --label-on-teal-container: #12a594;
 }
