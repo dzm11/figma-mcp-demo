@@ -56,8 +56,10 @@
   --color-outline-focused: #3255d4;
 
   /* ── Colors: Status ────────────────────────────────────────────────────── */
-  /* Figma: status/critical */
+  /* Figma: system/critical */
   --color-critical: #e5484d;
+  /* Figma: system/on-critical */
+  --color-on-critical: #fff0f0;
   /* Figma: system/critical-container */
   --color-critical-container: #ffd6d6;
 

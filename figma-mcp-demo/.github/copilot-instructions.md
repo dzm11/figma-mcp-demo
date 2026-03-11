@@ -2,90 +2,127 @@
 
 This document outlines the design system structure and integration guidelines for the figma-mcp-demo repository, which uses React and TypeScript with Vite.
 
-## Design System Structure
+> **Figma file key:** `H3scHHO8gzcKecmO2Sa9aN`
 
-### 1. Token Definitions
+---
+
+## 1. Token Definitions
 
 > **RULE: Never use hardcoded color, spacing, radius or typography values in CSS. You MUST use only the CSS custom properties listed below.**
 
 All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and defined as CSS custom properties in [`src/styles/tokens.css`](../src/styles/tokens.css). This file is imported globally via `src/index.css` and in `.storybook/preview.ts`.
 
-#### Colors — Main
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--color-surface-white` | `#ffffff` | `surfaces/surface` |
-| `--color-main-primary` | `#3d67ff` | `main/primary` |
-| `--color-main-on-primary` | `#ffffff` | `main/on-primary` |
+### Colors — Main
 
-#### Colors — State (interactive)
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--color-state-primary-hover` | `#3255d4` | `state/primary-hover` |
-| `--color-state-primary-active` | `#2844aa` | `state/primary-active` |
-| `--color-state-primary-disabled` | `#9eb3ff` | `state/primary-disabled` |
-| `--color-state-on-surface-hover` | `#4d5a75` | `state/on-surface-hover` |
-| `--color-state-on-surface-active` | `#252b37` | `state/on-surface-active` |
-| `--color-state-on-surface-disabled` | `#a3adc2` | `state/on-surface-disabled` |
+| CSS Custom Property        | Value     | Figma Variable         |
+|----------------------------|-----------|------------------------|
+| `--color-surface-white`    | `#ffffff` | `surfaces/surface`     |
+| `--color-main-primary`     | `#3d67ff` | `main/primary`         |
+| `--color-main-on-primary`  | `#ffffff` | `main/on-primary`      |
 
-#### Colors — Surfaces
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--color-surface-container-low` | `#f6f7f9` | `elevation/surface-container-low` |
-| `--color-surface-container` | `#edeff2` | `elevation/surface-container` |
-| `--color-surface-container-high` | `#e2e4e9` | `elevation/surface-container-high` |
-| `--color-surface-on-surface-weak` | `#4d5a75` | `surfaces/on-surface-weak` |
+### Colors — State (interactive)
 
-#### Colors — Outline
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--color-outline` | `#4d5a75` | `outline/outline` |
-| `--color-outline-hover` | `#252b37` | `outline/outline-hover` |
-| `--color-outline-variant` | `#d7dae1` | `outline/outline-variant` |
-| `--color-outline-variant-hover` | `#b1bacb` | `outline/outline-variant-hover` |
-| `--color-outline-variant-active` | `#a3adc2` | `outline/outline-variant-active` |
-| `--color-outline-variant-disabled` | `#d7dae1` | `outline/outline-variant-disabled` |
-| `--color-outline-focused` | `#3255d4` | `outline/outline-focused` |
+| CSS Custom Property                | Value     | Figma Variable               |
+|------------------------------------|-----------|------------------------------|
+| `--color-state-primary-hover`      | `#3255d4` | `state/primary-hover`        |
+| `--color-state-primary-active`     | `#2844aa` | `state/primary-active`       |
+| `--color-state-primary-disabled`   | `#9eb3ff` | `state/primary-disabled`     |
+| `--color-state-on-surface-hover`   | `#4d5a75` | `state/on-surface-hover`     |
+| `--color-state-on-surface-active`  | `#252b37` | `state/on-surface-active`    |
+| `--color-state-on-surface-disabled`| `#a3adc2` | `state/on-surface-disabled`  |
 
-#### Colors — Status
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--color-critical` | `#e5484d` | `status/critical` |
-| `--color-critical-container` | `#ffd6d6` | `system/critical-container` |
+### Colors — Surfaces
 
-#### Spacing
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--spacing-0` | `0px` | `spacing/space-0` |
-| `--spacing-4` | `4px` | `spacing/space-4` |
-| `--spacing-6` | `6px` | `spacing/space-6` |
-| `--spacing-8` | `8px` | `spacing/space-8` |
-| `--spacing-12` | `12px` | `spacing/space-12` |
+| CSS Custom Property              | Value     | Figma Variable                      |
+|----------------------------------|-----------|-------------------------------------|
+| `--color-surface-container-low`  | `#f6f7f9` | `elevation/surface-container-low`   |
+| `--color-surface-container`      | `#edeff2` | `elevation/surface-container`       |
+| `--color-surface-container-high` | `#e2e4e9` | `elevation/surface-container-high`  |
+| `--color-surface-on-surface-weak`| `#4d5a75` | `surfaces/on-surface-weak`          |
 
-#### Border Radius
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--radius-2` | `2px` | `border/radius-2` |
-| `--radius-4` | `4px` | `border/radius-4` |
-| `--radius-full` | `999px` | `border/radius-full` |
+### Colors — Outline
 
-#### Typography
-| CSS Custom Property | Value | Figma Variable |
-|---|---|---|
-| `--font-family-body` | `'Inter', sans-serif` | `font-family/body` |
-| `--font-size-14` | `14px` | `font-size/font-size-14` |
-| `--font-weight-regular` | `400` | `font-weight/weight-regular` |
-| `--font-weight-bold` | `700` | `font-weight/weight-bold` |
-| `--line-height-1250` | `20px` | `line-height/height-1250` |
-| `--letter-spacing-normal` | `0px` | `letter-spacing/spacing-normal` |
+| CSS Custom Property              | Value     | Figma Variable                  |
+|----------------------------------|-----------|---------------------------------|
+| `--color-outline`                | `#4d5a75` | `outline/outline`               |
+| `--color-outline-hover`          | `#252b37` | `outline/outline-hover`         |
+| `--color-outline-variant`        | `#d7dae1` | `outline/outline-variant`       |
+| `--color-outline-variant-hover`  | `#b1bacb` | `outline/outline-variant-hover` |
+| `--color-outline-variant-active` | `#a3adc2` | `outline/outline-variant-active`|
+| `--color-outline-variant-disabled`| `#d7dae1`| `outline/outline-variant-disabled`|
+| `--color-outline-focused`        | `#3255d4` | `outline/outline-focused`       |
+
+### Colors — Status
+
+| CSS Custom Property         | Value     | Figma Variable             |
+|-----------------------------|-----------|----------------------------|
+| `--color-critical`          | `#e5484d` | `system/critical`          |
+| `--color-on-critical`       | `#fff0f0` | `system/on-critical`       |
+| `--color-critical-container`| `#ffd6d6` | `system/critical-container`|
+
+### Spacing
+
+| CSS Custom Property | Value  | Figma Variable     |
+|---------------------|--------|--------------------|
+| `--spacing-0`       | `0px`  | `spacing/space-0`  |
+| `--spacing-4`       | `4px`  | `spacing/space-4`  |
+| `--spacing-6`       | `6px`  | `spacing/space-6`  |
+| `--spacing-8`       | `8px`  | `spacing/space-8`  |
+| `--spacing-12`      | `12px` | `spacing/space-12` |
+
+### Border Radius
+
+| CSS Custom Property | Value   | Figma Variable      |
+|---------------------|---------|---------------------|
+| `--radius-2`        | `2px`   | `border/radius-2`   |
+| `--radius-4`        | `4px`   | `border/radius-4`   |
+| `--radius-full`     | `999px` | `border/radius-full`|
+
+### Typography
+
+| CSS Custom Property       | Value              | Figma Variable                   |
+|---------------------------|--------------------|----------------------------------|
+| `--font-family-body`      | `'Inter', sans-serif` | `font-family/body`            |
+| `--font-size-14`          | `14px`             | `font-size/font-size-14`         |
+| `--font-weight-regular`   | `400`              | `font-weight/weight-regular`     |
+| `--font-weight-bold`      | `700`              | `font-weight/weight-bold`        |
+| `--line-height-1250`      | `20px`             | `line-height/height-1250`        |
+| `--letter-spacing-normal` | `0px`              | `letter-spacing/spacing-normal`  |
+
+### Composite Typography Scale
+
+| Figma Style              | CSS equivalent                                                                           |
+|--------------------------|------------------------------------------------------------------------------------------|
+| `Body/body-md-14/regular`| `font-family: var(--font-family-body); font-size: var(--font-size-14); font-weight: var(--font-weight-regular); line-height: var(--line-height-1250); letter-spacing: var(--letter-spacing-normal);` |
 
 ---
 
-### 2. Component Library
+## 2. Component Library
+
 - **Location**: `src/components/` — one subfolder per component
-- **Architecture**: Functional React components with TypeScript props interfaces, CSS Modules for styling
+- **Architecture**: Functional React components (`React.FC`) with TypeScript props interfaces, CSS Modules for styling
 - **Documentation**: Storybook stories (`.stories.tsx`) per component
 
-Example component structure:
+### Component Folder Structure
+
+Every component lives in `src/components/<ComponentName>/` and contains exactly four files:
+
+```
+src/components/
+  Button/
+    Button.tsx          ← React component
+    Button.types.ts     ← TypeScript props interface
+    Button.module.css   ← Scoped styles (tokens only, no hardcoded values)
+    Button.stories.tsx  ← Storybook stories (all variants)
+  Checkbox/
+    Checkbox.tsx
+    Checkbox.types.ts
+    Checkbox.module.css
+    Checkbox.stories.tsx
+```
+
+### Component Pattern (Button example)
+
 ```tsx
 // src/components/Button/Button.tsx
 import React from 'react';
@@ -96,27 +133,47 @@ export const Button: React.FC<ButtonProps> = ({
   type = 'primary',
   size = 'm',
   state = 'default',
+  disclosure = false,
+  icon,
   children,
   onClick,
-}) => (
-  <button
-    className={`${styles.button} ${styles[`type-${type}`]} ${styles[`size-${size}`]}`}
-    disabled={state === 'disabled'}
-    onClick={onClick}
-    type="button"
-  >
-    {children}
-  </button>
-);
+}) => {
+  const isDisabled = state === 'disabled';
+  const isLoading = state === 'loading';
+  const isCritical = state === 'critical';
+
+  return (
+    <button
+      aria-busy={isLoading}
+      className={[
+        styles.button,
+        styles[`type-${type}`],
+        styles[`size-${size}`],
+        isLoading && styles.loading,
+        isCritical && styles.critical,
+      ].filter(Boolean).join(' ')}
+      disabled={isDisabled || isLoading}
+      onClick={onClick}
+      type="button"
+    >
+      {icon && <span aria-hidden="true" className={styles.iconSlot}>{icon}</span>}
+      <span className={styles.textSlot}>{children}</span>
+      {disclosure && <span aria-hidden="true" className={styles.disclosureSlot}><ChevronDown /></span>}
+    </button>
+  );
+};
 ```
 
-Example CSS Modules — **tokens only, no hardcoded values**:
+### CSS Module Pattern — tokens only, no hardcoded values
+
 ```css
 /* src/components/Button/Button.module.css */
 .button {
   font-family: var(--font-family-body);
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-1250);
+  letter-spacing: var(--letter-spacing-normal);
   border-radius: var(--radius-full);
 }
 
@@ -125,75 +182,138 @@ Example CSS Modules — **tokens only, no hardcoded values**:
   color: var(--color-main-on-primary);
 }
 
-.type-primary:hover:not(:disabled) {
-  background-color: var(--color-state-primary-hover);
+.type-primary:hover:not(:disabled) { background-color: var(--color-state-primary-hover); }
+.type-primary:active:not(:disabled) { background-color: var(--color-state-primary-active); }
+.type-primary:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-main-on-primary), 0 0 0 4px var(--color-outline-focused);
 }
-
-.type-primary:active:not(:disabled) {
-  background-color: var(--color-state-primary-active);
-}
+.type-primary:disabled { background-color: var(--color-state-primary-disabled); cursor: not-allowed; }
 ```
 
 ---
 
-### 3. Frameworks & Libraries
-- **UI Framework**: React 19.2.0
-- **Language**: TypeScript 5.9.3
-- **Build System**: Vite 7.3.1
-- **Styling**: CSS Modules (`.module.css`) with design tokens from `src/styles/tokens.css`
-- **Testing**: Vitest with Playwright for browser testing
-- **Component Documentation**: Storybook 10.2.16
+## 3. Frameworks & Libraries
+
+| Concern               | Technology                        | Version     |
+|-----------------------|-----------------------------------|-------------|
+| UI Framework          | React                             | 19.2.0      |
+| Language              | TypeScript                        | 5.9.3       |
+| Build / Dev Server    | Vite + `@vitejs/plugin-react`     | 7.3.1       |
+| Styling               | CSS Modules (`.module.css`)       | —           |
+| Component Docs        | Storybook (`@storybook/react-vite`)| 10.2.16    |
+| Unit / Browser Tests  | Vitest + Playwright               | 4.0.18      |
+| Visual Regression     | Chromatic (`@chromatic-com/storybook`) | 5.0.1  |
+| Accessibility Audit   | `@storybook/addon-a11y`           | 10.2.16     |
+| Linting               | ESLint 9 + `typescript-eslint`    | 9.39.1      |
 
 ---
 
-### 4. Asset Management
-- **Storage**: Images in `src/assets/` (imported) or `public/` (direct path)
-- **Referencing**: `import logo from './assets/logo.svg'` or `/logo.svg`
+## 4. Asset Management
+
+- **Static assets** (images, fonts) used in components: `src/assets/` — imported with `import logo from './assets/logo.svg'`
+- **Public assets** (favicons, OG images): `public/` — referenced as `/filename.ext`
+- No CDN configuration; assets are bundled by Vite
 
 ---
 
-### 5. Icon System
-- Inline SVG markup in JSX components
-- Icons sized to 20×20px to match Figma icon slots
-- Use `currentColor` for stroke/fill so icons inherit the component's text color
+## 5. Icon System
+
+- **Format**: Inline SVG in JSX — no icon library, no sprite sheets
+- **Size**: `20×20px` for action icons (matches Figma icon slot); `16×16px` for inline/decorative icons inside components (e.g. Checkbox tick)
+- **Color**: Always use `stroke="currentColor"` or `fill="currentColor"` so icons inherit the component's text color automatically
+- **Naming**: Descriptive PascalCase inline components, e.g. `ChevronDown`, `CheckIcon`, `ErrorIcon`
+- **Accessibility**: Always add `aria-hidden="true"` on the wrapping `<span>` or directly on the `<svg>` when decorative
+
+```tsx
+/** Inline icon pattern */
+const ChevronDown = () => (
+  <svg aria-hidden="true" fill="none" height="20" viewBox="0 0 20 20" width="20"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor"
+      strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
+  </svg>
+);
+```
 
 ---
 
-### 6. Styling Approach
-- **Methodology**: CSS Modules — one `.module.css` per component
-- **Tokens file**: `src/styles/tokens.css` — the single source of truth for all values
-- **Global styles**: `src/index.css` — imports tokens, sets base body/typography
+## 6. Styling Approach
+
+- **Methodology**: CSS Modules — one `.module.css` file per component, scoped class names
+- **Token file**: `src/styles/tokens.css` — single source of truth; all `--custom-properties` live here
+- **Global styles**: `src/index.css` — contains `@import './styles/tokens.css'` and base body/typography reset
 - **Storybook**: `.storybook/preview.ts` imports `src/styles/tokens.css` so tokens are available in stories
-- **FORBIDDEN**: Raw hex codes, pixel values outside of tokens, or magic numbers in component CSS
+- **Interactive states**: Implemented with native CSS pseudo-classes — `:hover:not(:disabled)`, `:active:not(:disabled)`, `:focus-visible:not(:disabled)`, `:disabled`
+- **Focus ring**: Always `box-shadow` with `--color-outline-focused`; never use the `outline` property
+- **Disabled cursor**: Set `cursor: not-allowed` in CSS; use the HTML `disabled` attribute on the element
 
----
+### FORBIDDEN patterns
 
-### 7. Project Structure
-```
-src/
-  components/
-    Button/
-      Button.tsx          ← component
-      Button.types.ts     ← TypeScript interfaces
-      Button.module.css   ← scoped styles (tokens only)
-      Button.stories.tsx  ← Storybook stories
-  stories/                ← legacy Storybook examples
-  styles/
-    tokens.css            ← ALL design tokens (CSS custom properties)
-  assets/
-  App.tsx
-  index.css               ← global reset + @import './styles/tokens.css'
-  main.tsx
+```css
+/* ❌ Never do this */
+color: #3d67ff;
+padding: 12px;
+border-radius: 999px;
+font-size: 14px;
+
+/* ✅ Always do this */
+color: var(--color-main-primary);
+padding: var(--spacing-12);
+border-radius: var(--radius-full);
+font-size: var(--font-size-14);
 ```
 
 ---
 
-## Integration Guidelines for Figma Designs
+## 7. Project Structure
 
-1. **Tokens first** — before writing any CSS value, check the token table above and use `var(--...)`. If a value isn't in the table, ask whether it should be added as a new token.
-2. **Component folder** — create `src/components/ComponentName/` with `.tsx`, `.types.ts`, `.module.css`, `.stories.tsx`.
-3. **Interactive states** — implement with native CSS pseudo-classes (`:hover:not(:disabled)`, `:active:not(:disabled)`, `:focus-visible:not(:disabled)`, `:disabled`) using the state tokens.
-4. **Disabled state** — use the HTML `disabled` attribute on the element; style via the `:disabled` pseudo-class.
-5. **Focus ring** — use `box-shadow` with `--color-outline-focused` (not `outline`).
-6. **Accessibility** — semantic HTML, ARIA attributes (`aria-busy`, `aria-label`, etc.), and visible focus styles.
-7. **Storybook** — add stories for every variant; import tokens via the Storybook preview (already configured).
+```
+figma-mcp-demo/
+  .github/
+    copilot-instructions.md   ← this file (design system rules)
+  public/                     ← static assets (served as-is)
+  src/
+    assets/                   ← imported assets (bundled by Vite)
+    components/
+      Button/
+        Button.tsx
+        Button.types.ts
+        Button.module.css
+        Button.stories.tsx
+      Checkbox/
+        Checkbox.tsx
+        Checkbox.types.ts
+        Checkbox.module.css
+        Checkbox.stories.tsx
+    stories/                  ← top-level Storybook assets / Configure.mdx
+    styles/
+      tokens.css              ← ALL design tokens (CSS custom properties)
+    App.css
+    App.tsx
+    index.css                 ← global reset + @import './styles/tokens.css'
+    main.tsx
+  index.html
+  package.json
+  vite.config.ts
+  tsconfig.json
+```
+
+---
+
+## 8. Integration Guidelines for Figma Designs
+
+1. **Tokens first** — before writing any CSS value, check the token tables above and use `var(--...)`. If the needed value isn't listed, add it to `src/styles/tokens.css` with a comment referencing the Figma variable path.
+2. **Component folder** — always create `src/components/ComponentName/` with all four files: `.tsx`, `.types.ts`, `.module.css`, `.stories.tsx`.
+3. **State mapping from Figma** — map Figma component states to CSS pseudo-classes:
+   - Figma `Hover` → `:hover:not(:disabled)`
+   - Figma `Active` / `Pressed` → `:active:not(:disabled)`
+   - Figma `Focused` → `:focus-visible:not(:disabled)`
+   - Figma `Disabled` → `:disabled` (with `disabled` attribute on element)
+   - Figma `Critical` / `Error` → a `.critical` CSS class (not a pseudo-class)
+   - Figma `Loading` → a `.loading` CSS class with `pointer-events: none`
+4. **Disabled state** — use the HTML `disabled` boolean attribute so the browser handles `aria-disabled` and `:disabled` natively.
+5. **Focus ring** — `box-shadow: 0 0 0 2px var(--color-main-on-primary), 0 0 0 4px var(--color-outline-focused)` (two-ring style).
+6. **Accessibility** — semantic HTML elements, ARIA attributes (`aria-busy` for loading, `aria-label` when no visible label, `aria-describedby` for error messages), visible focus styles.
+7. **Indeterminate checkbox** — the `indeterminate` property has no HTML attribute; set it via a `useRef` + `useEffect`: `inputRef.current.indeterminate = indeterminate`.
+8. **Storybook** — add stories for every Figma variant; the Storybook preview already imports tokens globally.
+9. **No hardcoded values** — treat any raw hex, pixel value, or magic number in a `.module.css` as a bug.
