@@ -105,21 +105,35 @@ All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and d
 
 ### Component Folder Structure
 
-Every component lives in `src/components/<ComponentName>/` and contains exactly four files:
+Each component is split across **three dedicated folders**:
 
 ```
-src/components/
-  Button/
-    Button.tsx          ← React component
-    Button.types.ts     ← TypeScript props interface
-    Button.module.css   ← Scoped styles (tokens only, no hardcoded values)
-    Button.stories.tsx  ← Storybook stories (all variants)
-  Checkbox/
-    Checkbox.tsx
-    Checkbox.types.ts
-    Checkbox.module.css
+src/
+  components/
+    Button/
+      Button.tsx          ← React component
+      Button.types.ts     ← TypeScript props interface
+      Button.module.css   ← Scoped styles (tokens only, no hardcoded values)
+    Checkbox/
+      Checkbox.tsx
+      Checkbox.types.ts
+      Checkbox.module.css
+
+  stories/                ← all Storybook stories (one file per component)
+    Button.stories.tsx
     Checkbox.stories.tsx
+    InlineError.stories.tsx
+    Label.stories.tsx
+
+  figma/                  ← all Figma Code Connect files (one file per component)
+    Button.figma.tsx
+    Checkbox.figma.tsx
+    InlineError.figma.tsx
+    Label.figma.tsx
 ```
+
+- **`stories/`** files import via `'../components/ComponentName/ComponentName'`
+- **`figma/`** files use `@figma/code-connect` and are published via `npx figma connect publish`
 
 ### Component Pattern (Button example)
 
@@ -274,18 +288,30 @@ figma-mcp-demo/
   public/                     ← static assets (served as-is)
   src/
     assets/                   ← imported assets (bundled by Vite)
-    components/
+    components/               ← component source files only (.tsx / .types.ts / .module.css)
       Button/
         Button.tsx
         Button.types.ts
         Button.module.css
-        Button.stories.tsx
       Checkbox/
         Checkbox.tsx
         Checkbox.types.ts
         Checkbox.module.css
-        Checkbox.stories.tsx
-    stories/                  ← top-level Storybook assets / Configure.mdx
+      InlineError/
+        ...
+      Label/
+        ...
+    stories/                  ← Storybook stories (one .stories.tsx per component)
+      Configure.mdx
+      Button.stories.tsx
+      Checkbox.stories.tsx
+      InlineError.stories.tsx
+      Label.stories.tsx
+    figma/                    ← Figma Code Connect files (one .figma.tsx per component)
+      Button.figma.tsx
+      Checkbox.figma.tsx
+      InlineError.figma.tsx
+      Label.figma.tsx
     styles/
       tokens.css              ← ALL design tokens (CSS custom properties)
     App.css
@@ -303,7 +329,7 @@ figma-mcp-demo/
 ## 8. Integration Guidelines for Figma Designs
 
 1. **Tokens first** — before writing any CSS value, check the token tables above and use `var(--...)`. If the needed value isn't listed, add it to `src/styles/tokens.css` with a comment referencing the Figma variable path.
-2. **Component folder** — always create `src/components/ComponentName/` with all four files: `.tsx`, `.types.ts`, `.module.css`, `.stories.tsx`.
+2. **Component folder** — always create `src/components/ComponentName/` with three files: `.tsx`, `.types.ts`, `.module.css`. Create the corresponding story in `src/stories/ComponentName.stories.tsx` and the Code Connect file in `src/figma/ComponentName.figma.tsx`.
 3. **State mapping from Figma** — map Figma component states to CSS pseudo-classes:
    - Figma `Hover` → `:hover:not(:disabled)`
    - Figma `Active` / `Pressed` → `:active:not(:disabled)`

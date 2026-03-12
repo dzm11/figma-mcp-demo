@@ -36,15 +36,25 @@ Every time a component is implemented from a Figma selection, follow this exact 
 
 ## 1. File structure
 
-Every component lives in its own folder with exactly four files:
+Each component is split across **three dedicated top-level folders**:
 
 ```
-src/components/ComponentName/
-  ComponentName.tsx          ← component implementation
-  ComponentName.types.ts     ← TypeScript interfaces / types
-  ComponentName.module.css   ← scoped styles (tokens only)
-  ComponentName.stories.tsx  ← Storybook stories
+src/
+  components/ComponentName/          ← component source only
+    ComponentName.tsx
+    ComponentName.types.ts
+    ComponentName.module.css
+
+  stories/                           ← all Storybook stories
+    ComponentName.stories.tsx
+
+  figma/                             ← all Figma Code Connect files
+    ComponentName.figma.tsx
 ```
+
+- **`src/components/`** — component implementation, types, and CSS Modules. No stories, no Code Connect.
+- **`src/stories/`** — one `.stories.tsx` file per component. Import components via relative path `'../components/ComponentName/ComponentName'`.
+- **`src/figma/`** — one `.figma.tsx` file per component using `@figma/code-connect`. Publish with `npx figma connect publish`.
 
 Never put multiple components in one file. Never put types inline in `.tsx`.
 
@@ -184,7 +194,13 @@ const ChevronDown = () => (
 
 ## 8. Storybook stories
 
+Story files live in **`src/stories/`** (not inside the component folder).
+
 ```tsx
+// src/stories/ComponentName.stories.tsx
+import { ComponentName } from '../components/ComponentName/ComponentName';
+import type { Meta, StoryObj } from '@storybook/react';
+
 const meta: Meta<typeof ComponentName> = {
   title: 'Components/ComponentName',
   component: ComponentName,
@@ -200,11 +216,51 @@ type Story = StoryObj<typeof ComponentName>;
 export const Default: Story = { args: { children: 'Label' } };
 ```
 
-- One story file per component, title `'Components/ComponentName'`
+- One story file per component in `src/stories/`, title `'Components/ComponentName'`
 - Always add `tags: ['autodocs']`
 - Export a `Default` story — plus named stories for each meaningful variant
 - Use `argTypes` with `control` for every prop that has a finite set of values
 - Never import styles or tokens directly in story files — they come from the Storybook preview
+
+---
+
+## 9a. Figma Code Connect
+
+Code Connect files live in **`src/figma/`** (not inside the component folder).
+
+```tsx
+// src/figma/ComponentName.figma.tsx
+import figma from '@figma/code-connect';
+import { ComponentName } from '../components/ComponentName/ComponentName';
+
+figma.connect(
+  ComponentName,
+  'https://www.figma.com/design/<FILE_KEY>?node-id=<NODE_ID>',
+  {
+    props: {
+      variant: figma.enum('Variant', {
+        Primary: 'primary',
+        Secondary: 'secondary',
+      }),
+      label: figma.string('Label'),
+      isDisabled: figma.boolean('Disabled'),
+    },
+    example: ({ variant, label, isDisabled }) => (
+      <ComponentName variant={variant} disabled={isDisabled}>
+        {label}
+      </ComponentName>
+    ),
+  }
+);
+```
+
+- One `.figma.tsx` file per component in `src/figma/`
+- Map Figma prop names exactly (case-sensitive) to React prop values
+- `figma.enum('FigmaPropName', { FigmaValue: reactValue })` for variant/enum props
+- `figma.boolean('FigmaPropName')` for boolean Figma properties
+- `figma.string('FigmaPropName')` for text content
+- Publish all connections with `npx figma connect publish --token <FIGMA_TOKEN>`
+- The Button node ID is TODO — obtain via Figma right-click → "Copy link" → extract `node-id` param
 
 ---
 

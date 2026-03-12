@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { Button } from '../components/Button/Button';
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Plus icon matching Figma "Adding / add, create, include, select" (20×20)

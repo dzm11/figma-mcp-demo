@@ -1,4 +1,4 @@
-import { InlineError } from './InlineError';
+import { InlineError } from '../components/InlineError/InlineError';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof InlineError> = {
