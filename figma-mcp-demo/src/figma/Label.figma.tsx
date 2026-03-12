@@ -29,12 +29,15 @@ figma.connect(
         Purple: 'purple',
         Teal: 'teal',
       }),
-      isStrong: figma.boolean('isStrong'),
-      children: figma.string('Label'),
+      // isStrong is a VARIANT in Figma ('True' | 'False'), not a boolean property
+      isStrong: figma.enum('isStrong', {
+        True: true,
+        False: false,
+      }),
     },
-    example: ({ type, color, isStrong, children }) => (
+    example: ({ type, color, isStrong }) => (
       <Label type={type} color={color} isStrong={isStrong}>
-        {children}
+        Demo
       </Label>
     ),
   }

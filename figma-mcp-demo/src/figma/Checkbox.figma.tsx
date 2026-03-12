@@ -14,27 +14,42 @@ figma.connect(
   'https://www.figma.com/design/H3scHHO8gzcKecmO2Sa9aN?node-id=73399-2487',
   {
     props: {
-      checked: figma.enum('State', {
+      // Figma 'Checked' variant: Selected | Indetermined | Unselected
+      checked: figma.enum('Checked', {
         Selected: true,
+        Indetermined: false,
         Unselected: false,
-        Indeterminate: false,
       }),
-      indeterminate: figma.enum('State', {
-        Indeterminate: true,
+      indeterminate: figma.enum('Checked', {
+        Indetermined: true,
         Selected: false,
         Unselected: false,
       }),
-      disabled: figma.boolean('Disabled'),
-      critical: figma.boolean('Critical'),
-      label: figma.string('Label'),
+      // Figma 'State' variant: Default | Hover | Active | Focused | Disabled | Critical
+      disabled: figma.enum('State', {
+        Disabled: true,
+        Default: false,
+        Hover: false,
+        Active: false,
+        Focused: false,
+        Critical: false,
+      }),
+      critical: figma.enum('State', {
+        Critical: true,
+        Default: false,
+        Hover: false,
+        Active: false,
+        Focused: false,
+        Disabled: false,
+      }),
     },
-    example: ({ checked, indeterminate, disabled, critical, label }) => (
+    example: ({ checked, indeterminate, disabled, critical }) => (
       <Checkbox
         checked={checked}
         indeterminate={indeterminate}
         disabled={disabled}
         critical={critical}
-        label={label}
+        label="Label"
       />
     ),
   }
