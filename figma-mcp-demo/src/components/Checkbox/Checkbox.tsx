@@ -1,45 +1,8 @@
 import React, { useRef, useEffect } from 'react';
+import dashIcon from '../../assets/dash.svg';
+import tickIcon from '../../assets/tick.svg';
 import styles from './Checkbox.module.css';
 import type { CheckboxProps } from './Checkbox.types.ts';
-
-/** White tick / checkmark (16×16) */
-const CheckIcon = () => (
-  <svg
-    aria-hidden="true"
-    fill="none"
-    height="16"
-    viewBox="0 0 16 16"
-    width="16"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M3 8.5L6.5 12L13 5"
-      stroke="white"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1.5"
-    />
-  </svg>
-);
-
-/** White dash / indeterminate (16×16) */
-const DashIcon = () => (
-  <svg
-    aria-hidden="true"
-    fill="none"
-    height="16"
-    viewBox="0 0 16 16"
-    width="16"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M4 8H12"
-      stroke="white"
-      strokeLinecap="round"
-      strokeWidth="1.5"
-    />
-  </svg>
-);
 
 /** Error icon for critical inline message (16×16) */
 const ErrorIcon = () => (
@@ -110,7 +73,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
         {/* Custom visual box — styled via CSS using :checked/:indeterminate on the adjacent input */}
         <span aria-hidden="true" className={styles.box}>
-          {indeterminate ? <DashIcon /> : <CheckIcon />}
+          <img
+            alt=""
+            className={styles.icon}
+            src={indeterminate ? dashIcon : tickIcon}
+          />
         </span>
 
         {label && <span className={styles.label}>{label}</span>}

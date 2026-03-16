@@ -64,9 +64,11 @@
 }
 
 /* Hide icon in unchecked state; show when checked/indeterminate */
-.box svg {
+.icon {
   display: none;
   flex-shrink: 0;
+  width: 16px;
+  height: 16px;
 }
 
 /* ── Checked ────────────────────────────────────────────── */
@@ -76,7 +78,7 @@
   border-color: transparent;
 }
 
-.input:checked + .box svg {
+.input:checked + .box .icon {
   display: block;
 }
 
@@ -87,7 +89,7 @@
   border-color: transparent;
 }
 
-.input:indeterminate + .box svg {
+.input:indeterminate + .box .icon {
   display: block;
 }
 
@@ -158,7 +160,7 @@
 
 /* Unchecked in critical state */
 .critical .input:not(:checked):not(:indeterminate) + .box {
-  background-color: var(--color-critical-container);
+  background-color: var(--color-surface-white);
   border-color: var(--color-critical);
 }
 
@@ -167,6 +169,20 @@
 .critical .input:indeterminate + .box {
   background-color: var(--color-critical);
   border-color: transparent;
+}
+
+/* Critical hover keeps the danger treatment instead of reverting to neutral/primary */
+.critical .row:hover:not(.disabled) .input:not(:checked):not(:indeterminate):not(:disabled) + .box {
+  background-color: var(--color-surface-white);
+  border-color: var(--color-critical);
+  box-shadow: 0 0 0 4px var(--color-surface-container);
+}
+
+.critical .row:hover:not(.disabled) .input:checked:not(:disabled) + .box,
+.critical .row:hover:not(.disabled) .input:indeterminate:not(:disabled) + .box {
+  background-color: var(--color-critical);
+  border-color: transparent;
+  box-shadow: 0 0 0 4px var(--color-surface-container);
 }
 
 /* ── Label ─────────────────────────────────────────────── */

@@ -25,17 +25,13 @@ figma.connect(
       }),
       showText: figma.boolean('isText'),
       showSubtext: figma.boolean('isSubtext'),
-      text: figma.string('text'),
-      subtext: figma.string('subtext'),
     },
-    example: ({ showSubtext, showText, size, state, subtext, text, type }) => (
+    example: ({ showSubtext, showText, size, state, type }) => (
       <Avatar
         showSubtext={showSubtext}
         showText={showText}
         size={size}
         state={state}
-        subtext={subtext}
-        text={text}
         type={type}
       />
     ),

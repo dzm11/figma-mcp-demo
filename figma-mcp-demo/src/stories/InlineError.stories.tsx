@@ -30,9 +30,3 @@ export const Default: Story = {
     message: 'Error message',
   },
 };
-
-export const LongMessage: Story = {
-  args: {
-    message: 'This field is required and cannot be left empty.',
-  },
-};

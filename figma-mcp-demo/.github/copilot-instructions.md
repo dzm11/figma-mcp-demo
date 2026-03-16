@@ -218,6 +218,19 @@ export const Button: React.FC<ButtonProps> = ({
 | Unit / Browser Tests  | Vitest + Playwright               | 4.0.18      |
 | Visual Regression     | Chromatic (`@chromatic-com/storybook`) | 5.0.1  |
 | Accessibility Audit   | `@storybook/addon-a11y`           | 10.2.16     |
+
+---
+
+## Storybook Convention (Permanent)
+
+Use this convention for all current and future component stories in `src/stories/`:
+
+- Left sidebar should contain only **main component types** (for example: `Primary`, `Outlined`, `Secondary`, `Tertiary`).
+- Do **not** add separate stories for states or combinations (for example: `Disabled`, `Loading`, `Focused`, `Critical`, `AllStates`, `WithSubtext`).
+- States and additional props must be explored through **Controls** inside each type story.
+- If a component has no `type` prop, keep a single `Default` story and expose variants through Controls.
+
+This rule is required to keep Storybook navigation compact and consistent.
 | Linting               | ESLint 9 + `typescript-eslint`    | 9.39.1      |
 
 ---

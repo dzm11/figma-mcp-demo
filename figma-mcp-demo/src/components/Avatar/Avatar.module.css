@@ -23,35 +23,35 @@
 .size-xs {
   --avatar-size: 20px;
   --company-logo-width: 12px;
-  --company-logo-height: 6px;
+  --company-logo-height: 12px;
   --text-padding-right: var(--spacing-6);
 }
 
 .size-s {
   --avatar-size: 24px;
   --company-logo-width: 16px;
-  --company-logo-height: 8px;
+  --company-logo-height: 16px;
   --text-padding-right: var(--spacing-6);
 }
 
 .size-m {
   --avatar-size: 28px;
   --company-logo-width: 16px;
-  --company-logo-height: 8px;
+  --company-logo-height: 16px;
   --text-padding-right: var(--spacing-6);
 }
 
 .size-l {
   --avatar-size: 32px;
   --company-logo-width: 20px;
-  --company-logo-height: 10px;
+  --company-logo-height: 20px;
   --text-padding-right: var(--spacing-6);
 }
 
 .size-xl {
   --avatar-size: 40px;
   --company-logo-width: 24px;
-  --company-logo-height: 12px;
+  --company-logo-height: 24px;
   --text-padding-right: var(--spacing-8);
 }
 
