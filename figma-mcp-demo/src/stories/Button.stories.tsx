@@ -1,5 +1,6 @@
 import { Button } from '../components/Button/Button';
 import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent } from 'storybook/test';
 
 // Plus icon matching Figma "Adding / add, create, include, select" (20×20)
 const PlusIcon = () => (
@@ -100,6 +101,28 @@ export const Secondary: Story = {
 
 export const SecondaryDisabled: Story = {
   args: { type: 'secondary', size: 'm', state: 'disabled', children: 'Disabled' },
+};
+
+// ─── FOCUS STATES ───────────────────────────────────────────────────────────
+
+export const PrimaryFocused: Story = {
+  args: { type: 'primary', size: 'm', children: 'Focused' },
+  play: async () => { await userEvent.tab(); },
+};
+
+export const OutlinedFocused: Story = {
+  args: { type: 'outlined', size: 'm', children: 'Focused' },
+  play: async () => { await userEvent.tab(); },
+};
+
+export const SecondaryFocused: Story = {
+  args: { type: 'secondary', size: 'm', children: 'Focused' },
+  play: async () => { await userEvent.tab(); },
+};
+
+export const TertiaryFocused: Story = {
+  args: { type: 'tertiary', size: 'm', children: 'Focused' },
+  play: async () => { await userEvent.tab(); },
 };
 
 // ─── TERTIARY ───────────────────────────────────────────────────────────────

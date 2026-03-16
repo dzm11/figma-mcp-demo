@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import type { ReactNode } from 'react';
 import { Checkbox } from '../components/Checkbox/Checkbox';
+import { userEvent } from 'storybook/test';
 
 const meta: Meta<typeof Checkbox> = {
   title: 'Components/Checkbox',
@@ -77,6 +78,23 @@ export const CriticalWithError: Story = {
 
 export const NoLabel: Story = {
   args: { label: undefined },
+};
+
+/* ── Focus states ── */
+
+export const FocusedUnselected: Story = {
+  args: { defaultChecked: false },
+  play: async () => { await userEvent.tab(); },
+};
+
+export const FocusedSelected: Story = {
+  args: { defaultChecked: true },
+  play: async () => { await userEvent.tab(); },
+};
+
+export const FocusedIndeterminate: Story = {
+  args: { indeterminate: true },
+  play: async () => { await userEvent.tab(); },
 };
 
 /* ── All states grid (matches Figma overview) ── */

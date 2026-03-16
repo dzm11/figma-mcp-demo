@@ -36,8 +36,16 @@
   --color-surface-container: #edeff2;
   /* Figma: elevation/surface-container-high */
   --color-surface-container-high: #e2e4e9;
+  /* Figma: surfaces/surface-inverse */
+  --color-surface-inverse: #647595;
+  /* Figma: surfaces/on-surface */
+  --color-surface-on-surface: #0a112a;
   /* Figma: surfaces/on-surface-weak */
   --color-surface-on-surface-weak: #4d5a75;
+  /* Figma: surfaces/on-surface-weakest */
+  --color-surface-on-surface-weakest: #7e8ca9;
+  /* Figma: surfaces/on-surface-inverse */
+  --color-surface-on-surface-inverse: #ffffff;
 
   /* ── Colors: Outline ───────────────────────────────────────────────────── */
   /* Figma: outline/outline */
@@ -83,21 +91,35 @@
   /* Figma: border/radius-full */
   --radius-full: 999px;
 
+  /* ── Shadows ───────────────────────────────────────────────────────────── */
+  /* Figma: Shadow-1 */
+  --shadow-1: 0 1px 3px 0 rgb(26 26 26 / 8%);
+
   /* ── Typography ────────────────────────────────────────────────────────── */
   /* Figma: font-family/body */
   --font-family-body: 'Inter', sans-serif;
   /* Figma: font-size/font-size-10 */
   --font-size-10: 10px;
+  /* Figma: font-size/font-size-12 */
+  --font-size-12: 12px;
   /* Figma: font-size/font-size-14 */
   --font-size-14: 14px;
+  /* Figma: font-size/font-size-16 */
+  --font-size-16: 16px;
   /* Figma: font-weight/weight-regular */
   --font-weight-regular: 400;
+  /* Figma: font-weight/weight-semibold */
+  --font-weight-semibold: 600;
   /* Figma: font-weight/weight-bold */
   --font-weight-bold: 700;
   /* Figma: line-height/height-1000 */
   --line-height-1000: 16px;
+  /* Figma: line-height/height-1125 */
+  --line-height-1125: 18px;
   /* Figma: line-height/height-1250 */
   --line-height-1250: 20px;
+  /* Figma: line-height/height-1500 */
+  --line-height-1500: 24px;
   /* Figma: letter-spacing/spacing-normal */
   --letter-spacing-normal: 0px;
 
