@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { userEvent, within } from 'storybook/test';
+import { userEvent } from 'storybook/test';
 import { Avatar } from '../components/Avatar/Avatar';
 import type { AvatarSize, AvatarState, AvatarType } from '../components/Avatar/Avatar.types';
 
