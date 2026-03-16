@@ -38,6 +38,8 @@
   --color-surface-container-high: #e2e4e9;
   /* Figma: surfaces/surface-inverse */
   --color-surface-inverse: #647595;
+  /* Figma: surfaces/background-inverse */
+  --color-surface-background-inverse: #252b37;
   /* Figma: surfaces/on-surface */
   --color-surface-on-surface: #0a112a;
   /* Figma: surfaces/on-surface-weak */
@@ -46,6 +48,8 @@
   --color-surface-on-surface-weakest: #7e8ca9;
   /* Figma: surfaces/on-surface-inverse */
   --color-surface-on-surface-inverse: #ffffff;
+  /* Figma: surfaces/on-surface-weakest-inverse */
+  --color-surface-on-surface-weakest-inverse: #d7dae1;
 
   /* ── Colors: Outline ───────────────────────────────────────────────────── */
   /* Figma: outline/outline */
@@ -74,6 +78,8 @@
   /* ── Spacing ───────────────────────────────────────────────────────────── */
   /* Figma: spacing/space-0 */
   --spacing-0: 0px;
+  /* Figma: spacing/space-2 */
+  --spacing-2: 2px;
   /* Figma: spacing/space-4 */
   --spacing-4: 4px;
   /* Figma: spacing/space-6 */
@@ -82,18 +88,26 @@
   --spacing-8: 8px;
   /* Figma: spacing/space-12 */
   --spacing-12: 12px;
+  /* Figma: spacing/space-16 */
+  --spacing-16: 16px;
+  /* Figma: spacing/space-24 */
+  --spacing-24: 24px;
 
   /* ── Border Radius ─────────────────────────────────────────────────────── */
   /* Figma: border/radius-2 */
   --radius-2: 2px;
   /* Figma: border/radius-4 */
   --radius-4: 4px;
+  /* Figma: border/radius-8 */
+  --radius-8: 8px;
   /* Figma: border/radius-full */
   --radius-full: 999px;
 
   /* ── Shadows ───────────────────────────────────────────────────────────── */
   /* Figma: Shadow-1 */
   --shadow-1: 0 1px 3px 0 rgb(26 26 26 / 8%);
+  /* Figma: Shadow-3 */
+  --shadow-3: 0 4px 6px -2px rgb(26 26 26 / 20%);
 
   /* ── Typography ────────────────────────────────────────────────────────── */
   /* Figma: font-family/body */
@@ -108,6 +122,8 @@
   --font-size-16: 16px;
   /* Figma: font-weight/weight-regular */
   --font-weight-regular: 400;
+  /* Figma: font-weight/weight-medium */
+  --font-weight-medium: 500;
   /* Figma: font-weight/weight-semibold */
   --font-weight-semibold: 600;
   /* Figma: font-weight/weight-bold */
