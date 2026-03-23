@@ -107,7 +107,7 @@
 .type-outlined {
   background-color: transparent;
   color: var(--main-primary);
-  border: var(--border-width-border) solid var(--main-primary);
+  border: var(--border-weight-1) solid var(--main-primary);
 }
 
 .type-outlined:hover:not(:disabled) {
@@ -145,7 +145,7 @@
 .type-secondary {
   background-color: transparent;
   color: var(--var-on-surface-weak);
-  border: var(--border-width-border) solid var(--outline-outline-variant);
+  border: var(--border-weight-1) solid var(--outline-outline-variant);
 }
 
 .type-secondary:hover:not(:disabled) {
@@ -226,7 +226,7 @@
   margin: auto;
   width: var(--spacing-space-16);
   height: var(--spacing-space-16);
-  border: var(--border-width-border-2) solid transparent;
+  border: var(--border-weight-2) solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
