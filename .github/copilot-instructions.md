@@ -295,46 +295,44 @@ font-size: var(--font-size-14);
 ## 7. Project Structure
 
 ```
-figma-mcp-demo/
-  .github/
-    copilot-instructions.md   ← this file (design system rules)
-  public/                     ← static assets (served as-is)
-  src/
-    assets/                   ← imported assets (bundled by Vite)
-    components/               ← component source files only (.tsx / .types.ts / .module.css)
-      Button/
-        Button.tsx
-        Button.types.ts
-        Button.module.css
-      Checkbox/
-        Checkbox.tsx
-        Checkbox.types.ts
-        Checkbox.module.css
-      InlineError/
-        ...
-      Label/
-        ...
-    stories/                  ← Storybook stories (one .stories.tsx per component)
-      Configure.mdx
-      Button.stories.tsx
-      Checkbox.stories.tsx
-      InlineError.stories.tsx
-      Label.stories.tsx
-    figma/                    ← Figma Code Connect files (one .figma.tsx per component)
-      Button.figma.tsx
-      Checkbox.figma.tsx
-      InlineError.figma.tsx
-      Label.figma.tsx
-    styles/
-      tokens.css              ← ALL design tokens (CSS custom properties)
-    App.css
-    App.tsx
-    index.css                 ← global reset + @import './styles/tokens.css'
-    main.tsx
-  index.html
-  package.json
-  vite.config.ts
-  tsconfig.json
+.
+├── .github/
+│   └── copilot-instructions.md   ← this file (design system rules)
+├── public/                       ← static assets (served as-is)
+├── src/
+│   ├── assets/                   ← imported assets (bundled by Vite)
+│   ├── components/               ← component source files only (.tsx / .types.ts / .module.css)
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Button.types.ts
+│   │   │   └── Button.module.css
+│   │   ├── Checkbox/
+│   │   │   ├── Checkbox.tsx
+│   │   │   ├── Checkbox.types.ts
+│   │   │   └── Checkbox.module.css
+│   │   ├── InlineError/
+│   │   └── Label/
+│   ├── stories/                  ← Storybook stories (one .stories.tsx per component)
+│   │   ├── Configure.mdx
+│   │   ├── Button.stories.tsx
+│   │   ├── Checkbox.stories.tsx
+│   │   ├── InlineError.stories.tsx
+│   │   └── Label.stories.tsx
+│   ├── figma/                    ← Figma Code Connect files (one .figma.tsx per component)
+│   │   ├── Button.figma.tsx
+│   │   ├── Checkbox.figma.tsx
+│   │   ├── InlineError.figma.tsx
+│   │   └── Label.figma.tsx
+│   ├── styles/
+│   │   └── tokens.css            ← ALL design tokens (CSS custom properties)
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css                 ← global reset + @import './styles/tokens.css'
+│   └── main.tsx
+├── index.html
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
 ```
 
 ---
