@@ -1,58 +1,58 @@
 .root {
   display: inline-flex;
   align-items: center;
-  padding: var(--spacing-4);
-  border-radius: var(--radius-full);
+  padding: var(--spacing-space-4);
+  border-radius: var(--border-radius-full);
   white-space: nowrap;
 }
 
 .iconOnly {
-  box-shadow: var(--shadow-1);
+  box-shadow: var(none);
 }
 
 .withText {
-  gap: var(--spacing-8);
+  gap: var(--spacing-space-8);
   overflow: hidden;
 }
 
 .state-hover.withText,
 .root:hover.withText {
-  background-color: var(--color-surface-container);
+  background-color: var(--elevation-surface-container);
 }
 
 .size-xs {
   --avatar-size: 20px;
   --company-logo-width: 12px;
   --company-logo-height: 12px;
-  --text-padding-right: var(--spacing-6);
+  --text-padding-right: var(--spacing-space-6);
 }
 
 .size-s {
   --avatar-size: 24px;
   --company-logo-width: 16px;
   --company-logo-height: 16px;
-  --text-padding-right: var(--spacing-6);
+  --text-padding-right: var(--spacing-space-6);
 }
 
 .size-m {
   --avatar-size: 28px;
   --company-logo-width: 16px;
   --company-logo-height: 16px;
-  --text-padding-right: var(--spacing-6);
+  --text-padding-right: var(--spacing-space-6);
 }
 
 .size-l {
   --avatar-size: 32px;
   --company-logo-width: 20px;
   --company-logo-height: 20px;
-  --text-padding-right: var(--spacing-6);
+  --text-padding-right: var(--spacing-space-6);
 }
 
 .size-xl {
   --avatar-size: 40px;
   --company-logo-width: 24px;
   --company-logo-height: 24px;
-  --text-padding-right: var(--spacing-8);
+  --text-padding-right: var(--spacing-space-8);
 }
 
 .avatar {
@@ -63,25 +63,25 @@
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: var(--radius-full);
+  border-radius: var(--border-radius-full);
 }
 
 .avatar-initials {
-  background-color: var(--color-surface-white);
-  color: var(--color-main-primary);
+  background-color: var(--surfaces-surface);
+  color: var(--main-primary);
 }
 
 .avatar-inverse {
-  background-color: var(--color-surface-inverse);
-  color: var(--color-surface-on-surface-inverse);
+  background-color: var(--surfaces-surface-inverse);
+  color: var(--surfaces-on-surface-inverse);
 }
 
 .avatar-company {
-  background-color: var(--color-surface-white);
+  background-color: var(--surfaces-surface);
 }
 
 .avatar-image {
-  background-color: var(--color-surface-white);
+  background-color: var(--surfaces-surface);
 }
 
 .initials {
@@ -135,7 +135,7 @@
 .textGroup {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--spacing-space-4);
   padding-right: var(--text-padding-right);
   font-family: var(--font-family-body);
   font-size: var(--font-size-14);
@@ -145,9 +145,9 @@
 }
 
 .subtext {
-  color: var(--color-surface-on-surface-weakest);
+  color: var(--surfaces-on-surface-weakest);
 }
 
 .text {
-  color: var(--color-surface-on-surface);
+  color: var(--surfaces-on-surface);
 }

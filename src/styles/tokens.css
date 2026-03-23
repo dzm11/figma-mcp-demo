@@ -622,3 +622,16 @@
   --line-height-height-2500: var(--line-height-2500);
   --line-height-height-3000: var(--line-height-3000);
 }
+
+/* ── Collection: Shadows ───────────────────────────── */
+
+[data-theme="default"] {
+  --inset-100: inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15000000596046448), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15000000596046448);
+  --inset-200: inset 0px 2px 1px 0px rgba(26, 26, 26, 0.20000000298023224), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099);
+  --shadow-1: 0px 1px 3px 2px rgba(26, 26, 26, 0.07999999821186066);
+  --shadow-2: 0px 2px 3px -1px rgba(26, 26, 26, 0.07000000029802322);
+  --shadow-3: 0px 4px 6px -2px rgba(26, 26, 26, 0.20000000298023224);
+  --shadow-4: 0px 8px 16px -4px rgba(26, 26, 26, 0.2199999988079071);
+  --shadow-5: 0px 12px 20px -8px rgba(26, 26, 26, 0.23999999463558197);
+  --shadow-6: 0px 20px 20px -8px rgba(26, 26, 26, 0.2800000011920929);
+}

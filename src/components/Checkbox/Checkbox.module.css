@@ -9,14 +9,14 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-4);
+  gap: var(--spacing-space-4);
 }
 
 /* Clickable row: checkbox box + label */
 .row {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--spacing-space-8);
   cursor: pointer;
   user-select: none;
 }
@@ -49,12 +49,12 @@
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  border-radius: var(--radius-2);
+  border-radius: var(--border-radius-2);
   position: relative; /* needed for focus ring ::after */
 
   /* Default state: unselected */
-  background-color: var(--color-surface-white);
-  border: 1px solid var(--color-outline);
+  background-color: var(--surfaces-surface);
+  border: 1px solid var(--outline-outline);
   box-shadow: none;
 
   transition:
@@ -74,7 +74,7 @@
 /* ── Checked ────────────────────────────────────────────── */
 
 .input:checked + .box {
-  background-color: var(--color-main-primary);
+  background-color: var(--main-primary);
   border-color: transparent;
 }
 
@@ -85,7 +85,7 @@
 /* ── Indeterminate ──────────────────────────────────────── */
 
 .input:indeterminate + .box {
-  background-color: var(--color-main-primary);
+  background-color: var(--main-primary);
   border-color: transparent;
 }
 
@@ -97,34 +97,34 @@
 
 /* Unchecked hover */
 .row:hover:not(.disabled) .input:not(:checked):not(:indeterminate):not(:disabled) + .box {
-  background-color: var(--color-surface-container);
-  border-color: var(--color-outline-hover);
-  box-shadow: 0 0 0 4px var(--color-surface-container);
+  background-color: var(--elevation-surface-container);
+  border-color: var(--outline-outline-hover);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container);
 }
 
 /* Checked/indeterminate hover */
 .row:hover:not(.disabled) .input:checked:not(:disabled) + .box,
 .row:hover:not(.disabled) .input:indeterminate:not(:disabled) + .box {
-  background-color: var(--color-state-primary-hover);
+  background-color: var(--state-primary-hover);
   border-color: transparent;
-  box-shadow: 0 0 0 4px var(--color-surface-container);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container);
 }
 
 /* ── Active (pressed) ──────────────────────────────────── */
 
 /* Unchecked active */
 .row:active:not(.disabled) .input:not(:checked):not(:indeterminate):not(:disabled) + .box {
-  background-color: var(--color-surface-container-high);
-  border-color: var(--color-outline);
-  box-shadow: 0 0 0 4px var(--color-surface-container-high);
+  background-color: var(--elevation-surface-container-high);
+  border-color: var(--outline-outline);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container-high);
 }
 
 /* Checked/indeterminate active */
 .row:active:not(.disabled) .input:checked:not(:disabled) + .box,
 .row:active:not(.disabled) .input:indeterminate:not(:disabled) + .box {
-  background-color: var(--color-state-primary-active);
+  background-color: var(--state-primary-active);
   border-color: transparent;
-  box-shadow: 0 0 0 4px var(--color-surface-container-high);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container-high);
 }
 
 /* ── Focus visible ─────────────────────────────────────── */
@@ -138,21 +138,21 @@
   content: '';
   position: absolute;
   inset: -4px; /* 2px gap + 2px border width */
-  border: 2px solid var(--color-outline-focused);
-  border-radius: var(--radius-4);
+  border: 2px solid var(--outline-outline-focused);
+  border-radius: var(--border-radius-4);
   pointer-events: none;
 }
 
 /* ── Disabled ──────────────────────────────────────────── */
 
 .input:disabled + .box {
-  background-color: var(--color-surface-container);
-  border-color: var(--color-outline-variant-disabled);
+  background-color: var(--elevation-surface-container);
+  border-color: var(--outline-outline-variant-disabled);
 }
 
 .input:checked:disabled + .box,
 .input:indeterminate:disabled + .box {
-  background-color: var(--color-state-primary-disabled);
+  background-color: var(--state-primary-disabled);
   border-color: transparent;
 }
 
@@ -160,29 +160,29 @@
 
 /* Unchecked in critical state */
 .critical .input:not(:checked):not(:indeterminate) + .box {
-  background-color: var(--color-surface-white);
-  border-color: var(--color-critical);
+  background-color: var(--surfaces-surface);
+  border-color: var(--system-critical);
 }
 
 /* Checked/indeterminate in critical state */
 .critical .input:checked + .box,
 .critical .input:indeterminate + .box {
-  background-color: var(--color-critical);
+  background-color: var(--system-critical);
   border-color: transparent;
 }
 
 /* Critical hover keeps the danger treatment instead of reverting to neutral/primary */
 .critical .row:hover:not(.disabled) .input:not(:checked):not(:indeterminate):not(:disabled) + .box {
-  background-color: var(--color-surface-white);
-  border-color: var(--color-critical);
-  box-shadow: 0 0 0 4px var(--color-surface-container);
+  background-color: var(--surfaces-surface);
+  border-color: var(--system-critical);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container);
 }
 
 .critical .row:hover:not(.disabled) .input:checked:not(:disabled) + .box,
 .critical .row:hover:not(.disabled) .input:indeterminate:not(:disabled) + .box {
-  background-color: var(--color-critical);
+  background-color: var(--system-critical);
   border-color: transparent;
-  box-shadow: 0 0 0 4px var(--color-surface-container);
+  box-shadow: 0 0 0 4px var(--elevation-surface-container);
 }
 
 /* ── Label ─────────────────────────────────────────────── */
@@ -193,20 +193,20 @@
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-1250);
   letter-spacing: var(--letter-spacing-normal);
-  color: var(--color-surface-on-surface-weak);
-  padding: var(--spacing-4) 0;
+  color: var(--var-on-surface-weak);
+  padding: var(--spacing-space-4) 0;
 }
 
 .row:hover:not(.disabled) .label {
-  color: var(--color-state-on-surface-hover);
+  color: var(--state-on-surface-hover);
 }
 
 .row:active:not(.disabled) .label {
-  color: var(--color-state-on-surface-active);
+  color: var(--state-on-surface-active);
 }
 
 .disabled .label {
-  color: var(--color-state-on-surface-disabled);
+  color: var(--state-on-surface-disabled);
 }
 
 /* ── Error / inline message ────────────────────────────── */
@@ -214,7 +214,7 @@
 .errorRow {
   display: inline-flex;
   align-items: flex-start;
-  gap: var(--spacing-4);
+  gap: var(--spacing-space-4);
 }
 
 .errorIcon {
@@ -224,7 +224,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: var(--color-critical);
+  color: var(--system-critical);
 }
 
 .errorMessage {
@@ -232,5 +232,5 @@
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-1250);
-  color: var(--color-critical);
+  color: var(--system-critical);
 }

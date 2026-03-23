@@ -7,7 +7,7 @@
 .wrapper {
   display: inline-flex;
   align-items: flex-start;
-  gap: var(--spacing-4);
+  gap: var(--spacing-space-4);
 }
 
 /* 20×20 icon container — centres the 16×16 SVG, inherits critical colour */
@@ -18,7 +18,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: var(--color-critical);
+  color: var(--system-critical);
 }
 
 /* Body/body-md-14/regular in critical colour */
@@ -30,5 +30,5 @@
   line-height: var(--line-height-1250);
   letter-spacing: var(--letter-spacing-normal);
   font-style: normal;
-  color: var(--color-critical);
+  color: var(--system-critical);
 }

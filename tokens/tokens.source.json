@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-23T22:32:38.322Z",
+  "generatedAt": "2026-03-23T23:29:29.499Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -13043,6 +13043,163 @@
               "kind": "number",
               "value": 48,
               "unit": "px"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ShadowsCollection",
+      "name": "Shadows",
+      "defaultModeId": "default",
+      "modes": [
+        {
+          "modeId": "default",
+          "name": "Default"
+        }
+      ],
+      "tokens": [
+        {
+          "figmaName": "Inset-100",
+          "codeSyntax": "inset-100",
+          "cssVar": "--inset-100",
+          "scssVar": "$inset-100",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15000000596046448), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15000000596046448)"
+            }
+          }
+        },
+        {
+          "figmaName": "Inset-200",
+          "codeSyntax": "inset-200",
+          "cssVar": "--inset-200",
+          "scssVar": "$inset-200",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "inset 0px 2px 1px 0px rgba(26, 26, 26, 0.20000000298023224), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-1",
+          "codeSyntax": "shadow-1",
+          "cssVar": "--shadow-1",
+          "scssVar": "$shadow-1",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 1px 3px 2px rgba(26, 26, 26, 0.07999999821186066)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-2",
+          "codeSyntax": "shadow-2",
+          "cssVar": "--shadow-2",
+          "scssVar": "$shadow-2",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 2px 3px -1px rgba(26, 26, 26, 0.07000000029802322)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-3",
+          "codeSyntax": "shadow-3",
+          "cssVar": "--shadow-3",
+          "scssVar": "$shadow-3",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 4px 6px -2px rgba(26, 26, 26, 0.20000000298023224)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-4",
+          "codeSyntax": "shadow-4",
+          "cssVar": "--shadow-4",
+          "scssVar": "$shadow-4",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 8px 16px -4px rgba(26, 26, 26, 0.2199999988079071)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-5",
+          "codeSyntax": "shadow-5",
+          "cssVar": "--shadow-5",
+          "scssVar": "$shadow-5",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 12px 20px -8px rgba(26, 26, 26, 0.23999999463558197)"
+            }
+          }
+        },
+        {
+          "figmaName": "Shadow-6",
+          "codeSyntax": "shadow-6",
+          "cssVar": "--shadow-6",
+          "scssVar": "$shadow-6",
+          "type": "STRING",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "SHADOW"
+          ],
+          "valuesByMode": {
+            "Default": {
+              "kind": "string",
+              "value": "0px 20px 20px -8px rgba(26, 26, 26, 0.2800000011920929)"
             }
           }
         }

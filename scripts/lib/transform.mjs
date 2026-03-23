@@ -241,3 +241,121 @@ export function transformFigmaVariablesToSource(payload, config) {
     collections
   };
 }
+
+/**
+ * Transform Figma Style metadata + Node details into a "Shadows" collection
+ * of shadow tokens compatible with the variables schema.
+ *
+ * Receives:
+ *   - stylesPayload: from /v1/files/{fileKey}/styles endpoint (metadata only)
+ *   - nodesPayload: from /v1/files/{fileKey}/nodes endpoint (effect details)
+ *
+ * Figma effect styles are converted to CSS box-shadow string values.
+ * Both DROP_SHADOW and INNER_SHADOW effects are extracted.
+ */
+export function transformFigmaStylesToSource(stylesPayload, nodesPayload) {
+  const styles = stylesPayload?.meta?.styles || [];
+  const nodesMap = nodesPayload?.nodes || {};
+  const shadowTokens = [];
+
+  // Process each EFFECT style: fetch its node details and extract shadows
+  for (const style of styles) {
+    // Filter to EFFECT styles only
+    if (style.style_type !== "EFFECT") {
+      continue;
+    }
+
+    const nodeId = style.node_id;
+    const nodeData = nodesMap[nodeId];
+
+    if (!nodeData) {
+      console.warn(
+        `[warning] No node data found for style: "${style.name}" (node ID: ${nodeId})`
+      );
+      continue;
+    }
+
+    // Effects are stored inside the document property of the node response
+    const effects = nodeData?.document?.effects || [];
+
+    // Convert DROP_SHADOW and INNER_SHADOW effects to CSS box-shadow syntax
+    const shadows = effects
+      .filter((e) => e.type === "DROP_SHADOW" || e.type === "INNER_SHADOW")
+      .map((effect) => {
+        const offsetX = effect.offset?.x || 0;
+        const offsetY = effect.offset?.y || 0;
+        const blur = effect.radius || 0;
+        const spread = effect.spread || 0;
+        const color = effect.color || { r: 0, g: 0, b: 0, a: 1 };
+
+        // Convert Figma color (0-1 float) to RGB (0-255)
+        const r = Math.round(color.r * 255);
+        const g = Math.round(color.g * 255);
+        const b = Math.round(color.b * 255);
+        const a = typeof color.a === "number" ? color.a : 1;
+
+        const colorStr =
+          a < 1
+            ? `rgba(${r}, ${g}, ${b}, ${a})`
+            : `rgb(${r}, ${g}, ${b})`;
+        const inset = effect.type === "INNER_SHADOW" ? "inset " : "";
+
+        return `${inset}${offsetX}px ${offsetY}px ${blur}px ${spread}px ${colorStr}`;
+      })
+      .join(", ");
+
+    // Only create a token if we found actual shadows
+    if (!shadows || shadows.trim() === "") {
+      continue;
+    }
+
+    // Extract a clean token name from the Figma style name
+    // e.g. "Shadow-1" → "shadow-1", "Shadow/Light" → "shadow-light"
+    const cleanName = style.name
+      .toLowerCase()
+      .replace(/[/\s]+/g, "-")
+      .replace(/[^a-z0-9-]/g, "")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "");
+
+    shadowTokens.push({
+      figmaName: style.name,
+      codeSyntax: cleanName,
+      cssVar: `--${cleanName}`,
+      scssVar: `$${cleanName}`,
+      type: "STRING",
+      description: style.description || "",
+      hiddenFromPublishing: Boolean(style.hiddenFromPublishing),
+      scopes: ["SHADOW"],
+      valuesByMode: {
+        Default: {
+          kind: "string",
+          value: shadows
+        }
+      }
+    });
+  }
+
+  // Return as a complete collection if any shadows found
+  if (shadowTokens.length === 0) {
+    return null;
+  }
+
+  return {
+    id: "ShadowsCollection",
+    name: "Shadows",
+    defaultModeId: "default",
+    modes: [
+      {
+        modeId: "default",
+        name: "Default"
+      }
+    ],
+    tokens: shadowTokens.sort((a, b) =>
+      a.codeSyntax.localeCompare(b.codeSyntax, "en", {
+        numeric: true,
+        sensitivity: "base"
+      })
+    )
+  };
+}

@@ -79,3 +79,30 @@ export async function fetchLocalVariables() {
   const { fileKey } = getFigmaEnv();
   return figmaGet(`/v1/files/${fileKey}/variables/local`);
 }
+
+/**
+ * Fetch local styles (colors, effects, etc.) for the configured Figma file.
+ * Uses the Figma Styles REST API endpoint.
+ * Includes shadow/effect styles which can be converted to CSS box-shadow tokens.
+ */
+export async function fetchLocalStyles() {
+  const { fileKey } = getFigmaEnv();
+  return figmaGet(`/v1/files/${fileKey}/styles`);
+}
+
+/**
+ * Fetch node details for one or more node IDs in the Figma file.
+ * Used to retrieve full effect/shadow definitions after fetching style metadata.
+ *
+ * @param {string|string[]} nodeIds - single node ID or array of node IDs (format: "75:242")
+ * @returns {Promise<Object>} node data with effects, properties, etc.
+ */
+export async function fetchNodeDetails(nodeIds) {
+  const { fileKey } = getFigmaEnv();
+  
+  const idsParam = Array.isArray(nodeIds)
+    ? nodeIds.join(",")
+    : nodeIds;
+
+  return figmaGet(`/v1/files/${fileKey}/nodes?ids=${encodeURIComponent(idsParam)}`);
+}

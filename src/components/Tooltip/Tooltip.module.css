@@ -1,7 +1,7 @@
 .root {
-  --tooltip-surface: var(--color-surface-white);
-  --tooltip-title: var(--color-surface-on-surface);
-  --tooltip-description: var(--color-surface-on-surface-weak);
+  --tooltip-surface: var(--surfaces-surface);
+  --tooltip-title: var(--surfaces-on-surface);
+  --tooltip-description: var(--var-on-surface-weak);
 
   position: relative;
   display: inline-flex;
@@ -12,26 +12,26 @@
 }
 
 .tone-default {
-  --tooltip-surface: var(--color-surface-white);
-  --tooltip-title: var(--color-surface-on-surface);
-  --tooltip-description: var(--color-surface-on-surface-weak);
+  --tooltip-surface: var(--surfaces-surface);
+  --tooltip-title: var(--surfaces-on-surface);
+  --tooltip-description: var(--var-on-surface-weak);
 }
 
 .tone-inverse {
-  --tooltip-surface: var(--color-surface-background-inverse);
-  --tooltip-title: var(--color-surface-on-surface-inverse);
-  --tooltip-description: var(--color-surface-on-surface-weakest-inverse);
+  --tooltip-surface: var(--surfaces-background-inverse);
+  --tooltip-title: var(--surfaces-on-surface-inverse);
+  --tooltip-description: var(--surfaces-on-surface-weakest-inverse);
 }
 
 .surface {
   display: inline-flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-space-2);
   width: 100%;
-  padding: var(--spacing-12);
-  border-radius: var(--radius-4);
+  padding: var(--spacing-space-12);
+  border-radius: var(--border-radius-4);
   background-color: var(--tooltip-surface);
-  box-shadow: var(--shadow-3);
+  box-shadow: var(none);
 }
 
 .arrowSlot {
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 var(--spacing-16);
+  padding: 0 var(--spacing-space-16);
 }
 
 .arrow {
