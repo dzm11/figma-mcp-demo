@@ -1,73 +1,101 @@
-# React + TypeScript + Vite
+# figma-mcp-demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a frontend design system built with React + TypeScript + Storybook, plus a pipeline for syncing tokens from Figma Variables.
 
-Currently, two official plugins are available:
+Main goals of the project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- keep UI components aligned with Figma,
+- maintain a single source of truth for design values,
+- enable fast review of changes through Storybook,
+- automate token pull/build and publishing to GitHub.
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript 5
+- Vite 7
+- Storybook 10
+- Figma Code Connect
 
-## Expanding the ESLint configuration
+## How this project works
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+In short:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Design values are defined in Figma Variables.
+2. The pipeline fetches this data through the Figma REST API.
+3. The generator produces final token files used by components.
+4. Components (CSS Modules) should use `var(--token)` instead of hardcoded values.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Most important file: src/styles/tokens.css
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The file [src/styles/tokens.css](src/styles/tokens.css) is the final, app-facing token output.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+That means:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- components and global styles read tokens from this file,
+- Storybook imports the same file, so previews reflect the real design system state,
+- this file should not be edited manually, because it is generated.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Related places:
+
+- [src/index.css](src/index.css) imports tokens globally,
+- [.storybook/preview.ts](.storybook/preview.ts) imports tokens for stories,
+- [src/styles/generated/_tokens.scss](src/styles/generated/_tokens.scss) is an internal helper SCSS artifact.
+
+## Folder architecture
+
+- [src/components](src/components) - UI components (TSX + CSS Modules + types)
+- [src/styles](src/styles) - global styles, tokens, and fonts
+- [src/stories](src/stories) - Storybook stories
+- [src/assets](src/assets) - SVG/PNG assets
+- [scripts](scripts) - token pipeline (pull/build/sync/pr)
+- [config/tokens.config.json](config/tokens.config.json) - token generator configuration
+- [tokens/tokens.source.json](tokens/tokens.source.json) - normalized source data fetched from Figma
+
+## Commands
+
+### Development
+
+- `npm run dev` - run the app locally
+- `npm run storybook` - run Storybook
+- `npm run build` - production build
+- `npm run lint` - lint
+
+### Token pipeline
+
+- `npm run tokens:pull` - fetch Variables from Figma into source JSON
+- `npm run tokens:build` - generate `src/styles/tokens.css` and `src/styles/generated/_tokens.scss`
+- `npm run tokens:sync` - pull + build
+- `npm run tokens:pr` - sync + commit/push + create PR (requires `gh`)
+
+## How to work with token changes
+
+Typical workflow:
+
+1. Update tokens in Figma.
+2. Run `npm run tokens:sync`.
+3. Review the diff, mainly in [src/styles/tokens.css](src/styles/tokens.css).
+4. Start Storybook and do a quick visual sanity check.
+5. Commit + push, or run `npm run tokens:pr`.
+
+## Environment variables
+
+Use [.env.example](.env.example) as a template and create a local `.env.local` file.
+
+Most important variables:
+
+- `FIGMA_TOKEN` - Personal Access Token for the Figma API,
+- `FIGMA_FILE_KEY` - Figma file key,
+- `BASE_BRANCH` - target branch for token PRs,
+- `TOKENS_BRANCH_PREFIX` - prefix for sync branches.
+
+## Team rules
+
+- Do not hardcode color/spacing/radius/typography values if a token exists.
+- Treat [src/styles/tokens.css](src/styles/tokens.css) as the frontend source of truth.
+- For every larger token change, verify component views in Storybook.
+- If you see `unresolved-alias`, it means an alias in source data did not resolve correctly and should be checked in Figma source or transform logic.
+
+## Additional context
+
+A broader project and component overview is available in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
