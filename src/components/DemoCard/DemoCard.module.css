@@ -9,7 +9,7 @@
   border: 1px solid var(--outline-outline-variant);
   border-radius: var(--border-radius-8);
   background-color: var(--surfaces-surface);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-3);
   transition: opacity 0.2s ease;
 }
 
