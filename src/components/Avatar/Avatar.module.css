@@ -7,7 +7,7 @@
 }
 
 .iconOnly {
-  box-shadow: var(none);
+  box-shadow: var(--shadow-1);
 }
 
 .withText {

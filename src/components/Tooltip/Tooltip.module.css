@@ -31,7 +31,7 @@
   padding: var(--spacing-space-12);
   border-radius: var(--border-radius-4);
   background-color: var(--tooltip-surface);
-  box-shadow: var(none);
+  box-shadow: var(--shadow-1);
 }
 
 .arrowSlot {
