@@ -1,0 +1,2575 @@
+// AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
+// Source: Figma Variables REST API
+// Run `npm run tokens:build` to regenerate.
+
+// ── Collection: Primitives (mode: Splash) ──
+
+// Border/Radius-0
+// No description
+$border-radius-0: 0;
+
+// Border/Radius-2
+// No description
+$border-radius-2: 2;
+
+// Border/Radius-4
+// No description
+$border-radius-4: 4;
+
+// Border/Radius-8
+// No description
+$border-radius-8: 8;
+
+// Border/Radius-12
+// No description
+$border-radius-12: 12;
+
+// Border/Radius-16
+// No description
+$border-radius-16: 16;
+
+// Border/Radius-full
+// No description
+$border-radius-full: 999;
+
+// Border/Weight-1
+// No description
+$border-weight-1: 1;
+
+// Border/Weight-2
+// No description
+$border-weight-2: 2;
+
+// Border/Weight-4
+// No description
+$border-weight-4: 4;
+
+// Brand/Brand-15
+// No description
+$brand-brand-15: oklch(95.38% 0.0219 274.74);
+
+// Brand/Brand-25
+// No description
+$brand-brand-25: oklch(92.45% 0.0361 273.7);
+
+// Brand/Brand-50
+// No description
+$brand-brand-50: oklch(85.19% 0.0729 272.8);
+
+// Brand/Brand-100
+// No description
+$brand-brand-100: oklch(77.99% 0.1114 271.79);
+
+// Brand/Brand-200
+// No description
+$brand-brand-200: oklch(70.68% 0.1525 270.53);
+
+// Brand/Brand-300
+// No description
+$brand-brand-300: oklch(63.96% 0.1922 268.84);
+
+// Brand/Brand-400
+// No description
+$brand-brand-400: oklch(57.8% 0.2302 266.88);
+
+// Brand/Brand-500
+// No description
+$brand-brand-500: oklch(50.46% 0.1992 266.97);
+
+// Brand/Brand-600
+// No description
+$brand-brand-600: oklch(43.16% 0.1667 267.17);
+
+// Brand/Brand-700
+// No description
+$brand-brand-700: oklch(35.46% 0.1311 267.44);
+
+// Brand/Brand-800
+// No description
+$brand-brand-800: oklch(27.44% 0.0944 268);
+
+// Brand/Brand-900
+// No description
+$brand-brand-900: oklch(18.74% 0.0517 269.18);
+
+// Color/Brand/Brand900
+// No description
+$color-brand-brand900: oklch(18.74% 0.0517 269.18);
+
+// Color/Neutrals/Neutral0
+// No description
+$color-neutrals-neutral0: oklch(100% 0 89.88);
+
+// Color/Neutrals/Neutral50
+// No description
+$color-neutrals-neutral50: oklch(97.55% 0.0045 258.32);
+
+// Color/Neutrals/Neutral100
+// No description
+$color-neutrals-neutral100: oklch(97.17% 0.012 259.82);
+
+// Color/Neutrals/Neutral200
+// No description
+$color-neutrals-neutral200: oklch(93.75% 0.0283 261.48);
+
+// Color/Neutrals/Neutral300
+// No description
+$color-neutrals-neutral300: oklch(88.47% 0.016 266.27);
+
+// Color/Neutrals/Neutral400
+// No description
+$color-neutrals-neutral400: oklch(78.72% 0.0261 263.3);
+
+// Color/Neutrals/Neutral500
+// No description
+$color-neutrals-neutral500: oklch(74.83% 0.0312 263.26);
+
+// Color/Neutrals/Neutral600
+// No description
+$color-neutrals-neutral600: oklch(64.46% 0.0391 262.72);
+
+// Color/Neutrals/Neutral700
+// No description
+$color-neutrals-neutral700: oklch(65.21% 0.0436 262.69);
+
+// Color/Neutrals/Neutral800
+// No description
+$color-neutrals-neutral800: oklch(55.9% 0.0534 260.1);
+
+// Color/Neutrals/Neutral900
+// No description
+$color-neutrals-neutral900: oklch(38.48% 0.0356 261.25);
+
+// Color/[old] Gray/600
+// No description
+$color-old-gray-600: oklch(69.06% 0.0384 262.75);
+
+// Color/[old] Gray/900
+// No description
+$color-old-gray-900: oklch(38.48% 0.0356 261.25);
+
+// Color/[old] White/0
+// No description
+$color-old-white-0: oklch(100% 0 89.88);
+
+// Color/Status/Blue2
+// No description
+$color-status-blue2: oklch(74.25% 0.1331 225.65);
+
+// Data Vis/1 - Midnight
+// No description
+$data-vis-1-midnight: oklch(63.76% 0.1862 284.36);
+
+// Data Vis/2 - Valencia
+// No description
+$data-vis-2-valencia: oklch(76.81% 0.169 62.07);
+
+// Data Vis/3 - Splash
+// No description
+$data-vis-3-splash: oklch(77.94% 0.1365 213.13);
+
+// Data Vis/4 - Crimson
+// No description
+$data-vis-4-crimson: oklch(65.21% 0.2279 4.64);
+
+// Data Vis/5 - Lime
+// No description
+$data-vis-5-lime: oklch(81.06% 0.2105 129.83);
+
+// Data Vis/6 - Five-O
+// No description
+$data-vis-6-five-o: oklch(58.32% 0.2002 279.82);
+
+// Data Vis/7 - Azure
+// No description
+$data-vis-7-azure: oklch(65.25% 0.1324 167.84);
+
+// Data Vis/8 - Fanta
+// No description
+$data-vis-8-fanta: oklch(68.92% 0.2038 42.19);
+
+// Data Vis/9 - Fihalhohi
+// No description
+$data-vis-9-fihalhohi: oklch(66.08% 0.1618 243.89);
+
+// Data Vis/10 - Blurple
+// No description
+$data-vis-10-blurple: oklch(56.88% 0.2522 287.48);
+
+// Data Vis/11 - Honey
+// No description
+$data-vis-11-honey: oklch(83.37% 0.1705 82.77);
+
+// Data Vis/12 - Cornflower
+// No description
+$data-vis-12-cornflower: oklch(78.86% 0.0841 267.16);
+
+// Data Vis/13 - Piggy
+// No description
+$data-vis-13-piggy: oklch(75.05% 0.2164 332.79);
+
+// Data Vis/14 - Oceanic
+// No description
+$data-vis-14-oceanic: oklch(55.6% 0.1754 254.02);
+
+// Data Vis/15 - Ramle
+// No description
+$data-vis-15-ramle: oklch(92.6% 0.195 103.58);
+
+// Data Vis/16 - Purple
+// No description
+$data-vis-16-purple: oklch(62.59% 0.2761 325.43);
+
+// Data Vis/17 - Cryptonite
+// No description
+$data-vis-17-cryptonite: oklch(72.69% 0.2347 143.31);
+
+// Data Vis/18 - Indigo
+// No description
+$data-vis-18-indigo: oklch(49.95% 0.2164 261.04);
+
+// Data Vis/19 - Jade
+// No description
+$data-vis-19-jade: oklch(67.5% 0.1912 148.73);
+
+// Data Vis/20 - Lemongrass
+// No description
+$data-vis-20-lemongrass: oklch(89.9% 0.2013 115.27);
+
+// Data Vis/21
+// No description
+$data-vis-21: oklch(59.77% 0.235 29.61);
+
+// Data Vis/22
+// No description
+$data-vis-22: oklch(51.04% 0.0936 266.21);
+
+// Data Vis/23
+// No description
+$data-vis-23: oklch(84.96% 0.1231 191.85);
+
+// Data Vis/24
+// No description
+$data-vis-24: oklch(59.57% 0.1027 190.51);
+
+// Data Vis/25
+// No description
+$data-vis-25: oklch(85.74% 0.1069 67.83);
+
+// Data Vis/26
+// No description
+$data-vis-26: oklch(59.04% 0.11 64.57);
+
+// Data Vis/27
+// No description
+$data-vis-27: oklch(71.45% 0.2104 325.34);
+
+// Data Vis/28
+// No description
+$data-vis-28: oklch(46.45% 0.2013 325.57);
+
+// Data Vis/29
+// No description
+$data-vis-29: oklch(73.85% 0.162 358.45);
+
+// Data Vis/30
+// No description
+$data-vis-30: oklch(48.35% 0.1653 3.84);
+
+// Data Vis/31
+// No description
+$data-vis-31: oklch(92.53% 0.1651 113.65);
+
+// Data Vis/32
+// No description
+$data-vis-32: oklch(66.38% 0.1475 115.15);
+
+// Data Vis/33
+// No description
+$data-vis-33: oklch(69.63% 0.1451 307.01);
+
+// Data Vis/34
+// No description
+$data-vis-34: oklch(41.79% 0.1532 304.46);
+
+// Data Vis/35
+// No description
+$data-vis-35: oklch(94.97% 0.1734 106.09);
+
+// Data Vis/36
+// No description
+$data-vis-36: oklch(69.13% 0.1469 105.6);
+
+// Data Vis/37
+// No description
+$data-vis-37: oklch(78.68% 0.1411 160.59);
+
+// Data Vis/38
+// No description
+$data-vis-38: oklch(52.66% 0.1319 154.24);
+
+// Data Vis/39
+// No description
+$data-vis-39: oklch(72.37% 0.1556 24.92);
+
+// Data Vis/40
+// No description
+$data-vis-40: oklch(47.09% 0.1634 28.42);
+
+// Data Vis/41
+// No description
+$data-vis-41: oklch(78.1% 0.1204 229.11);
+
+// Data Vis/42
+// No description
+$data-vis-42: oklch(51.92% 0.1117 236.32);
+
+// Data Vis/43
+// No description
+$data-vis-43: oklch(79.11% 0.1351 54.9);
+
+// Data Vis/44
+// No description
+$data-vis-44: oklch(52.78% 0.1376 48.45);
+
+// Data Vis/45
+// No description
+$data-vis-45: oklch(81.9% 0.1748 148.45);
+
+// Data Vis/46
+// No description
+$data-vis-46: oklch(56.15% 0.1684 145.43);
+
+// Data Vis/47
+// No description
+$data-vis-47: oklch(89.83% 0.1452 93.35);
+
+// Data Vis/48
+// No description
+$data-vis-48: oklch(63.54% 0.1275 89.75);
+
+// Data Vis/49
+// No description
+$data-vis-49: oklch(68.9% 0.1718 285.91);
+
+// Data Vis/50
+// No description
+$data-vis-50: oklch(41.43% 0.1823 279.73);
+
+// Data Vis/51
+// No description
+$data-vis-51: oklch(77.55% 0.1107 181.85);
+
+// Data Vis/52
+// No description
+$data-vis-52: oklch(51.21% 0.0947 177.39);
+
+// Data Vis/53
+// No description
+$data-vis-53: oklch(83.47% 0.1311 333.29);
+
+// Data Vis/54
+// No description
+$data-vis-54: oklch(56.83% 0.1403 334.41);
+
+// Data Vis/55
+// No description
+$data-vis-55: oklch(72.23% 0.1224 241.76);
+
+// Data Vis/56
+// No description
+$data-vis-56: oklch(45.35% 0.122 248.31);
+
+// Data Vis/57
+// No description
+$data-vis-57: oklch(86.99% 0.1646 131.21);
+
+// Data Vis/58
+// No description
+$data-vis-58: oklch(60.54% 0.1602 133.48);
+
+// Data Vis/59
+// No description
+$data-vis-59: oklch(67.51% 0.1466 255.76);
+
+// Data Vis/60
+// No description
+$data-vis-60: oklch(40.49% 0.1544 258.66);
+
+// Neutral/Neutral-0
+// No description
+$neutral-neutral-0: oklch(100% 0 89.88);
+
+// Neutral/Neutral-50
+// No description
+$neutral-neutral-50: oklch(97.59% 0.0029 264.54);
+
+// Neutral/Neutral-100
+// No description
+$neutral-neutral-100: oklch(95.15% 0.0046 258.32);
+
+// Neutral/Neutral-200
+// No description
+$neutral-neutral-200: oklch(91.88% 0.0071 268.54);
+
+// Neutral/Neutral-300
+// No description
+$neutral-neutral-300: oklch(88.81% 0.0101 267.35);
+
+// Neutral/Neutral-400
+// No description
+$neutral-neutral-400: oklch(78.72% 0.0261 263.3);
+
+// Neutral/Neutral-500
+// No description
+$neutral-neutral-500: oklch(74.66% 0.0323 265.27);
+
+// Neutral/Neutral-600
+// No description
+$neutral-neutral-600: oklch(63.92% 0.0466 264.8);
+
+// Neutral/Neutral-700
+// No description
+$neutral-neutral-700: oklch(56.09% 0.0539 262.89);
+
+// Neutral/Neutral-800
+// No description
+$neutral-neutral-800: oklch(46.75% 0.047 264.62);
+
+// Neutral/Neutral-900
+// No description
+$neutral-neutral-900: oklch(28.86% 0.0236 264.1);
+
+// Spacing/space-0
+// No description
+$spacing-space-0: 0rem;
+
+// Spacing/space-2
+// No description
+$spacing-space-2: 0.125rem;
+
+// Spacing/space-4
+// No description
+$spacing-space-4: 0.25rem;
+
+// Spacing/space-6
+// No description
+$spacing-space-6: 0.375rem;
+
+// Spacing/space-8
+// No description
+$spacing-space-8: 0.5rem;
+
+// Spacing/space-12
+// No description
+$spacing-space-12: 0.75rem;
+
+// Spacing/space-16
+// No description
+$spacing-space-16: 1rem;
+
+// Spacing/space-20
+// No description
+$spacing-space-20: 1.25rem;
+
+// Spacing/space-24
+// No description
+$spacing-space-24: 1.5rem;
+
+// Spacing/space-32
+// No description
+$spacing-space-32: 2rem;
+
+// Spacing/space-40
+// No description
+$spacing-space-40: 2.5rem;
+
+// Spacing/space-48
+// No description
+$spacing-space-48: 3rem;
+
+// Spacing/space-64
+// No description
+$spacing-space-64: 4rem;
+
+// Spacing/space-72
+// No description
+$spacing-space-72: 4.5rem;
+
+// System/Black-1
+// No description
+$system-black-1: oklch(0% 0 0);
+
+// System/Black-2
+// No description
+$system-black-2: oklch(100% 0 89.88);
+
+// System/Black-3
+// No description
+$system-black-3: oklch(75.08% 0 89.88);
+
+// System/Black-4
+// No description
+$system-black-4: oklch(32.11% 0 89.88);
+
+// System/Blue-1
+// No description
+$system-blue-1: oklch(57.91% 0.2141 257.97);
+
+// System/Blue-2
+// No description
+$system-blue-2: oklch(97.12% 0.0136 258.34);
+
+// System/Blue-3
+// No description
+$system-blue-3: oklch(92.27% 0.0375 256.97);
+
+// System/Blue-4
+// No description
+$system-blue-4: oklch(57.91% 0.2141 257.97);
+
+// System/Gray-1
+// No description
+$system-gray-1: oklch(59.99% 0 89.88);
+
+// System/Gray-2
+// No description
+$system-gray-2: oklch(100% 0 89.88);
+
+// System/Gray-3
+// No description
+$system-gray-3: oklch(92.49% 0 89.88);
+
+// System/Gray-4
+// No description
+$system-gray-4: oklch(51.03% 0 89.88);
+
+// System/Green-1
+// No description
+$system-green-1: oklch(64.65% 0.146 147.33);
+
+// System/Green-2
+// No description
+$system-green-2: oklch(97.92% 0.0091 150.69);
+
+// System/Green-3
+// No description
+$system-green-3: oklch(94.64% 0.0234 149.37);
+
+// System/Green-4
+// No description
+$system-green-4: oklch(64.65% 0.146 147.33);
+
+// System/Orange-1
+// No description
+$system-orange-1: oklch(67.19% 0.2138 36.81);
+
+// System/Orange-2
+// No description
+$system-orange-2: oklch(97.46% 0.013 41.2);
+
+// System/Orange-3
+// No description
+$system-orange-3: oklch(93.14% 0.0365 41.23);
+
+// System/Orange-4
+// No description
+$system-orange-4: oklch(67.19% 0.2138 36.81);
+
+// System/Purple-1
+// No description
+$system-purple-1: oklch(55.56% 0.1829 305.86);
+
+// System/Purple-2
+// No description
+$system-purple-2: oklch(97.03% 0.0118 313.22);
+
+// System/Purple-3
+// No description
+$system-purple-3: oklch(92.32% 0.0313 312.85);
+
+// System/Purple-4
+// No description
+$system-purple-4: oklch(55.56% 0.1829 305.86);
+
+// System/Red-1
+// No description
+$system-red-1: oklch(62.54% 0.1931 22.94);
+
+// System/Red-2
+// No description
+$system-red-2: oklch(96.69% 0.0162 17.44);
+
+// System/Red-3
+// No description
+$system-red-3: oklch(91.08% 0.046 18.03);
+
+// System/Red-4
+// No description
+$system-red-4: oklch(62.54% 0.1931 22.94);
+
+// System/Teal-1
+// No description
+$system-teal-1: oklch(64.98% 0.1137 181.88);
+
+// System/Teal-2
+// No description
+$system-teal-2: oklch(98.49% 0.0127 190.97);
+
+// System/Teal-3
+// No description
+$system-teal-3: oklch(96.2% 0.0324 189.53);
+
+// System/Teal-4
+// No description
+$system-teal-4: oklch(64.98% 0.1137 181.88);
+
+// System/Yellow-1
+// No description
+$system-yellow-1: oklch(81.73% 0.164 75.99);
+
+// System/Yellow-2
+// No description
+$system-yellow-2: oklch(43.58% 0.1201 47.21);
+
+// System/Yellow-3
+// No description
+$system-yellow-3: oklch(94.29% 0.0348 57.61);
+
+// System/Yellow-4
+// No description
+$system-yellow-4: oklch(43.58% 0.1201 47.21);
+
+// ── Collection: Tailwind (mode: Splash) ──
+
+// border-radius/rounded-full
+// No description
+$border-radius-rounded-full: 9999;
+
+// border-radius/rounded-none
+// No description
+$border-radius-rounded-none: 0;
+
+// border-width/border
+// No description
+$border-width-border: 0.0625rem;
+
+// border-width/border-0
+// No description
+$border-width-border-0: 0rem;
+
+// border-width/border-2
+// No description
+$border-width-border-2: 0.125rem;
+
+// border-width/border-3
+// No description
+$border-width-border-3: 0.1875rem;
+
+// border-width/border-4
+// No description
+$border-width-border-4: 0.25rem;
+
+// border-width/border-5
+// No description
+$border-width-border-5: 0.3125rem;
+
+// border-width/border-6
+// No description
+$border-width-border-6: 0.375rem;
+
+// border-width/border-7
+// No description
+$border-width-border-7: 0.375rem;
+
+// border-width/border-8
+// No description
+$border-width-border-8: 0.5rem;
+
+// line-height/leading-1
+// No description
+$line-height-leading-1: 400%;
+
+// line-height/leading-2
+// No description
+$line-height-leading-2: 800%;
+
+// line-height/leading-3
+// No description
+$line-height-leading-3: 1200%;
+
+// line-height/leading-4
+// No description
+$line-height-leading-4: 1600%;
+
+// line-height/leading-5
+// No description
+$line-height-leading-5: 2000%;
+
+// line-height/leading-6
+// No description
+$line-height-leading-6: 2400%;
+
+// line-height/leading-7
+// No description
+$line-height-leading-7: 2800%;
+
+// line-height/leading-8
+// No description
+$line-height-leading-8: 3200%;
+
+// line-height/leading-9
+// No description
+$line-height-leading-9: 3600%;
+
+// line-height/leading-10
+// No description
+$line-height-leading-10: 4000%;
+
+// line-height/leading-11
+// No description
+$line-height-leading-11: 4400%;
+
+// line-height/leading-12
+// No description
+$line-height-leading-12: 4800%;
+
+// line-height/leading-13
+// No description
+$line-height-leading-13: 5200%;
+
+// line-height/leading-14
+// No description
+$line-height-leading-14: 5600%;
+
+// line-height/leading-15
+// No description
+$line-height-leading-15: 6000%;
+
+// line-height/leading-16
+// No description
+$line-height-leading-16: 6400%;
+
+// line-height/leading-17
+// No description
+$line-height-leading-17: 6800%;
+
+// line-height/leading-18
+// No description
+$line-height-leading-18: 7200%;
+
+// line-height/leading-19
+// No description
+$line-height-leading-19: 7600%;
+
+// line-height/leading-20
+// No description
+$line-height-leading-20: 8000%;
+
+// opacity/opacity-0
+// No description
+$opacity-opacity-0: 0;
+
+// opacity/opacity-5
+// No description
+$opacity-opacity-5: 5;
+
+// opacity/opacity-10
+// No description
+$opacity-opacity-10: 10;
+
+// opacity/opacity-15
+// No description
+$opacity-opacity-15: 15;
+
+// opacity/opacity-20
+// No description
+$opacity-opacity-20: 20;
+
+// opacity/opacity-25
+// No description
+$opacity-opacity-25: 25;
+
+// opacity/opacity-30
+// No description
+$opacity-opacity-30: 30;
+
+// opacity/opacity-35
+// No description
+$opacity-opacity-35: 35;
+
+// opacity/opacity-40
+// No description
+$opacity-opacity-40: 40;
+
+// opacity/opacity-45
+// No description
+$opacity-opacity-45: 45;
+
+// opacity/opacity-50
+// No description
+$opacity-opacity-50: 50;
+
+// opacity/opacity-55
+// No description
+$opacity-opacity-55: 55;
+
+// opacity/opacity-60
+// No description
+$opacity-opacity-60: 60;
+
+// opacity/opacity-65
+// No description
+$opacity-opacity-65: 65;
+
+// opacity/opacity-70
+// No description
+$opacity-opacity-70: 70;
+
+// opacity/opacity-75
+// No description
+$opacity-opacity-75: 75;
+
+// opacity/opacity-80
+// No description
+$opacity-opacity-80: 80;
+
+// opacity/opacity-85
+// No description
+$opacity-opacity-85: 85;
+
+// opacity/opacity-90
+// No description
+$opacity-opacity-90: 90;
+
+// opacity/opacity-95
+// No description
+$opacity-opacity-95: 95;
+
+// opacity/opacity-100
+// No description
+$opacity-opacity-100: 100;
+
+// spacing/0
+// No description
+$spacing-0: 0rem;
+
+// spacing/0-5
+// No description
+$spacing-0-5: 0.125rem;
+
+// spacing/1
+// No description
+$spacing-1: 0.25rem;
+
+// spacing/1-5
+// No description
+$spacing-1-5: 0.375rem;
+
+// spacing/2
+// No description
+$spacing-2: 0.5rem;
+
+// spacing/2-5
+// No description
+$spacing-2-5: 0.625rem;
+
+// spacing/3
+// No description
+$spacing-3: 0.75rem;
+
+// spacing/3-5
+// No description
+$spacing-3-5: 0.875rem;
+
+// spacing/4
+// No description
+$spacing-4: 1rem;
+
+// spacing/5
+// No description
+$spacing-5: 1.25rem;
+
+// spacing/6
+// No description
+$spacing-6: 1.5rem;
+
+// spacing/7
+// No description
+$spacing-7: 1.75rem;
+
+// spacing/8
+// No description
+$spacing-8: 2rem;
+
+// spacing/9
+// No description
+$spacing-9: 2.25rem;
+
+// spacing/10
+// No description
+$spacing-10: 2.5rem;
+
+// spacing/11
+// No description
+$spacing-11: 2.75rem;
+
+// spacing/12
+// No description
+$spacing-12: 3rem;
+
+// spacing/14
+// No description
+$spacing-14: 3.5rem;
+
+// spacing/16
+// No description
+$spacing-16: 4rem;
+
+// spacing/20
+// No description
+$spacing-20: 5rem;
+
+// spacing/24
+// No description
+$spacing-24: 6rem;
+
+// spacing/28
+// No description
+$spacing-28: 7rem;
+
+// spacing/32
+// No description
+$spacing-32: 8rem;
+
+// spacing/36
+// No description
+$spacing-36: 9rem;
+
+// spacing/40
+// No description
+$spacing-40: 10rem;
+
+// spacing/44
+// No description
+$spacing-44: 11rem;
+
+// spacing/48
+// No description
+$spacing-48: 12rem;
+
+// spacing/52
+// No description
+$spacing-52: 13rem;
+
+// spacing/56
+// No description
+$spacing-56: 14rem;
+
+// spacing/60
+// No description
+$spacing-60: 15rem;
+
+// spacing/64
+// No description
+$spacing-64: 16rem;
+
+// spacing/72
+// No description
+$spacing-72: 18rem;
+
+// spacing/80
+// No description
+$spacing-80: 20rem;
+
+// spacing/96
+// No description
+$spacing-96: 24rem;
+
+// spacing/px
+// No description
+$spacing-px: 0.0625rem;
+
+// tailwind colors/amber/50
+// No description
+$tailwind-colors-amber-50: oklch(98.69% 0.0214 95.28);
+
+// tailwind colors/amber/100
+// No description
+$tailwind-colors-amber-100: oklch(96.19% 0.058 95.62);
+
+// tailwind colors/amber/200
+// No description
+$tailwind-colors-amber-200: oklch(92.43% 0.1151 95.75);
+
+// tailwind colors/amber/300
+// No description
+$tailwind-colors-amber-300: oklch(87.9% 0.1534 91.61);
+
+// tailwind colors/amber/400
+// No description
+$tailwind-colors-amber-400: oklch(83.69% 0.1644 84.43);
+
+// tailwind colors/amber/500
+// No description
+$tailwind-colors-amber-500: oklch(76.86% 0.1647 70.08);
+
+// tailwind colors/amber/600
+// No description
+$tailwind-colors-amber-600: oklch(66.58% 0.1574 58.32);
+
+// tailwind colors/amber/700
+// No description
+$tailwind-colors-amber-700: oklch(55.53% 0.1455 49);
+
+// tailwind colors/amber/800
+// No description
+$tailwind-colors-amber-800: oklch(47.32% 0.1247 46.2);
+
+// tailwind colors/amber/900
+// No description
+$tailwind-colors-amber-900: oklch(41.37% 0.1054 45.9);
+
+// tailwind colors/amber/950
+// No description
+$tailwind-colors-amber-950: oklch(27.91% 0.0742 45.64);
+
+// tailwind colors/base/black
+// No description
+$tailwind-colors-base-black: oklch(0% 0 0);
+
+// tailwind colors/base/transparent
+// No description
+$tailwind-colors-base-transparent: oklch(100% 0 89.88 / 0);
+
+// tailwind colors/base/white
+// No description
+$tailwind-colors-base-white: oklch(100% 0 89.88);
+
+// tailwind colors/blue/50
+// No description
+$tailwind-colors-blue-50: oklch(97.05% 0.0142 254.6);
+
+// tailwind colors/blue/100
+// No description
+$tailwind-colors-blue-100: oklch(93.19% 0.0316 255.59);
+
+// tailwind colors/blue/200
+// No description
+$tailwind-colors-blue-200: oklch(88.23% 0.0571 254.13);
+
+// tailwind colors/blue/300
+// No description
+$tailwind-colors-blue-300: oklch(80.91% 0.0956 251.81);
+
+// tailwind colors/blue/400
+// No description
+$tailwind-colors-blue-400: oklch(71.37% 0.1434 254.62);
+
+// tailwind colors/blue/500
+// No description
+$tailwind-colors-blue-500: oklch(62.31% 0.188 259.81);
+
+// tailwind colors/blue/600
+// No description
+$tailwind-colors-blue-600: oklch(54.61% 0.2152 262.88);
+
+// tailwind colors/blue/700
+// No description
+$tailwind-colors-blue-700: oklch(48.82% 0.2172 264.38);
+
+// tailwind colors/blue/800
+// No description
+$tailwind-colors-blue-800: oklch(42.44% 0.1809 265.64);
+
+// tailwind colors/blue/900
+// No description
+$tailwind-colors-blue-900: oklch(37.91% 0.1378 265.52);
+
+// tailwind colors/blue/950
+// No description
+$tailwind-colors-blue-950: oklch(28.23% 0.0874 267.94);
+
+// tailwind colors/cyan/50
+// No description
+$tailwind-colors-cyan-50: oklch(98.41% 0.0189 200.87);
+
+// tailwind colors/cyan/100
+// No description
+$tailwind-colors-cyan-100: oklch(95.63% 0.0443 203.39);
+
+// tailwind colors/cyan/200
+// No description
+$tailwind-colors-cyan-200: oklch(91.67% 0.0772 205.04);
+
+// tailwind colors/cyan/300
+// No description
+$tailwind-colors-cyan-300: oklch(86.51% 0.1153 207.08);
+
+// tailwind colors/cyan/400
+// No description
+$tailwind-colors-cyan-400: oklch(79.71% 0.1339 211.53);
+
+// tailwind colors/cyan/500
+// No description
+$tailwind-colors-cyan-500: oklch(71.48% 0.1257 215.22);
+
+// tailwind colors/cyan/600
+// No description
+$tailwind-colors-cyan-600: oklch(60.89% 0.1109 221.72);
+
+// tailwind colors/cyan/700
+// No description
+$tailwind-colors-cyan-700: oklch(51.98% 0.0936 223.13);
+
+// tailwind colors/cyan/800
+// No description
+$tailwind-colors-cyan-800: oklch(45% 0.0771 224.28);
+
+// tailwind colors/cyan/900
+// No description
+$tailwind-colors-cyan-900: oklch(39.82% 0.0664 227.39);
+
+// tailwind colors/cyan/950
+// No description
+$tailwind-colors-cyan-950: oklch(30.18% 0.0541 229.7);
+
+// tailwind colors/emerald/50
+// No description
+$tailwind-colors-emerald-50: oklch(97.93% 0.0207 166.11);
+
+// tailwind colors/emerald/100
+// No description
+$tailwind-colors-emerald-100: oklch(95.05% 0.0507 163.05);
+
+// tailwind colors/emerald/200
+// No description
+$tailwind-colors-emerald-200: oklch(90.49% 0.0895 164.15);
+
+// tailwind colors/emerald/300
+// No description
+$tailwind-colors-emerald-300: oklch(84.52% 0.1299 164.98);
+
+// tailwind colors/emerald/400
+// No description
+$tailwind-colors-emerald-400: oklch(77.29% 0.1535 163.22);
+
+// tailwind colors/emerald/500
+// No description
+$tailwind-colors-emerald-500: oklch(69.59% 0.1491 162.48);
+
+// tailwind colors/emerald/600
+// No description
+$tailwind-colors-emerald-600: oklch(59.6% 0.1274 163.23);
+
+// tailwind colors/emerald/700
+// No description
+$tailwind-colors-emerald-700: oklch(50.81% 0.1049 165.61);
+
+// tailwind colors/emerald/800
+// No description
+$tailwind-colors-emerald-800: oklch(43.18% 0.0865 166.91);
+
+// tailwind colors/emerald/900
+// No description
+$tailwind-colors-emerald-900: oklch(37.8% 0.073 168.94);
+
+// tailwind colors/emerald/950
+// No description
+$tailwind-colors-emerald-950: oklch(26.21% 0.0487 172.55);
+
+// tailwind colors/fuchsia/50
+// No description
+$tailwind-colors-fuchsia-50: oklch(97.73% 0.0173 320.06);
+
+// tailwind colors/fuchsia/100
+// No description
+$tailwind-colors-fuchsia-100: oklch(95.2% 0.036 318.85);
+
+// tailwind colors/fuchsia/200
+// No description
+$tailwind-colors-fuchsia-200: oklch(90.3% 0.0732 319.62);
+
+// tailwind colors/fuchsia/300
+// No description
+$tailwind-colors-fuchsia-300: oklch(83.3% 0.1322 321.43);
+
+// tailwind colors/fuchsia/400
+// No description
+$tailwind-colors-fuchsia-400: oklch(74.77% 0.207 322.16);
+
+// tailwind colors/fuchsia/500
+// No description
+$tailwind-colors-fuchsia-500: oklch(66.68% 0.2591 322.15);
+
+// tailwind colors/fuchsia/600
+// No description
+$tailwind-colors-fuchsia-600: oklch(59.15% 0.2569 322.9);
+
+// tailwind colors/fuchsia/700
+// No description
+$tailwind-colors-fuchsia-700: oklch(51.8% 0.2258 323.95);
+
+// tailwind colors/fuchsia/800
+// No description
+$tailwind-colors-fuchsia-800: oklch(45.19% 0.1922 324.59);
+
+// tailwind colors/fuchsia/900
+// No description
+$tailwind-colors-fuchsia-900: oklch(40.07% 0.1601 325.61);
+
+// tailwind colors/fuchsia/950
+// No description
+$tailwind-colors-fuchsia-950: oklch(29.32% 0.1309 325.66);
+
+// tailwind colors/gray/50
+// No description
+$tailwind-colors-gray-50: oklch(98.46% 0.0017 247.84);
+
+// tailwind colors/gray/100
+// No description
+$tailwind-colors-gray-100: oklch(96.7% 0.0029 264.54);
+
+// tailwind colors/gray/200
+// No description
+$tailwind-colors-gray-200: oklch(92.76% 0.0058 264.53);
+
+// tailwind colors/gray/300
+// No description
+$tailwind-colors-gray-300: oklch(87.17% 0.0093 258.34);
+
+// tailwind colors/gray/400
+// No description
+$tailwind-colors-gray-400: oklch(71.37% 0.0192 261.32);
+
+// tailwind colors/gray/500
+// No description
+$tailwind-colors-gray-500: oklch(55.1% 0.0234 264.36);
+
+// tailwind colors/gray/600
+// No description
+$tailwind-colors-gray-600: oklch(44.61% 0.0263 256.8);
+
+// tailwind colors/gray/700
+// No description
+$tailwind-colors-gray-700: oklch(37.29% 0.0306 259.73);
+
+// tailwind colors/gray/800
+// No description
+$tailwind-colors-gray-800: oklch(27.81% 0.0296 256.85);
+
+// tailwind colors/gray/900
+// No description
+$tailwind-colors-gray-900: oklch(21.01% 0.0318 264.66);
+
+// tailwind colors/gray/950
+// No description
+$tailwind-colors-gray-950: oklch(12.96% 0.0274 261.69);
+
+// tailwind colors/green/50
+// No description
+$tailwind-colors-green-50: oklch(98.19% 0.0181 155.83);
+
+// tailwind colors/green/100
+// No description
+$tailwind-colors-green-100: oklch(96.24% 0.0434 156.74);
+
+// tailwind colors/green/200
+// No description
+$tailwind-colors-green-200: oklch(92.5% 0.0806 155.99);
+
+// tailwind colors/green/300
+// No description
+$tailwind-colors-green-300: oklch(87.12% 0.1363 154.45);
+
+// tailwind colors/green/400
+// No description
+$tailwind-colors-green-400: oklch(80.03% 0.1821 151.71);
+
+// tailwind colors/green/500
+// No description
+$tailwind-colors-green-500: oklch(72.27% 0.192 149.58);
+
+// tailwind colors/green/600
+// No description
+$tailwind-colors-green-600: oklch(62.71% 0.1699 149.21);
+
+// tailwind colors/green/700
+// No description
+$tailwind-colors-green-700: oklch(52.73% 0.1371 150.07);
+
+// tailwind colors/green/800
+// No description
+$tailwind-colors-green-800: oklch(44.79% 0.1083 151.33);
+
+// tailwind colors/green/900
+// No description
+$tailwind-colors-green-900: oklch(39.25% 0.0896 152.54);
+
+// tailwind colors/green/950
+// No description
+$tailwind-colors-green-950: oklch(26.64% 0.0628 152.93);
+
+// tailwind colors/indigo/50
+// No description
+$tailwind-colors-indigo-50: oklch(96.19% 0.0179 272.31);
+
+// tailwind colors/indigo/100
+// No description
+$tailwind-colors-indigo-100: oklch(92.99% 0.0334 272.79);
+
+// tailwind colors/indigo/200
+// No description
+$tailwind-colors-indigo-200: oklch(86.99% 0.0622 274.04);
+
+// tailwind colors/indigo/300
+// No description
+$tailwind-colors-indigo-300: oklch(78.53% 0.1041 274.71);
+
+// tailwind colors/indigo/400
+// No description
+$tailwind-colors-indigo-400: oklch(68.01% 0.1583 276.93);
+
+// tailwind colors/indigo/500
+// No description
+$tailwind-colors-indigo-500: oklch(58.54% 0.2041 277.12);
+
+// tailwind colors/indigo/600
+// No description
+$tailwind-colors-indigo-600: oklch(51.06% 0.2301 276.97);
+
+// tailwind colors/indigo/700
+// No description
+$tailwind-colors-indigo-700: oklch(45.68% 0.2146 277.02);
+
+// tailwind colors/indigo/800
+// No description
+$tailwind-colors-indigo-800: oklch(39.84% 0.1773 277.37);
+
+// tailwind colors/indigo/900
+// No description
+$tailwind-colors-indigo-900: oklch(35.88% 0.1354 278.7);
+
+// tailwind colors/indigo/950
+// No description
+$tailwind-colors-indigo-950: oklch(25.73% 0.0861 281.29);
+
+// tailwind colors/lime/50
+// No description
+$tailwind-colors-lime-50: oklch(98.57% 0.031 120.76);
+
+// tailwind colors/lime/100
+// No description
+$tailwind-colors-lime-100: oklch(96.69% 0.0659 122.33);
+
+// tailwind colors/lime/200
+// No description
+$tailwind-colors-lime-200: oklch(93.82% 0.1217 124.32);
+
+// tailwind colors/lime/300
+// No description
+$tailwind-colors-lime-300: oklch(89.72% 0.1786 126.67);
+
+// tailwind colors/lime/400
+// No description
+$tailwind-colors-lime-400: oklch(84.93% 0.2073 128.85);
+
+// tailwind colors/lime/500
+// No description
+$tailwind-colors-lime-500: oklch(76.81% 0.2044 130.85);
+
+// tailwind colors/lime/600
+// No description
+$tailwind-colors-lime-600: oklch(64.82% 0.1754 131.68);
+
+// tailwind colors/lime/700
+// No description
+$tailwind-colors-lime-700: oklch(53.22% 0.1405 131.59);
+
+// tailwind colors/lime/800
+// No description
+$tailwind-colors-lime-800: oklch(45.28% 0.1129 130.93);
+
+// tailwind colors/lime/900
+// No description
+$tailwind-colors-lime-900: oklch(40.5% 0.0956 131.06);
+
+// tailwind colors/lime/950
+// No description
+$tailwind-colors-lime-950: oklch(27.41% 0.0688 132.11);
+
+// tailwind colors/neutral/50
+// No description
+$tailwind-colors-neutral-50: oklch(98.51% 0 89.88);
+
+// tailwind colors/neutral/100
+// No description
+$tailwind-colors-neutral-100: oklch(97.02% 0 89.88);
+
+// tailwind colors/neutral/200
+// No description
+$tailwind-colors-neutral-200: oklch(92.19% 0 89.88);
+
+// tailwind colors/neutral/300
+// No description
+$tailwind-colors-neutral-300: oklch(86.99% 0 89.88);
+
+// tailwind colors/neutral/400
+// No description
+$tailwind-colors-neutral-400: oklch(71.55% 0 89.88);
+
+// tailwind colors/neutral/500
+// No description
+$tailwind-colors-neutral-500: oklch(55.55% 0 89.88);
+
+// tailwind colors/neutral/600
+// No description
+$tailwind-colors-neutral-600: oklch(43.86% 0 89.88);
+
+// tailwind colors/neutral/700
+// No description
+$tailwind-colors-neutral-700: oklch(37.15% 0 89.88);
+
+// tailwind colors/neutral/800
+// No description
+$tailwind-colors-neutral-800: oklch(26.86% 0 89.88);
+
+// tailwind colors/neutral/900
+// No description
+$tailwind-colors-neutral-900: oklch(20.46% 0 89.88);
+
+// tailwind colors/neutral/950
+// No description
+$tailwind-colors-neutral-950: oklch(14.48% 0 89.88);
+
+// tailwind colors/orange/50
+// No description
+$tailwind-colors-orange-50: oklch(97.96% 0.0158 73.68);
+
+// tailwind colors/orange/100
+// No description
+$tailwind-colors-orange-100: oklch(95.42% 0.0372 75.16);
+
+// tailwind colors/orange/200
+// No description
+$tailwind-colors-orange-200: oklch(90.15% 0.0729 70.7);
+
+// tailwind colors/orange/300
+// No description
+$tailwind-colors-orange-300: oklch(83.66% 0.1165 66.29);
+
+// tailwind colors/orange/400
+// No description
+$tailwind-colors-orange-400: oklch(75.76% 0.159 55.93);
+
+// tailwind colors/orange/500
+// No description
+$tailwind-colors-orange-500: oklch(70.49% 0.1867 47.6);
+
+// tailwind colors/orange/600
+// No description
+$tailwind-colors-orange-600: oklch(64.61% 0.1943 41.12);
+
+// tailwind colors/orange/700
+// No description
+$tailwind-colors-orange-700: oklch(55.34% 0.1739 38.4);
+
+// tailwind colors/orange/800
+// No description
+$tailwind-colors-orange-800: oklch(46.98% 0.143 37.3);
+
+// tailwind colors/orange/900
+// No description
+$tailwind-colors-orange-900: oklch(40.84% 0.1165 38.17);
+
+// tailwind colors/orange/950
+// No description
+$tailwind-colors-orange-950: oklch(26.59% 0.0762 36.26);
+
+// tailwind colors/pink/50
+// No description
+$tailwind-colors-pink-50: oklch(97.14% 0.0141 343.2);
+
+// tailwind colors/pink/100
+// No description
+$tailwind-colors-pink-100: oklch(94.82% 0.0276 342.26);
+
+// tailwind colors/pink/200
+// No description
+$tailwind-colors-pink-200: oklch(89.94% 0.0589 343.23);
+
+// tailwind colors/pink/300
+// No description
+$tailwind-colors-pink-300: oklch(82.28% 0.1095 346.02);
+
+// tailwind colors/pink/400
+// No description
+$tailwind-colors-pink-400: oklch(72.53% 0.1752 349.76);
+
+// tailwind colors/pink/500
+// No description
+$tailwind-colors-pink-500: oklch(65.59% 0.2118 354.31);
+
+// tailwind colors/pink/600
+// No description
+$tailwind-colors-pink-600: oklch(59.16% 0.218 0.58);
+
+// tailwind colors/pink/700
+// No description
+$tailwind-colors-pink-700: oklch(52.46% 0.199 3.96);
+
+// tailwind colors/pink/800
+// No description
+$tailwind-colors-pink-800: oklch(45.87% 0.1697 3.82);
+
+// tailwind colors/pink/900
+// No description
+$tailwind-colors-pink-900: oklch(40.78% 0.1442 2.43);
+
+// tailwind colors/pink/950
+// No description
+$tailwind-colors-pink-950: oklch(28.45% 0.1048 3.91);
+
+// tailwind colors/purple/50
+// No description
+$tailwind-colors-purple-50: oklch(97.68% 0.0142 308.3);
+
+// tailwind colors/purple/100
+// No description
+$tailwind-colors-purple-100: oklch(94.64% 0.0327 307.17);
+
+// tailwind colors/purple/200
+// No description
+$tailwind-colors-purple-200: oklch(90.24% 0.0604 306.7);
+
+// tailwind colors/purple/300
+// No description
+$tailwind-colors-purple-300: oklch(82.68% 0.1082 306.38);
+
+// tailwind colors/purple/400
+// No description
+$tailwind-colors-purple-400: oklch(72.17% 0.1767 305.5);
+
+// tailwind colors/purple/500
+// No description
+$tailwind-colors-purple-500: oklch(62.68% 0.2325 303.9);
+
+// tailwind colors/purple/600
+// No description
+$tailwind-colors-purple-600: oklch(55.75% 0.2525 302.32);
+
+// tailwind colors/purple/700
+// No description
+$tailwind-colors-purple-700: oklch(49.55% 0.2369 301.92);
+
+// tailwind colors/purple/800
+// No description
+$tailwind-colors-purple-800: oklch(43.83% 0.1983 303.72);
+
+// tailwind colors/purple/900
+// No description
+$tailwind-colors-purple-900: oklch(38.07% 0.1661 304.99);
+
+// tailwind colors/purple/950
+// No description
+$tailwind-colors-purple-950: oklch(29.05% 0.1432 302.72);
+
+// tailwind colors/red/50
+// No description
+$tailwind-colors-red-50: oklch(97.05% 0.0129 17.38);
+
+// tailwind colors/red/100
+// No description
+$tailwind-colors-red-100: oklch(93.56% 0.0309 17.72);
+
+// tailwind colors/red/200
+// No description
+$tailwind-colors-red-200: oklch(88.45% 0.0593 18.33);
+
+// tailwind colors/red/300
+// No description
+$tailwind-colors-red-300: oklch(80.77% 0.1035 19.57);
+
+// tailwind colors/red/400
+// No description
+$tailwind-colors-red-400: oklch(71.06% 0.1661 22.22);
+
+// tailwind colors/red/500
+// No description
+$tailwind-colors-red-500: oklch(63.68% 0.2078 25.33);
+
+// tailwind colors/red/600
+// No description
+$tailwind-colors-red-600: oklch(57.71% 0.2152 27.33);
+
+// tailwind colors/red/700
+// No description
+$tailwind-colors-red-700: oklch(50.54% 0.1905 27.52);
+
+// tailwind colors/red/800
+// No description
+$tailwind-colors-red-800: oklch(44.37% 0.1613 26.9);
+
+// tailwind colors/red/900
+// No description
+$tailwind-colors-red-900: oklch(39.58% 0.1331 25.72);
+
+// tailwind colors/red/950
+// No description
+$tailwind-colors-red-950: oklch(25.75% 0.0886 26.04);
+
+// tailwind colors/rose/50
+// No description
+$tailwind-colors-rose-50: oklch(96.94% 0.0152 12.42);
+
+// tailwind colors/rose/100
+// No description
+$tailwind-colors-rose-100: oklch(94.14% 0.0298 12.58);
+
+// tailwind colors/rose/200
+// No description
+$tailwind-colors-rose-200: oklch(89.24% 0.0559 10);
+
+// tailwind colors/rose/300
+// No description
+$tailwind-colors-rose-300: oklch(80.97% 0.1061 11.64);
+
+// tailwind colors/rose/400
+// No description
+$tailwind-colors-rose-400: oklch(71.92% 0.169 13.43);
+
+// tailwind colors/rose/500
+// No description
+$tailwind-colors-rose-500: oklch(64.5% 0.2154 16.44);
+
+// tailwind colors/rose/600
+// No description
+$tailwind-colors-rose-600: oklch(58.58% 0.222 17.58);
+
+// tailwind colors/rose/700
+// No description
+$tailwind-colors-rose-700: oklch(51.43% 0.1978 16.93);
+
+// tailwind colors/rose/800
+// No description
+$tailwind-colors-rose-800: oklch(45.46% 0.1713 13.7);
+
+// tailwind colors/rose/900
+// No description
+$tailwind-colors-rose-900: oklch(41.03% 0.1502 10.27);
+
+// tailwind colors/rose/950
+// No description
+$tailwind-colors-rose-950: oklch(27.08% 0.1009 12.09);
+
+// tailwind colors/sky/50
+// No description
+$tailwind-colors-sky-50: oklch(97.71% 0.0125 236.62);
+
+// tailwind colors/sky/100
+// No description
+$tailwind-colors-sky-100: oklch(95.14% 0.025 236.82);
+
+// tailwind colors/sky/200
+// No description
+$tailwind-colors-sky-200: oklch(90.14% 0.0555 230.9);
+
+// tailwind colors/sky/300
+// No description
+$tailwind-colors-sky-300: oklch(82.76% 0.1013 230.32);
+
+// tailwind colors/sky/400
+// No description
+$tailwind-colors-sky-400: oklch(75.35% 0.139 232.66);
+
+// tailwind colors/sky/500
+// No description
+$tailwind-colors-sky-500: oklch(68.47% 0.1479 237.32);
+
+// tailwind colors/sky/600
+// No description
+$tailwind-colors-sky-600: oklch(58.76% 0.1389 241.97);
+
+// tailwind colors/sky/700
+// No description
+$tailwind-colors-sky-700: oklch(50% 0.1193 242.75);
+
+// tailwind colors/sky/800
+// No description
+$tailwind-colors-sky-800: oklch(44.34% 0.1 240.79);
+
+// tailwind colors/sky/900
+// No description
+$tailwind-colors-sky-900: oklch(39.12% 0.0845 240.88);
+
+// tailwind colors/sky/950
+// No description
+$tailwind-colors-sky-950: oklch(29.35% 0.0632 243.16);
+
+// tailwind colors/slate/50
+// No description
+$tailwind-colors-slate-50: oklch(98.42% 0.0034 247.86);
+
+// tailwind colors/slate/100
+// No description
+$tailwind-colors-slate-100: oklch(96.83% 0.0069 247.9);
+
+// tailwind colors/slate/200
+// No description
+$tailwind-colors-slate-200: oklch(92.88% 0.0126 255.51);
+
+// tailwind colors/slate/300
+// No description
+$tailwind-colors-slate-300: oklch(86.9% 0.0198 252.89);
+
+// tailwind colors/slate/400
+// No description
+$tailwind-colors-slate-400: oklch(71.07% 0.0351 256.79);
+
+// tailwind colors/slate/500
+// No description
+$tailwind-colors-slate-500: oklch(55.44% 0.0407 257.42);
+
+// tailwind colors/slate/600
+// No description
+$tailwind-colors-slate-600: oklch(44.55% 0.0374 257.28);
+
+// tailwind colors/slate/700
+// No description
+$tailwind-colors-slate-700: oklch(37.17% 0.0392 257.29);
+
+// tailwind colors/slate/800
+// No description
+$tailwind-colors-slate-800: oklch(27.95% 0.0368 260.03);
+
+// tailwind colors/slate/900
+// No description
+$tailwind-colors-slate-900: oklch(20.77% 0.0398 265.75);
+
+// tailwind colors/slate/950
+// No description
+$tailwind-colors-slate-950: oklch(12.88% 0.0406 264.7);
+
+// tailwind colors/stone/50
+// No description
+$tailwind-colors-stone-50: oklch(98.48% 0.0013 106.42);
+
+// tailwind colors/stone/100
+// No description
+$tailwind-colors-stone-100: oklch(96.99% 0.0013 106.42);
+
+// tailwind colors/stone/200
+// No description
+$tailwind-colors-stone-200: oklch(92.32% 0.0026 48.72);
+
+// tailwind colors/stone/300
+// No description
+$tailwind-colors-stone-300: oklch(86.87% 0.0043 56.37);
+
+// tailwind colors/stone/400
+// No description
+$tailwind-colors-stone-400: oklch(71.61% 0.0091 56.26);
+
+// tailwind colors/stone/500
+// No description
+$tailwind-colors-stone-500: oklch(55.34% 0.0116 58.07);
+
+// tailwind colors/stone/600
+// No description
+$tailwind-colors-stone-600: oklch(44.44% 0.0096 73.64);
+
+// tailwind colors/stone/700
+// No description
+$tailwind-colors-stone-700: oklch(37.41% 0.0087 67.56);
+
+// tailwind colors/stone/800
+// No description
+$tailwind-colors-stone-800: oklch(26.85% 0.0063 34.3);
+
+// tailwind colors/stone/900
+// No description
+$tailwind-colors-stone-900: oklch(21.61% 0.0061 56.04);
+
+// tailwind colors/stone/950
+// No description
+$tailwind-colors-stone-950: oklch(14.69% 0.0041 49.25);
+
+// tailwind colors/teal/50
+// No description
+$tailwind-colors-teal-50: oklch(98.36% 0.0142 180.72);
+
+// tailwind colors/teal/100
+// No description
+$tailwind-colors-teal-100: oklch(95.27% 0.0498 180.8);
+
+// tailwind colors/teal/200
+// No description
+$tailwind-colors-teal-200: oklch(91% 0.0927 180.43);
+
+// tailwind colors/teal/300
+// No description
+$tailwind-colors-teal-300: oklch(85.49% 0.1251 181.07);
+
+// tailwind colors/teal/400
+// No description
+$tailwind-colors-teal-400: oklch(78.45% 0.1325 181.91);
+
+// tailwind colors/teal/500
+// No description
+$tailwind-colors-teal-500: oklch(70.38% 0.123 182.5);
+
+// tailwind colors/teal/600
+// No description
+$tailwind-colors-teal-600: oklch(60.02% 0.1038 184.7);
+
+// tailwind colors/teal/700
+// No description
+$tailwind-colors-teal-700: oklch(51.09% 0.0861 186.39);
+
+// tailwind colors/teal/800
+// No description
+$tailwind-colors-teal-800: oklch(43.7% 0.0705 188.22);
+
+// tailwind colors/teal/900
+// No description
+$tailwind-colors-teal-900: oklch(38.61% 0.059 188.42);
+
+// tailwind colors/teal/950
+// No description
+$tailwind-colors-teal-950: oklch(27.73% 0.0447 192.52);
+
+// tailwind colors/violet/50
+// No description
+$tailwind-colors-violet-50: oklch(96.91% 0.0161 293.76);
+
+// tailwind colors/violet/100
+// No description
+$tailwind-colors-violet-100: oklch(94.33% 0.0284 294.59);
+
+// tailwind colors/violet/200
+// No description
+$tailwind-colors-violet-200: oklch(89.43% 0.0549 293.28);
+
+// tailwind colors/violet/300
+// No description
+$tailwind-colors-violet-300: oklch(81.12% 0.1013 293.57);
+
+// tailwind colors/violet/400
+// No description
+$tailwind-colors-violet-400: oklch(70.9% 0.1592 293.54);
+
+// tailwind colors/violet/500
+// No description
+$tailwind-colors-violet-500: oklch(60.56% 0.2189 292.72);
+
+// tailwind colors/violet/600
+// No description
+$tailwind-colors-violet-600: oklch(54.13% 0.2466 293.01);
+
+// tailwind colors/violet/700
+// No description
+$tailwind-colors-violet-700: oklch(49.07% 0.2412 292.58);
+
+// tailwind colors/violet/800
+// No description
+$tailwind-colors-violet-800: oklch(43.2% 0.2106 292.76);
+
+// tailwind colors/violet/900
+// No description
+$tailwind-colors-violet-900: oklch(37.96% 0.1783 293.74);
+
+// tailwind colors/violet/950
+// No description
+$tailwind-colors-violet-950: oklch(28.27% 0.1351 291.09);
+
+// tailwind colors/yellow/50
+// No description
+$tailwind-colors-yellow-50: oklch(98.73% 0.0262 102.21);
+
+// tailwind colors/yellow/100
+// No description
+$tailwind-colors-yellow-100: oklch(97.29% 0.0693 103.19);
+
+// tailwind colors/yellow/200
+// No description
+$tailwind-colors-yellow-200: oklch(94.51% 0.1243 101.54);
+
+// tailwind colors/yellow/300
+// No description
+$tailwind-colors-yellow-300: oklch(90.52% 0.1657 98.11);
+
+// tailwind colors/yellow/400
+// No description
+$tailwind-colors-yellow-400: oklch(86.06% 0.1731 91.94);
+
+// tailwind colors/yellow/500
+// No description
+$tailwind-colors-yellow-500: oklch(79.52% 0.1617 86.05);
+
+// tailwind colors/yellow/600
+// No description
+$tailwind-colors-yellow-600: oklch(68.06% 0.1423 75.83);
+
+// tailwind colors/yellow/700
+// No description
+$tailwind-colors-yellow-700: oklch(55.38% 0.1207 66.44);
+
+// tailwind colors/yellow/800
+// No description
+$tailwind-colors-yellow-800: oklch(47.62% 0.1034 61.91);
+
+// tailwind colors/yellow/900
+// No description
+$tailwind-colors-yellow-900: oklch(42.1% 0.0897 57.71);
+
+// tailwind colors/yellow/950
+// No description
+$tailwind-colors-yellow-950: oklch(28.57% 0.0639 53.81);
+
+// tailwind colors/zinc/50
+// No description
+$tailwind-colors-zinc-50: oklch(98.51% 0 89.88);
+
+// tailwind colors/zinc/100
+// No description
+$tailwind-colors-zinc-100: oklch(96.74% 0.0013 286.38);
+
+// tailwind colors/zinc/200
+// No description
+$tailwind-colors-zinc-200: oklch(91.97% 0.004 286.32);
+
+// tailwind colors/zinc/300
+// No description
+$tailwind-colors-zinc-300: oklch(87.11% 0.0055 286.29);
+
+// tailwind colors/zinc/400
+// No description
+$tailwind-colors-zinc-400: oklch(71.18% 0.0129 286.07);
+
+// tailwind colors/zinc/500
+// No description
+$tailwind-colors-zinc-500: oklch(55.17% 0.0138 285.94);
+
+// tailwind colors/zinc/600
+// No description
+$tailwind-colors-zinc-600: oklch(44.19% 0.0146 285.79);
+
+// tailwind colors/zinc/700
+// No description
+$tailwind-colors-zinc-700: oklch(37.03% 0.0119 285.81);
+
+// tailwind colors/zinc/800
+// No description
+$tailwind-colors-zinc-800: oklch(27.39% 0.0055 286.03);
+
+// tailwind colors/zinc/900
+// No description
+$tailwind-colors-zinc-900: oklch(21.03% 0.0059 285.89);
+
+// tailwind colors/zinc/950
+// No description
+$tailwind-colors-zinc-950: oklch(14.08% 0.0044 285.82);
+
+// ── Collection: Tokens (mode: Splash) ──
+
+// Elevation/Scrim
+// Dimmed overlay used behind modals and dialogs.
+$elevation-scrim: oklch(18.74% 0.0517 269.18 / 0.6);
+
+// Elevation/Surface Container
+// Standard surface color for cards and modules.
+$elevation-surface-container: $neutral-neutral-100;
+
+// Elevation/Surface Container High
+// Elevated surface for focused content.
+$elevation-surface-container-high: $neutral-neutral-200;
+
+// Elevation/Surface Container Highest
+// Highly elevated elements like sticky headers or tooltips.
+$elevation-surface-container-highest: $neutral-neutral-300;
+
+// Elevation/Surface Container Low
+// Slightly raised surface for containers and sections.
+$elevation-surface-container-low: $neutral-neutral-50;
+
+// Elevation/Surface Container Lowest
+// Base-level surface behind all other elements.
+$elevation-surface-container-lowest: $neutral-neutral-0;
+
+// Surfaces/Background
+// No description
+$html-token-name: $neutral-neutral-0;
+
+// Icons/Brand/disabled
+// No description
+$icons-brand-disabled: /* unresolved-alias */;
+
+// Icons/Brand/primary
+// No description
+$icons-brand-primary: /* unresolved-alias */;
+
+// Icons/Neutral/default
+// No description
+$icons-neutral-default: $color-neutrals-neutral600;
+
+// Icons/Neutral/neutral-disabled
+// No description
+$icons-neutral-neutral-disabled: oklch(69.06% 0.0384 262.75 / 0.5);
+
+// Icons/Neutral/white
+// No description
+$icons-neutral-white: $color-neutrals-neutral0;
+
+// Icons/Neutral/white-disabled
+// No description
+$icons-neutral-white-disabled: oklch(100% 0 89.88 / 0.3);
+
+// Label/Black
+// Use for destructive actions or critical messages.
+$label-black: $system-black-1;
+
+// Label/Black Container
+// Use for success states or confirmations.
+$label-black-container: $system-black-3;
+
+// Label/Blue
+// Use for links, primary actions or info.
+$label-blue: $system-blue-1;
+
+// Label/Blue Container
+// Use for links, primary actions or info.
+$label-blue-container: $system-blue-3;
+
+// Label/Gray
+// Use for success states or confirmations.
+$label-gray: $system-gray-1;
+
+// Label/Gray Container
+// Use for destructive actions or critical messages.
+$label-gray-container: $system-gray-3;
+
+// Label/Green
+// Use for success states or confirmations.
+$label-green: $system-green-1;
+
+// Label/Green Container
+// Use for success states or confirmations.
+$label-green-container: $system-green-3;
+
+// Label/On Black
+// Text on red background.
+$label-on-black: $system-black-2;
+
+// Label/On Black Container
+// Text on green background.
+$label-on-black-container: $system-black-4;
+
+// Label/On Blue
+// Text on blue background.
+$label-on-blue: $system-blue-2;
+
+// Label/On Blue Container
+// Text on blue background.
+$label-on-blue-container: $system-blue-4;
+
+// Label/On Gray
+// Text on green background.
+$label-on-gray: $system-gray-2;
+
+// Label/On Gray Container
+// Text on red background.
+$label-on-gray-container: $system-gray-4;
+
+// Label/On Green
+// Text on green background.
+$label-on-green: $system-green-2;
+
+// Label/On Green Container
+// Text on green background.
+$label-on-green-container: $system-green-4;
+
+// Label/On Orange
+// Text on orange background.
+$label-on-orange: $system-orange-2;
+
+// Label/On Orange Container
+// Text on orange background.
+$label-on-orange-container: $system-orange-4;
+
+// Label/On Purple
+// Text on purple background.
+$label-on-purple: $system-purple-2;
+
+// Label/On Purple Container
+// Text on purple background.
+$label-on-purple-container: $system-purple-4;
+
+// Label/On Red
+// Text on red background.
+$label-on-red: $system-red-2;
+
+// Label/On Red Container
+// Text on red background.
+$label-on-red-container: $system-red-4;
+
+// Label/On Teal
+// Text on teal background.
+$label-on-teal: $system-teal-2;
+
+// Label/On Teal Container
+// Text on teal background.
+$label-on-teal-container: $system-teal-4;
+
+// Label/On Yellow
+// Text on yellow background.
+$label-on-yellow: $system-yellow-2;
+
+// Label/On Yellow Container
+// Text on yellow background.
+$label-on-yellow-container: $system-yellow-4;
+
+// Label/Orange
+// Use for highlight or attention-grabbing elements.
+$label-orange: $system-orange-1;
+
+// Label/Orange Container
+// Use for highlight or attention-grabbing elements.
+$label-orange-container: $system-orange-3;
+
+// Label/Purple
+// Use for creativity, AI, or branding highlights.
+$label-purple: $system-purple-1;
+
+// Label/Purple Container
+// Use for creativity, AI, or branding highlights.
+$label-purple-container: $system-purple-3;
+
+// Label/Red
+// Use for destructive actions or critical messages.
+$label-red: $system-red-1;
+
+// Label/Red Container
+// Use for destructive actions or critical messages.
+$label-red-container: $system-red-3;
+
+// Label/Teal
+// Use for neutral status or support information.
+$label-teal: $system-teal-1;
+
+// Label/Teal Container
+// Use for neutral status or support information.
+$label-teal-container: $system-teal-3;
+
+// Label/Yellow
+// Use for warnings or caution messages.
+$label-yellow: $system-yellow-1;
+
+// Label/Yellow Container
+// Use for warnings or caution messages.
+$label-yellow-container: $system-yellow-3;
+
+// Main/On Primary
+// No description
+$main-on-primary: $neutral-neutral-0;
+
+// Main/On Primary Container
+// No description
+$main-on-primary-container: $brand-brand-700;
+
+// Main/On Secondary
+// No description
+$main-on-secondary: $neutral-neutral-0;
+
+// Main/On Secondary Container
+// No description
+$main-on-secondary-container: $neutral-neutral-900;
+
+// Main/On Tertiary
+// No description
+$main-on-tertiary: oklch(100% 0 89.88);
+
+// Main/On Tertiary Container
+// No description
+$main-on-tertiary-container: oklch(100% 0 89.88);
+
+// Main/Primary
+// No description
+$main-primary: $brand-brand-400;
+
+// Main/Primary Container
+// No description
+$main-primary-container: $brand-brand-25;
+
+// Main/Secondary
+// No description
+$main-secondary: $neutral-neutral-900;
+
+// Main/Secondary Container
+// No description
+$main-secondary-container: $neutral-neutral-50;
+
+// Main/Tertiary
+// No description
+$main-tertiary: oklch(100% 0 89.88);
+
+// Main/Tertiary Container
+// No description
+$main-tertiary-container: oklch(100% 0 89.88);
+
+// Outline/Outline
+// Default outline color for borders and focus rings.
+$outline-outline: $neutral-neutral-800;
+
+// Outline/Outline Active
+// Outline color during active click or interaction.
+$outline-outline-active: $neutral-neutral-900;
+
+// Outline/Outline Disabled
+// Outline color during active click or interaction.
+$outline-outline-disabled: $neutral-neutral-300;
+
+// Outline/Outline Focused
+// Outline color when an element receives keyboard focus.
+$outline-outline-focused: $brand-brand-500;
+
+// Outline/Outline Hover
+// Outline color when hovering over an interactive element.
+$outline-outline-hover: $neutral-neutral-900;
+
+// Outline/Outline Variant
+// Secondary outline variant used for subtle accents.
+$outline-outline-variant: $neutral-neutral-300;
+
+// Outline/Outline Variant Active
+// Variant outline color during active state.
+$outline-outline-variant-active: $neutral-neutral-500;
+
+// Outline/Outline Variant Disabled
+// Variant outline color during active state.
+$outline-outline-variant-disabled: $neutral-neutral-300;
+
+// Outline/Outline Variant Focused
+// Variant outline color on keyboard focus.
+$outline-outline-variant-focused: $brand-brand-500;
+
+// Outline/Outline Variant Hover
+// Variant outline color on hover.
+$outline-outline-variant-hover: $neutral-neutral-400;
+
+// State/On Surface Active
+// No description
+$state-on-surface-active: $neutral-neutral-900;
+
+// State/On Surface Disabled
+// No description
+$state-on-surface-disabled: $neutral-neutral-500;
+
+// State/On Surface Hover
+// No description
+$state-on-surface-hover: $neutral-neutral-800;
+
+// State/Primary Active
+// No description
+$state-primary-active: $brand-brand-600;
+
+// State/Primary Disabled
+// No description
+$state-primary-disabled: $brand-brand-100;
+
+// State/Primary Hover
+// No description
+$state-primary-hover: $brand-brand-500;
+
+// State/Primary Pressed
+// No description
+$state-primary-pressed: $brand-brand-700;
+
+// Status/blue-elements
+// No description
+$status-blue-elements: $color-status-blue2;
+
+// Status/error-elements
+// No description
+$status-error-elements: /* unresolved-alias */;
+
+// Status/error-text
+// No description
+$status-error-text: /* unresolved-alias */;
+
+// Status/purple-elements
+// No description
+$status-purple-elements: /* unresolved-alias */;
+
+// Status/success-elements
+// No description
+$status-success-elements: /* unresolved-alias */;
+
+// Status/warning-elements
+// No description
+$status-warning-elements: /* unresolved-alias */;
+
+// Status/warning-text
+// No description
+$status-warning-text: /* unresolved-alias */;
+
+// Surface/bg-1
+// No description
+$surface-bg-1: $color-neutrals-neutral0;
+
+// Surface/card
+// No description
+$surface-card: $color-neutrals-neutral0;
+
+// Surfaces/Background Inverse
+// No description
+$surfaces-background-inverse: $neutral-neutral-900;
+
+// Surfaces/On Surface
+// No description
+$surfaces-on-surface: $brand-brand-900;
+
+// Surfaces/On Surface Inverse
+// No description
+$surfaces-on-surface-inverse: $neutral-neutral-0;
+
+// Surfaces/On Surface Weak Inverse
+// No description
+$surfaces-on-surface-weak-inverse: $neutral-neutral-100;
+
+// Surfaces/On Surface Weakest
+// No description
+$surfaces-on-surface-weakest: $neutral-neutral-600;
+
+// Surfaces/On Surface Weakest Inverse
+// No description
+$surfaces-on-surface-weakest-inverse: $neutral-neutral-300;
+
+// Surfaces/Surface
+// No description
+$surfaces-surface: $neutral-neutral-0;
+
+// Surfaces/Surface Inverse
+// No description
+$surfaces-surface-inverse: $neutral-neutral-700;
+
+// System/Brand
+// No description
+$system-brand: $brand-brand-500;
+
+// System/Brand Container
+// No description
+$system-brand-container: $brand-brand-15;
+
+// System/Critical
+// Use for backgrounds communicating critical, like banners.
+$system-critical: $system-red-1;
+
+// System/Critical Container
+// Critical Container
+$system-critical-container: $system-red-3;
+
+// System/Info
+// Use for backgrounds communicating Info, like banners.
+$system-info: $neutral-neutral-800;
+
+// System/Info Container
+// Info Container
+$system-info-container: $neutral-neutral-200;
+
+// System/Magic (AI)
+// Use for backgrounds communicating AI, like banners.
+$system-magic-ai: oklch(53.32% 0.2596 262.64);
+
+// System/Magic (AI) Container
+// Magic (AI) Container
+$system-magic-ai-container: oklch(53.32% 0.2596 262.64);
+
+// System/On Brand
+// No description
+$system-on-brand: $brand-brand-15;
+
+// System/On Brand Container
+// No description
+$system-on-brand-container: $brand-brand-500;
+
+// System/On Critical
+// Use for text communicating critical.
+$system-on-critical: $system-red-2;
+
+// System/On Critical Container
+// Use for elements communicating critical inside small containers
+$system-on-critical-container: $system-red-4;
+
+// System/On Info
+// Use for text communicating info.
+$system-on-info: $neutral-neutral-0;
+
+// System/On Info Container
+// Use for elements communicating info inside small containers
+$system-on-info-container: $neutral-neutral-800;
+
+// System/On Magic (AI)
+// Use for text communicating AI.
+$system-on-magic-ai: oklch(53.32% 0.2596 262.64);
+
+// System/On Magic (AI) Container
+// Use for elements communicating AI inside small containers
+$system-on-magic-ai-container: oklch(53.32% 0.2596 262.64);
+
+// System/On Success
+// Use for text communicating success.
+$system-on-success: $system-green-2;
+
+// System/On Success Container
+// Use for elements communicating success inside small containers
+$system-on-success-container: $system-green-4;
+
+// System/On Warning
+// Use for text communicating warning.
+$system-on-warning: $system-orange-2;
+
+// System/On Warning Container
+// Use for elements communicating warning inside small containers
+$system-on-warning-container: $system-orange-4;
+
+// System/Success
+// Use for backgrounds communicating success, like banners.
+$system-success: $system-green-1;
+
+// System/Success Container
+// Success Container
+$system-success-container: $system-green-3;
+
+// System/Warning
+// Use for backgrounds communicating warning, like banners.
+$system-warning: $system-orange-1;
+
+// System/Warning Container
+// Warning Container
+$system-warning-container: $system-orange-3;
+
+// Text/Color/Components/Elements/label
+// No description
+$text-color-components-elements-label: $color-neutrals-neutral800;
+
+// Text/Color/Page Contents/header-page
+// No description
+$text-color-page-contents-header-page: $color-neutrals-neutral900;
+
+// Text/Color/Page Contents/header-section
+// No description
+$text-color-page-contents-header-section: $color-neutrals-neutral900;
+
+// Text/Color/Page Contents/white
+// No description
+$text-color-page-contents-white: $color-neutrals-neutral0;
+
+// Surfaces/On Surface Weak
+// No description
+$var-on-surface-weak: $neutral-neutral-800;
+
+// ── Collection: Typography (mode: Splash) ──
+
+// font-family/body
+// No description
+$font-family-body: Inter;
+
+// font-family/heading
+// No description
+$font-family-heading: Inter;
+
+// font-size/font-size-10
+// No description
+$font-size-font-size-10: 0.625rem;
+
+// font-size/font-size-12
+// No description
+$font-size-font-size-12: 0.75rem;
+
+// font-size/font-size-14
+// No description
+$font-size-font-size-14: 0.875rem;
+
+// font-size/font-size-16
+// No description
+$font-size-font-size-16: 1rem;
+
+// font-size/font-size-20
+// No description
+$font-size-font-size-20: 1.25rem;
+
+// font-size/font-size-24
+// No description
+$font-size-font-size-24: 1.5rem;
+
+// font-size/font-size-32
+// No description
+$font-size-font-size-32: 2rem;
+
+// font-size/font-size-40
+// No description
+$font-size-font-size-40: 2.5rem;
+
+// font-weight/weight-bold
+// No description
+$font-weight-weight-bold: 700;
+
+// font-weight/weight-medium
+// No description
+$font-weight-weight-medium: 500;
+
+// font-weight/weight-regular
+// No description
+$font-weight-weight-regular: 400;
+
+// font-weight/weight-semibold
+// No description
+$font-weight-weight-semibold: 600;
+
+// letter-spacing/spacing-dense
+// No description
+$letter-spacing-spacing-dense: -0.33000001311302185;
+
+// letter-spacing/spacing-denser
+// No description
+$letter-spacing-spacing-denser: -0.949999988079071;
+
+// letter-spacing/spacing-densest
+// No description
+$letter-spacing-spacing-densest: -1.2400000095367432;
+
+// letter-spacing/spacing-normal
+// No description
+$letter-spacing-spacing-normal: 0;
+
+// line-height/height-750
+// No description
+$line-height-height-750: 1200%;
+
+// line-height/height-1000
+// No description
+$line-height-height-1000: 1600%;
+
+// line-height/height-1125
+// No description
+$line-height-height-1125: 1800%;
+
+// line-height/height-1250
+// No description
+$line-height-height-1250: 2000%;
+
+// line-height/height-1500
+// No description
+$line-height-height-1500: 2400%;
+
+// line-height/height-2000
+// No description
+$line-height-height-2000: 3200%;
+
+// line-height/height-2500
+// No description
+$line-height-height-2500: 4000%;
+
+// line-height/height-3000
+// No description
+$line-height-height-3000: 4800%;
