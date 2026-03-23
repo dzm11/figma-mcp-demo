@@ -4,7 +4,7 @@
   font-size: var(--font-size-14);
   line-height: var(--line-height-1250);
   letter-spacing: var(--letter-spacing-normal);
-  border-radius: var(--radius-full);
+  border-radius: var(--border-radius-full);
   border: none;
   cursor: pointer;
   transition:
@@ -14,7 +14,7 @@
     box-shadow 0.15s ease;
   display: inline-flex;
   align-items: center;
-  gap: 0; /* spacing/space-0 per Figma — slots handle their own spacing */
+  gap: var(--spacing-space-0); /* spacing/space-0 per Figma — slots handle their own spacing */
   outline: none;
   white-space: nowrap;
 }
@@ -25,13 +25,13 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: var(--spacing-space-20);
+  height: var(--spacing-space-20);
 }
 
 /* Text slot — 6px inner horizontal padding per Figma (spacing/space-6) */
 .textSlot {
-  padding: 0 var(--spacing-6);
+  padding: 0 var(--spacing-space-6);
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -43,8 +43,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: var(--spacing-space-20);
+  height: var(--spacing-space-20);
 }
 
 /* ============================================
@@ -52,15 +52,15 @@
    L: 12px all  |  M: 8px 12px  |  S: 4px 12px
    ============================================ */
 .size-l {
-  padding: var(--spacing-12);
+  padding: var(--spacing-space-12);
 }
 
 .size-m {
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--spacing-space-8) var(--spacing-space-12);
 }
 
 .size-s {
-  padding: var(--spacing-4) var(--spacing-12);
+  padding: var(--spacing-space-4) var(--spacing-space-12);
 }
 
 /* ============================================
@@ -68,36 +68,36 @@
    bg: main/primary #3d67ff  |  text: on-primary white
    ============================================ */
 .type-primary {
-  background-color: var(--color-main-primary);
-  color: var(--color-main-on-primary);
+  background-color: var(--main-primary);
+  color: var(--main-on-primary);
 }
 
 .type-primary:hover:not(:disabled) {
-  background-color: var(--color-state-primary-hover);
+  background-color: var(--state-primary-hover);
 }
 
 .type-primary:active:not(:disabled) {
-  background-color: var(--color-state-primary-active);
+  background-color: var(--state-primary-active);
 }
 
 .type-primary:focus-visible:not(:disabled) {
-  background-color: var(--color-main-primary);
+  background-color: var(--main-primary);
   box-shadow:
-    0 0 0 2px var(--color-main-on-primary),
-    0 0 0 4px var(--color-outline-focused);
+    0 0 0 var(--border-weight-2) var(--main-on-primary),
+    0 0 0 var(--border-weight-4) var(--outline-outline-focused);
 }
 
 .type-primary:disabled {
-  background-color: var(--color-state-primary-disabled);
+  background-color: var(--state-primary-disabled);
   cursor: not-allowed;
 }
 
 .type-primary.critical {
-  background-color: var(--color-critical);
+  background-color: var(--system-critical);
 }
 
 .type-primary.critical:hover:not(:disabled) {
-  background-color: #c8302d;
+  background-color: color-mix(in oklch, var(--system-critical) 85%, black);
 }
 
 /* ============================================
@@ -106,36 +106,36 @@
    ============================================ */
 .type-outlined {
   background-color: transparent;
-  color: var(--color-main-primary);
-  border: 1px solid var(--color-main-primary);
+  color: var(--main-primary);
+  border: var(--border-width-border) solid var(--main-primary);
 }
 
 .type-outlined:hover:not(:disabled) {
-  background-color: var(--color-surface-container-low);
-  border-color: var(--color-outline-variant-hover);
+  background-color: var(--elevation-surface-container-low);
+  border-color: var(--outline-outline-variant-hover);
 }
 
 .type-outlined:active:not(:disabled) {
-  background-color: var(--color-surface-container);
-  border-color: var(--color-outline-variant-active);
-  color: var(--color-state-on-surface-active);
+  background-color: var(--elevation-surface-container);
+  border-color: var(--outline-outline-variant-active);
+  color: var(--state-on-surface-active);
 }
 
 .type-outlined:focus-visible:not(:disabled) {
   box-shadow:
-    0 0 0 2px var(--color-main-on-primary),
-    0 0 0 4px var(--color-main-primary);
+    0 0 0 var(--border-weight-2) var(--main-on-primary),
+    0 0 0 var(--border-weight-4) var(--main-primary);
 }
 
 .type-outlined:disabled {
-  border-color: var(--color-outline-variant-disabled);
-  color: var(--color-state-on-surface-disabled);
+  border-color: var(--outline-outline-variant-disabled);
+  color: var(--state-on-surface-disabled);
   cursor: not-allowed;
 }
 
 .type-outlined.critical {
-  border-color: var(--color-critical);
-  color: var(--color-critical);
+  border-color: var(--system-critical);
+  color: var(--system-critical);
 }
 
 /* ============================================
@@ -144,30 +144,30 @@
    ============================================ */
 .type-secondary {
   background-color: transparent;
-  color: var(--color-surface-on-surface-weak);
-  border: 1px solid var(--color-outline-variant);
+  color: var(--var-on-surface-weak);
+  border: var(--border-width-border) solid var(--outline-outline-variant);
 }
 
 .type-secondary:hover:not(:disabled) {
-  background-color: var(--color-surface-container-low);
-  border-color: var(--color-outline-variant-hover);
+  background-color: var(--elevation-surface-container-low);
+  border-color: var(--outline-outline-variant-hover);
 }
 
 .type-secondary:active:not(:disabled) {
-  background-color: var(--color-surface-container);
-  border-color: var(--color-outline-variant-active);
+  background-color: var(--elevation-surface-container);
+  border-color: var(--outline-outline-variant-active);
 }
 
 .type-secondary:focus-visible:not(:disabled) {
-  border-color: var(--color-outline-focused);
+  border-color: var(--outline-outline-focused);
   box-shadow:
-    0 0 0 2px var(--color-main-on-primary),
-    0 0 0 4px var(--color-outline-focused);
+    0 0 0 var(--border-weight-2) var(--main-on-primary),
+    0 0 0 var(--border-weight-4) var(--outline-outline-focused);
 }
 
 .type-secondary:disabled {
-  border-color: var(--color-outline-variant-disabled);
-  color: var(--color-state-on-surface-disabled);
+  border-color: var(--outline-outline-variant-disabled);
+  color: var(--state-on-surface-disabled);
   cursor: not-allowed;
 }
 
@@ -177,31 +177,31 @@
    ============================================ */
 .type-tertiary {
   background-color: transparent;
-  color: var(--color-surface-on-surface-weak);
+  color: var(--var-on-surface-weak);
   border: none;
 }
 
 .type-tertiary:hover:not(:disabled) {
-  color: var(--color-state-on-surface-active);
-  background-color: var(--color-surface-container-low);
+  color: var(--state-on-surface-active);
+  background-color: var(--elevation-surface-container-low);
 }
 
 .type-tertiary:active:not(:disabled) {
-  color: var(--color-state-on-surface-active);
-  background-color: var(--color-surface-container);
+  color: var(--state-on-surface-active);
+  background-color: var(--elevation-surface-container);
 }
 
 .type-tertiary:focus-visible:not(:disabled) {
-  box-shadow: 0 0 0 2px var(--color-outline-focused);
+  box-shadow: 0 0 0 var(--border-weight-2) var(--outline-outline-focused);
 }
 
 .type-tertiary:disabled {
-  color: var(--color-state-on-surface-disabled);
+  color: var(--state-on-surface-disabled);
   cursor: not-allowed;
 }
 
 .type-tertiary.critical {
-  color: var(--color-critical);
+  color: var(--system-critical);
 }
 
 /* ============================================
@@ -224,22 +224,22 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 16px;
-  height: 16px;
-  border: 2px solid transparent;
+  width: var(--spacing-space-16);
+  height: var(--spacing-space-16);
+  border: var(--border-width-border-2) solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
 
 .type-primary.loading::after {
-  border-color: var(--color-main-on-primary);
+  border-color: var(--main-on-primary);
   border-top-color: transparent;
 }
 
 .type-outlined.loading::after,
 .type-secondary.loading::after,
 .type-tertiary.loading::after {
-  border-color: var(--color-surface-on-surface-weak);
+  border-color: var(--var-on-surface-weak);
   border-top-color: transparent;
 }
 

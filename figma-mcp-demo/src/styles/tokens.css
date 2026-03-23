@@ -4,17 +4,17 @@
 
 /* ── Collection: Primitives ───────────────────────────── */
 
-[data-theme="splash"] {
-  --border-radius-0: 0;
-  --border-radius-2: 2;
-  --border-radius-4: 4;
-  --border-radius-8: 8;
-  --border-radius-12: 12;
-  --border-radius-16: 16;
-  --border-radius-full: 999;
-  --border-weight-1: 1;
-  --border-weight-2: 2;
-  --border-weight-4: 4;
+:root {
+  --border-radius-0: 0px;
+  --border-radius-2: 2px;
+  --border-radius-4: 4px;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+  --border-radius-16: 16px;
+  --border-radius-full: 999px;
+  --border-weight-1: 1px;
+  --border-weight-2: 2px;
+  --border-weight-4: 4px;
   --brand-brand-15: oklch(95.38% 0.0219 274.74);
   --brand-brand-25: oklch(92.45% 0.0361 273.7);
   --brand-brand-50: oklch(85.19% 0.0729 272.8);
@@ -168,38 +168,7 @@
 
 /* ── Collection: Tailwind ───────────────────────────── */
 
-[data-theme="splash"] {
-  --border-radius-rounded-full: 9999;
-  --border-radius-rounded-none: 0;
-  --border-width-border: 0.0625rem;
-  --border-width-border-0: 0rem;
-  --border-width-border-2: 0.125rem;
-  --border-width-border-3: 0.1875rem;
-  --border-width-border-4: 0.25rem;
-  --border-width-border-5: 0.3125rem;
-  --border-width-border-6: 0.375rem;
-  --border-width-border-7: 0.375rem;
-  --border-width-border-8: 0.5rem;
-  --line-height-leading-1: 400%;
-  --line-height-leading-2: 800%;
-  --line-height-leading-3: 1200%;
-  --line-height-leading-4: 1600%;
-  --line-height-leading-5: 2000%;
-  --line-height-leading-6: 2400%;
-  --line-height-leading-7: 2800%;
-  --line-height-leading-8: 3200%;
-  --line-height-leading-9: 3600%;
-  --line-height-leading-10: 4000%;
-  --line-height-leading-11: 4400%;
-  --line-height-leading-12: 4800%;
-  --line-height-leading-13: 5200%;
-  --line-height-leading-14: 5600%;
-  --line-height-leading-15: 6000%;
-  --line-height-leading-16: 6400%;
-  --line-height-leading-17: 6800%;
-  --line-height-leading-18: 7200%;
-  --line-height-leading-19: 7600%;
-  --line-height-leading-20: 8000%;
+:root {
   --opacity-opacity-0: 0;
   --opacity-opacity-5: 5;
   --opacity-opacity-10: 10;
@@ -221,41 +190,6 @@
   --opacity-opacity-90: 90;
   --opacity-opacity-95: 95;
   --opacity-opacity-100: 100;
-  --spacing-0: 0rem;
-  --spacing-0-5: 0.125rem;
-  --spacing-1: 0.25rem;
-  --spacing-1-5: 0.375rem;
-  --spacing-2: 0.5rem;
-  --spacing-2-5: 0.625rem;
-  --spacing-3: 0.75rem;
-  --spacing-3-5: 0.875rem;
-  --spacing-4: 1rem;
-  --spacing-5: 1.25rem;
-  --spacing-6: 1.5rem;
-  --spacing-7: 1.75rem;
-  --spacing-8: 2rem;
-  --spacing-9: 2.25rem;
-  --spacing-10: 2.5rem;
-  --spacing-11: 2.75rem;
-  --spacing-12: 3rem;
-  --spacing-14: 3.5rem;
-  --spacing-16: 4rem;
-  --spacing-20: 5rem;
-  --spacing-24: 6rem;
-  --spacing-28: 7rem;
-  --spacing-32: 8rem;
-  --spacing-36: 9rem;
-  --spacing-40: 10rem;
-  --spacing-44: 11rem;
-  --spacing-48: 12rem;
-  --spacing-52: 13rem;
-  --spacing-56: 14rem;
-  --spacing-60: 15rem;
-  --spacing-64: 16rem;
-  --spacing-72: 18rem;
-  --spacing-80: 20rem;
-  --spacing-96: 24rem;
-  --spacing-px: 0.0625rem;
   --tailwind-colors-amber-50: oklch(98.69% 0.0214 95.28);
   --tailwind-colors-amber-100: oklch(96.19% 0.058 95.62);
   --tailwind-colors-amber-200: oklch(92.43% 0.1151 95.75);
@@ -505,7 +439,7 @@
 
 /* ── Collection: Tokens ───────────────────────────── */
 
-[data-theme="splash"] {
+:root {
   --elevation-scrim: oklch(18.74% 0.0517 269.18 / 0.6);
   --elevation-surface-container: var(--neutral-neutral-100);
   --elevation-surface-container-high: var(--neutral-neutral-200);
@@ -513,8 +447,8 @@
   --elevation-surface-container-low: var(--neutral-neutral-50);
   --elevation-surface-container-lowest: var(--neutral-neutral-0);
   --html-token-name: var(--neutral-neutral-0);
-  --icons-brand-disabled: /* unresolved-alias */;
-  --icons-brand-primary: /* unresolved-alias */;
+  --icons-brand-disabled: unresolved-alias;
+  --icons-brand-primary: unresolved-alias;
   --icons-neutral-default: var(--color-neutrals-neutral600);
   --icons-neutral-neutral-disabled: oklch(69.06% 0.0384 262.75 / 0.5);
   --icons-neutral-white: var(--color-neutrals-neutral0);
@@ -585,12 +519,12 @@
   --state-primary-hover: var(--brand-brand-500);
   --state-primary-pressed: var(--brand-brand-700);
   --status-blue-elements: var(--color-status-blue2);
-  --status-error-elements: /* unresolved-alias */;
-  --status-error-text: /* unresolved-alias */;
-  --status-purple-elements: /* unresolved-alias */;
-  --status-success-elements: /* unresolved-alias */;
-  --status-warning-elements: /* unresolved-alias */;
-  --status-warning-text: /* unresolved-alias */;
+  --status-error-elements: unresolved-alias;
+  --status-error-text: unresolved-alias;
+  --status-purple-elements: unresolved-alias;
+  --status-success-elements: unresolved-alias;
+  --status-warning-elements: unresolved-alias;
+  --status-warning-text: unresolved-alias;
   --surface-bg-1: var(--color-neutrals-neutral0);
   --surface-card: var(--color-neutrals-neutral0);
   --surfaces-background-inverse: var(--neutral-neutral-900);
@@ -634,31 +568,57 @@
 
 /* ── Collection: Typography ───────────────────────────── */
 
-[data-theme="splash"] {
+:root {
   --font-family-body: Inter;
   --font-family-heading: Inter;
-  --font-size-font-size-10: 0.625rem;
-  --font-size-font-size-12: 0.75rem;
-  --font-size-font-size-14: 0.875rem;
-  --font-size-font-size-16: 1rem;
-  --font-size-font-size-20: 1.25rem;
-  --font-size-font-size-24: 1.5rem;
-  --font-size-font-size-32: 2rem;
-  --font-size-font-size-40: 2.5rem;
-  --font-weight-weight-bold: 700;
-  --font-weight-weight-medium: 500;
-  --font-weight-weight-regular: 400;
-  --font-weight-weight-semibold: 600;
-  --letter-spacing-spacing-dense: -0.33000001311302185;
-  --letter-spacing-spacing-denser: -0.949999988079071;
-  --letter-spacing-spacing-densest: -1.2400000095367432;
-  --letter-spacing-spacing-normal: 0;
-  --line-height-height-750: 1200%;
-  --line-height-height-1000: 1600%;
-  --line-height-height-1125: 1800%;
-  --line-height-height-1250: 2000%;
-  --line-height-height-1500: 2400%;
-  --line-height-height-2000: 3200%;
-  --line-height-height-2500: 4000%;
-  --line-height-height-3000: 4800%;
+  --font-size-10: 0.625rem;
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --letter-spacing-dense: -0.33000001311302185;
+  --letter-spacing-denser: -0.949999988079071;
+  --letter-spacing-densest: -1.2400000095367432;
+  --letter-spacing-normal: 0;
+  --line-height-750: 12px;
+  --line-height-1000: 16px;
+  --line-height-1125: 18px;
+  --line-height-1250: 20px;
+  --line-height-1500: 24px;
+  --line-height-2000: 32px;
+  --line-height-2500: 40px;
+  --line-height-3000: 48px;
+
+  /* Legacy typography aliases (backward compatibility) */
+  --font-size-font-size-10: var(--font-size-10);
+  --font-size-font-size-12: var(--font-size-12);
+  --font-size-font-size-14: var(--font-size-14);
+  --font-size-font-size-16: var(--font-size-16);
+  --font-size-font-size-20: var(--font-size-20);
+  --font-size-font-size-24: var(--font-size-24);
+  --font-size-font-size-32: var(--font-size-32);
+  --font-size-font-size-40: var(--font-size-40);
+  --font-weight-weight-bold: var(--font-weight-bold);
+  --font-weight-weight-medium: var(--font-weight-medium);
+  --font-weight-weight-regular: var(--font-weight-regular);
+  --font-weight-weight-semibold: var(--font-weight-semibold);
+  --letter-spacing-spacing-dense: var(--letter-spacing-dense);
+  --letter-spacing-spacing-denser: var(--letter-spacing-denser);
+  --letter-spacing-spacing-densest: var(--letter-spacing-densest);
+  --letter-spacing-spacing-normal: var(--letter-spacing-normal);
+  --line-height-height-750: var(--line-height-750);
+  --line-height-height-1000: var(--line-height-1000);
+  --line-height-height-1125: var(--line-height-1125);
+  --line-height-height-1250: var(--line-height-1250);
+  --line-height-height-1500: var(--line-height-1500);
+  --line-height-height-2000: var(--line-height-2000);
+  --line-height-height-2500: var(--line-height-2500);
+  --line-height-height-3000: var(--line-height-3000);
 }

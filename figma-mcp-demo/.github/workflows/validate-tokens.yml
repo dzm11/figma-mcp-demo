@@ -1,0 +1,47 @@
+name: Validate generated tokens
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Verify source JSON exists
+        run: |
+          if [ ! -f tokens/tokens.source.json ]; then
+            echo "tokens/tokens.source.json is missing."
+            echo "Run 'npm run tokens:pull' locally and commit the result."
+            exit 1
+          fi
+
+      - name: Rebuild generated token files
+        run: npm run tokens:build
+
+      - name: Check generated files are up to date
+        run: |
+          if ! git diff --quiet -- src/styles/generated/_tokens.scss src/styles/tokens.css; then
+            echo "Generated token files are out of date."
+            echo "Run 'npm run tokens:build' locally and commit the result."
+            git diff -- src/styles/generated/_tokens.scss src/styles/tokens.css
+            exit 1
+          fi

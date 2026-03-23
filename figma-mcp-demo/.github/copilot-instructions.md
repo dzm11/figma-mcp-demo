@@ -10,7 +10,7 @@ This document outlines the design system structure and integration guidelines fo
 
 > **RULE: Never use hardcoded color, spacing, radius or typography values in CSS. You MUST use only the CSS custom properties listed below.**
 
-All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and defined as CSS custom properties in [`src/styles/tokens.css`](../src/styles/tokens.css). This file is imported globally via `src/index.css` and in `.storybook/preview.ts`.
+All design tokens are sourced from the Figma file `H3scHHO8gzcKecmO2Sa9aN` and defined as CSS custom properties in `src/styles/tokens.css`. This file is imported globally via `src/index.css` and in `.storybook/preview.ts`.
 
 ### Colors — Main
 

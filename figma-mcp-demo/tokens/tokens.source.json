@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-23T21:32:39.496Z",
+  "generatedAt": "2026-03-23T22:32:38.322Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -30,7 +30,7 @@
             "Splash": {
               "kind": "number",
               "value": 0,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -50,7 +50,7 @@
             "Splash": {
               "kind": "number",
               "value": 2,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -70,7 +70,7 @@
             "Splash": {
               "kind": "number",
               "value": 4,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -90,7 +90,7 @@
             "Splash": {
               "kind": "number",
               "value": 8,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -110,7 +110,7 @@
             "Splash": {
               "kind": "number",
               "value": 12,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -130,7 +130,7 @@
             "Splash": {
               "kind": "number",
               "value": 16,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -150,7 +150,7 @@
             "Splash": {
               "kind": "number",
               "value": 999,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -170,7 +170,7 @@
             "Splash": {
               "kind": "number",
               "value": 1,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -190,7 +190,7 @@
             "Splash": {
               "kind": "number",
               "value": 2,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -210,7 +210,7 @@
             "Splash": {
               "kind": "number",
               "value": 4,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -3674,626 +3674,6 @@
       ],
       "tokens": [
         {
-          "id": "VariableID:81922:414",
-          "figmaName": "border-radius/rounded-full",
-          "codeSyntax": "border-radius-rounded-full",
-          "cssVar": "--border-radius-rounded-full",
-          "scssVar": "$border-radius-rounded-full",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "CORNER_RADIUS"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 9999,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:413",
-          "figmaName": "border-radius/rounded-none",
-          "codeSyntax": "border-radius-rounded-none",
-          "cssVar": "--border-radius-rounded-none",
-          "scssVar": "$border-radius-rounded-none",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "CORNER_RADIUS"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 0,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:416",
-          "figmaName": "border-width/border",
-          "codeSyntax": "border-width-border",
-          "cssVar": "--border-width-border",
-          "scssVar": "$border-width-border",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 1,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:415",
-          "figmaName": "border-width/border-0",
-          "codeSyntax": "border-width-border-0",
-          "cssVar": "--border-width-border-0",
-          "scssVar": "$border-width-border-0",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 0,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:417",
-          "figmaName": "border-width/border-2",
-          "codeSyntax": "border-width-border-2",
-          "cssVar": "--border-width-border-2",
-          "scssVar": "$border-width-border-2",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 2,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:418",
-          "figmaName": "border-width/border-3",
-          "codeSyntax": "border-width-border-3",
-          "cssVar": "--border-width-border-3",
-          "scssVar": "$border-width-border-3",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 3,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:419",
-          "figmaName": "border-width/border-4",
-          "codeSyntax": "border-width-border-4",
-          "cssVar": "--border-width-border-4",
-          "scssVar": "$border-width-border-4",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 4,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:420",
-          "figmaName": "border-width/border-5",
-          "codeSyntax": "border-width-border-5",
-          "cssVar": "--border-width-border-5",
-          "scssVar": "$border-width-border-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 5,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:421",
-          "figmaName": "border-width/border-6",
-          "codeSyntax": "border-width-border-6",
-          "cssVar": "--border-width-border-6",
-          "scssVar": "$border-width-border-6",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 6,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:422",
-          "figmaName": "border-width/border-7",
-          "codeSyntax": "border-width-border-7",
-          "cssVar": "--border-width-border-7",
-          "scssVar": "$border-width-border-7",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 6,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:423",
-          "figmaName": "border-width/border-8",
-          "codeSyntax": "border-width-border-8",
-          "cssVar": "--border-width-border-8",
-          "scssVar": "$border-width-border-8",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "STROKE_FLOAT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 8,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:445",
-          "figmaName": "line-height/leading-1",
-          "codeSyntax": "line-height-leading-1",
-          "cssVar": "--line-height-leading-1",
-          "scssVar": "$line-height-leading-1",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 4,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:446",
-          "figmaName": "line-height/leading-2",
-          "codeSyntax": "line-height-leading-2",
-          "cssVar": "--line-height-leading-2",
-          "scssVar": "$line-height-leading-2",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 8,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:447",
-          "figmaName": "line-height/leading-3",
-          "codeSyntax": "line-height-leading-3",
-          "cssVar": "--line-height-leading-3",
-          "scssVar": "$line-height-leading-3",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 12,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:448",
-          "figmaName": "line-height/leading-4",
-          "codeSyntax": "line-height-leading-4",
-          "cssVar": "--line-height-leading-4",
-          "scssVar": "$line-height-leading-4",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 16,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:449",
-          "figmaName": "line-height/leading-5",
-          "codeSyntax": "line-height-leading-5",
-          "cssVar": "--line-height-leading-5",
-          "scssVar": "$line-height-leading-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 20,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:450",
-          "figmaName": "line-height/leading-6",
-          "codeSyntax": "line-height-leading-6",
-          "cssVar": "--line-height-leading-6",
-          "scssVar": "$line-height-leading-6",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 24,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:451",
-          "figmaName": "line-height/leading-7",
-          "codeSyntax": "line-height-leading-7",
-          "cssVar": "--line-height-leading-7",
-          "scssVar": "$line-height-leading-7",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 28,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:452",
-          "figmaName": "line-height/leading-8",
-          "codeSyntax": "line-height-leading-8",
-          "cssVar": "--line-height-leading-8",
-          "scssVar": "$line-height-leading-8",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 32,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:453",
-          "figmaName": "line-height/leading-9",
-          "codeSyntax": "line-height-leading-9",
-          "cssVar": "--line-height-leading-9",
-          "scssVar": "$line-height-leading-9",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 36,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:454",
-          "figmaName": "line-height/leading-10",
-          "codeSyntax": "line-height-leading-10",
-          "cssVar": "--line-height-leading-10",
-          "scssVar": "$line-height-leading-10",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 40,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:455",
-          "figmaName": "line-height/leading-11",
-          "codeSyntax": "line-height-leading-11",
-          "cssVar": "--line-height-leading-11",
-          "scssVar": "$line-height-leading-11",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 44,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:456",
-          "figmaName": "line-height/leading-12",
-          "codeSyntax": "line-height-leading-12",
-          "cssVar": "--line-height-leading-12",
-          "scssVar": "$line-height-leading-12",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 48,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:457",
-          "figmaName": "line-height/leading-13",
-          "codeSyntax": "line-height-leading-13",
-          "cssVar": "--line-height-leading-13",
-          "scssVar": "$line-height-leading-13",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 52,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:458",
-          "figmaName": "line-height/leading-14",
-          "codeSyntax": "line-height-leading-14",
-          "cssVar": "--line-height-leading-14",
-          "scssVar": "$line-height-leading-14",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 56,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:459",
-          "figmaName": "line-height/leading-15",
-          "codeSyntax": "line-height-leading-15",
-          "cssVar": "--line-height-leading-15",
-          "scssVar": "$line-height-leading-15",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 60,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:460",
-          "figmaName": "line-height/leading-16",
-          "codeSyntax": "line-height-leading-16",
-          "cssVar": "--line-height-leading-16",
-          "scssVar": "$line-height-leading-16",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 64,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:461",
-          "figmaName": "line-height/leading-17",
-          "codeSyntax": "line-height-leading-17",
-          "cssVar": "--line-height-leading-17",
-          "scssVar": "$line-height-leading-17",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 68,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:462",
-          "figmaName": "line-height/leading-18",
-          "codeSyntax": "line-height-leading-18",
-          "cssVar": "--line-height-leading-18",
-          "scssVar": "$line-height-leading-18",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 72,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:463",
-          "figmaName": "line-height/leading-19",
-          "codeSyntax": "line-height-leading-19",
-          "cssVar": "--line-height-leading-19",
-          "scssVar": "$line-height-leading-19",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 76,
-              "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:464",
-          "figmaName": "line-height/leading-20",
-          "codeSyntax": "line-height-leading-20",
-          "cssVar": "--line-height-leading-20",
-          "scssVar": "$line-height-leading-20",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "LINE_HEIGHT"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 80,
-              "unit": ""
-            }
-          }
-        },
-        {
           "id": "VariableID:81922:424",
           "figmaName": "opacity/opacity-0",
           "codeSyntax": "opacity-opacity-0",
@@ -4710,706 +4090,6 @@
               "kind": "number",
               "value": 100,
               "unit": ""
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:309",
-          "figmaName": "spacing/0",
-          "codeSyntax": "spacing-0",
-          "cssVar": "--spacing-0",
-          "scssVar": "$spacing-0",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 0,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:340",
-          "figmaName": "spacing/0-5",
-          "codeSyntax": "spacing-0-5",
-          "cssVar": "--spacing-0-5",
-          "scssVar": "$spacing-0-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 2,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:310",
-          "figmaName": "spacing/1",
-          "codeSyntax": "spacing-1",
-          "cssVar": "--spacing-1",
-          "scssVar": "$spacing-1",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 4,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:341",
-          "figmaName": "spacing/1-5",
-          "codeSyntax": "spacing-1-5",
-          "cssVar": "--spacing-1-5",
-          "scssVar": "$spacing-1-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 6,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:311",
-          "figmaName": "spacing/2",
-          "codeSyntax": "spacing-2",
-          "cssVar": "--spacing-2",
-          "scssVar": "$spacing-2",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 8,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:342",
-          "figmaName": "spacing/2-5",
-          "codeSyntax": "spacing-2-5",
-          "cssVar": "--spacing-2-5",
-          "scssVar": "$spacing-2-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 10,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:312",
-          "figmaName": "spacing/3",
-          "codeSyntax": "spacing-3",
-          "cssVar": "--spacing-3",
-          "scssVar": "$spacing-3",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 12,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:343",
-          "figmaName": "spacing/3-5",
-          "codeSyntax": "spacing-3-5",
-          "cssVar": "--spacing-3-5",
-          "scssVar": "$spacing-3-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 14,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:313",
-          "figmaName": "spacing/4",
-          "codeSyntax": "spacing-4",
-          "cssVar": "--spacing-4",
-          "scssVar": "$spacing-4",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 16,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:314",
-          "figmaName": "spacing/5",
-          "codeSyntax": "spacing-5",
-          "cssVar": "--spacing-5",
-          "scssVar": "$spacing-5",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 20,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:315",
-          "figmaName": "spacing/6",
-          "codeSyntax": "spacing-6",
-          "cssVar": "--spacing-6",
-          "scssVar": "$spacing-6",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 24,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:316",
-          "figmaName": "spacing/7",
-          "codeSyntax": "spacing-7",
-          "cssVar": "--spacing-7",
-          "scssVar": "$spacing-7",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 28,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:317",
-          "figmaName": "spacing/8",
-          "codeSyntax": "spacing-8",
-          "cssVar": "--spacing-8",
-          "scssVar": "$spacing-8",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 32,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:318",
-          "figmaName": "spacing/9",
-          "codeSyntax": "spacing-9",
-          "cssVar": "--spacing-9",
-          "scssVar": "$spacing-9",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 36,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:319",
-          "figmaName": "spacing/10",
-          "codeSyntax": "spacing-10",
-          "cssVar": "--spacing-10",
-          "scssVar": "$spacing-10",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 40,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:320",
-          "figmaName": "spacing/11",
-          "codeSyntax": "spacing-11",
-          "cssVar": "--spacing-11",
-          "scssVar": "$spacing-11",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 44,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:321",
-          "figmaName": "spacing/12",
-          "codeSyntax": "spacing-12",
-          "cssVar": "--spacing-12",
-          "scssVar": "$spacing-12",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 48,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:322",
-          "figmaName": "spacing/14",
-          "codeSyntax": "spacing-14",
-          "cssVar": "--spacing-14",
-          "scssVar": "$spacing-14",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 56,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:323",
-          "figmaName": "spacing/16",
-          "codeSyntax": "spacing-16",
-          "cssVar": "--spacing-16",
-          "scssVar": "$spacing-16",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 64,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:324",
-          "figmaName": "spacing/20",
-          "codeSyntax": "spacing-20",
-          "cssVar": "--spacing-20",
-          "scssVar": "$spacing-20",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 80,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:325",
-          "figmaName": "spacing/24",
-          "codeSyntax": "spacing-24",
-          "cssVar": "--spacing-24",
-          "scssVar": "$spacing-24",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 96,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:326",
-          "figmaName": "spacing/28",
-          "codeSyntax": "spacing-28",
-          "cssVar": "--spacing-28",
-          "scssVar": "$spacing-28",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 112,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:327",
-          "figmaName": "spacing/32",
-          "codeSyntax": "spacing-32",
-          "cssVar": "--spacing-32",
-          "scssVar": "$spacing-32",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 128,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:328",
-          "figmaName": "spacing/36",
-          "codeSyntax": "spacing-36",
-          "cssVar": "--spacing-36",
-          "scssVar": "$spacing-36",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 144,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:329",
-          "figmaName": "spacing/40",
-          "codeSyntax": "spacing-40",
-          "cssVar": "--spacing-40",
-          "scssVar": "$spacing-40",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 160,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:330",
-          "figmaName": "spacing/44",
-          "codeSyntax": "spacing-44",
-          "cssVar": "--spacing-44",
-          "scssVar": "$spacing-44",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 176,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:331",
-          "figmaName": "spacing/48",
-          "codeSyntax": "spacing-48",
-          "cssVar": "--spacing-48",
-          "scssVar": "$spacing-48",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 192,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:332",
-          "figmaName": "spacing/52",
-          "codeSyntax": "spacing-52",
-          "cssVar": "--spacing-52",
-          "scssVar": "$spacing-52",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 208,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:333",
-          "figmaName": "spacing/56",
-          "codeSyntax": "spacing-56",
-          "cssVar": "--spacing-56",
-          "scssVar": "$spacing-56",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 224,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:334",
-          "figmaName": "spacing/60",
-          "codeSyntax": "spacing-60",
-          "cssVar": "--spacing-60",
-          "scssVar": "$spacing-60",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 240,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:335",
-          "figmaName": "spacing/64",
-          "codeSyntax": "spacing-64",
-          "cssVar": "--spacing-64",
-          "scssVar": "$spacing-64",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 256,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:336",
-          "figmaName": "spacing/72",
-          "codeSyntax": "spacing-72",
-          "cssVar": "--spacing-72",
-          "scssVar": "$spacing-72",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 288,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:337",
-          "figmaName": "spacing/80",
-          "codeSyntax": "spacing-80",
-          "cssVar": "--spacing-80",
-          "scssVar": "$spacing-80",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 320,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:338",
-          "figmaName": "spacing/96",
-          "codeSyntax": "spacing-96",
-          "cssVar": "--spacing-96",
-          "scssVar": "$spacing-96",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 384,
-              "unit": "px"
-            }
-          }
-        },
-        {
-          "id": "VariableID:81922:339",
-          "figmaName": "spacing/px",
-          "codeSyntax": "spacing-px",
-          "cssVar": "--spacing-px",
-          "scssVar": "$spacing-px",
-          "type": "FLOAT",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "GAP"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "number",
-              "value": 1,
-              "unit": "px"
             }
           }
         },
@@ -11467,7 +10147,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -11488,7 +10168,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -12938,7 +11618,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -12957,7 +11637,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -12976,7 +11656,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -12995,7 +11675,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -13014,7 +11694,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -13033,7 +11713,7 @@
           "valuesByMode": {
             "Splash": {
               "kind": "string",
-              "value": "/* unresolved-alias */"
+              "value": "unresolved-alias"
             }
           }
         },
@@ -13889,9 +12569,9 @@
         {
           "id": "VariableID:72782:481",
           "figmaName": "font-size/font-size-10",
-          "codeSyntax": "font-size-font-size-10",
-          "cssVar": "--font-size-font-size-10",
-          "scssVar": "$font-size-font-size-10",
+          "codeSyntax": "font-size-10",
+          "cssVar": "--font-size-10",
+          "scssVar": "$font-size-10",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -13909,9 +12589,9 @@
         {
           "id": "VariableID:72782:477",
           "figmaName": "font-size/font-size-12",
-          "codeSyntax": "font-size-font-size-12",
-          "cssVar": "--font-size-font-size-12",
-          "scssVar": "$font-size-font-size-12",
+          "codeSyntax": "font-size-12",
+          "cssVar": "--font-size-12",
+          "scssVar": "$font-size-12",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -13929,9 +12609,9 @@
         {
           "id": "VariableID:72782:465",
           "figmaName": "font-size/font-size-14",
-          "codeSyntax": "font-size-font-size-14",
-          "cssVar": "--font-size-font-size-14",
-          "scssVar": "$font-size-font-size-14",
+          "codeSyntax": "font-size-14",
+          "cssVar": "--font-size-14",
+          "scssVar": "$font-size-14",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -13949,9 +12629,9 @@
         {
           "id": "VariableID:72782:466",
           "figmaName": "font-size/font-size-16",
-          "codeSyntax": "font-size-font-size-16",
-          "cssVar": "--font-size-font-size-16",
-          "scssVar": "$font-size-font-size-16",
+          "codeSyntax": "font-size-16",
+          "cssVar": "--font-size-16",
+          "scssVar": "$font-size-16",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -13969,9 +12649,9 @@
         {
           "id": "VariableID:72782:472",
           "figmaName": "font-size/font-size-20",
-          "codeSyntax": "font-size-font-size-20",
-          "cssVar": "--font-size-font-size-20",
-          "scssVar": "$font-size-font-size-20",
+          "codeSyntax": "font-size-20",
+          "cssVar": "--font-size-20",
+          "scssVar": "$font-size-20",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -13989,9 +12669,9 @@
         {
           "id": "VariableID:72782:473",
           "figmaName": "font-size/font-size-24",
-          "codeSyntax": "font-size-font-size-24",
-          "cssVar": "--font-size-font-size-24",
-          "scssVar": "$font-size-font-size-24",
+          "codeSyntax": "font-size-24",
+          "cssVar": "--font-size-24",
+          "scssVar": "$font-size-24",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14009,9 +12689,9 @@
         {
           "id": "VariableID:72782:459",
           "figmaName": "font-size/font-size-32",
-          "codeSyntax": "font-size-font-size-32",
-          "cssVar": "--font-size-font-size-32",
-          "scssVar": "$font-size-font-size-32",
+          "codeSyntax": "font-size-32",
+          "cssVar": "--font-size-32",
+          "scssVar": "$font-size-32",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14029,9 +12709,9 @@
         {
           "id": "VariableID:72782:458",
           "figmaName": "font-size/font-size-40",
-          "codeSyntax": "font-size-font-size-40",
-          "cssVar": "--font-size-font-size-40",
-          "scssVar": "$font-size-font-size-40",
+          "codeSyntax": "font-size-40",
+          "cssVar": "--font-size-40",
+          "scssVar": "$font-size-40",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14049,9 +12729,9 @@
         {
           "id": "VariableID:72782:492",
           "figmaName": "font-weight/weight-bold",
-          "codeSyntax": "font-weight-weight-bold",
-          "cssVar": "--font-weight-weight-bold",
-          "scssVar": "$font-weight-weight-bold",
+          "codeSyntax": "font-weight-bold",
+          "cssVar": "--font-weight-bold",
+          "scssVar": "$font-weight-bold",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14069,9 +12749,9 @@
         {
           "id": "VariableID:72782:512",
           "figmaName": "font-weight/weight-medium",
-          "codeSyntax": "font-weight-weight-medium",
-          "cssVar": "--font-weight-weight-medium",
-          "scssVar": "$font-weight-weight-medium",
+          "codeSyntax": "font-weight-medium",
+          "cssVar": "--font-weight-medium",
+          "scssVar": "$font-weight-medium",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14089,9 +12769,9 @@
         {
           "id": "VariableID:72782:511",
           "figmaName": "font-weight/weight-regular",
-          "codeSyntax": "font-weight-weight-regular",
-          "cssVar": "--font-weight-weight-regular",
-          "scssVar": "$font-weight-weight-regular",
+          "codeSyntax": "font-weight-regular",
+          "cssVar": "--font-weight-regular",
+          "scssVar": "$font-weight-regular",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14109,9 +12789,9 @@
         {
           "id": "VariableID:72782:493",
           "figmaName": "font-weight/weight-semibold",
-          "codeSyntax": "font-weight-weight-semibold",
-          "cssVar": "--font-weight-weight-semibold",
-          "scssVar": "$font-weight-weight-semibold",
+          "codeSyntax": "font-weight-semibold",
+          "cssVar": "--font-weight-semibold",
+          "scssVar": "$font-weight-semibold",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14129,9 +12809,9 @@
         {
           "id": "VariableID:72782:525",
           "figmaName": "letter-spacing/spacing-dense",
-          "codeSyntax": "letter-spacing-spacing-dense",
-          "cssVar": "--letter-spacing-spacing-dense",
-          "scssVar": "$letter-spacing-spacing-dense",
+          "codeSyntax": "letter-spacing-dense",
+          "cssVar": "--letter-spacing-dense",
+          "scssVar": "$letter-spacing-dense",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14149,9 +12829,9 @@
         {
           "id": "VariableID:72782:521",
           "figmaName": "letter-spacing/spacing-denser",
-          "codeSyntax": "letter-spacing-spacing-denser",
-          "cssVar": "--letter-spacing-spacing-denser",
-          "scssVar": "$letter-spacing-spacing-denser",
+          "codeSyntax": "letter-spacing-denser",
+          "cssVar": "--letter-spacing-denser",
+          "scssVar": "$letter-spacing-denser",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14169,9 +12849,9 @@
         {
           "id": "VariableID:72782:513",
           "figmaName": "letter-spacing/spacing-densest",
-          "codeSyntax": "letter-spacing-spacing-densest",
-          "cssVar": "--letter-spacing-spacing-densest",
-          "scssVar": "$letter-spacing-spacing-densest",
+          "codeSyntax": "letter-spacing-densest",
+          "cssVar": "--letter-spacing-densest",
+          "scssVar": "$letter-spacing-densest",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14189,9 +12869,9 @@
         {
           "id": "VariableID:72782:517",
           "figmaName": "letter-spacing/spacing-normal",
-          "codeSyntax": "letter-spacing-spacing-normal",
-          "cssVar": "--letter-spacing-spacing-normal",
-          "scssVar": "$letter-spacing-spacing-normal",
+          "codeSyntax": "letter-spacing-normal",
+          "cssVar": "--letter-spacing-normal",
+          "scssVar": "$letter-spacing-normal",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14209,9 +12889,9 @@
         {
           "id": "VariableID:72782:557",
           "figmaName": "line-height/height-750",
-          "codeSyntax": "line-height-height-750",
-          "cssVar": "--line-height-height-750",
-          "scssVar": "$line-height-height-750",
+          "codeSyntax": "line-height-750",
+          "cssVar": "--line-height-750",
+          "scssVar": "$line-height-750",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14222,16 +12902,16 @@
             "Splash": {
               "kind": "number",
               "value": 12,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:554",
           "figmaName": "line-height/height-1000",
-          "codeSyntax": "line-height-height-1000",
-          "cssVar": "--line-height-height-1000",
-          "scssVar": "$line-height-height-1000",
+          "codeSyntax": "line-height-1000",
+          "cssVar": "--line-height-1000",
+          "scssVar": "$line-height-1000",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14242,16 +12922,16 @@
             "Splash": {
               "kind": "number",
               "value": 16,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:551",
           "figmaName": "line-height/height-1125",
-          "codeSyntax": "line-height-height-1125",
-          "cssVar": "--line-height-height-1125",
-          "scssVar": "$line-height-height-1125",
+          "codeSyntax": "line-height-1125",
+          "cssVar": "--line-height-1125",
+          "scssVar": "$line-height-1125",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14262,16 +12942,16 @@
             "Splash": {
               "kind": "number",
               "value": 18,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:548",
           "figmaName": "line-height/height-1250",
-          "codeSyntax": "line-height-height-1250",
-          "cssVar": "--line-height-height-1250",
-          "scssVar": "$line-height-height-1250",
+          "codeSyntax": "line-height-1250",
+          "cssVar": "--line-height-1250",
+          "scssVar": "$line-height-1250",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14282,16 +12962,16 @@
             "Splash": {
               "kind": "number",
               "value": 20,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:545",
           "figmaName": "line-height/height-1500",
-          "codeSyntax": "line-height-height-1500",
-          "cssVar": "--line-height-height-1500",
-          "scssVar": "$line-height-height-1500",
+          "codeSyntax": "line-height-1500",
+          "cssVar": "--line-height-1500",
+          "scssVar": "$line-height-1500",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14302,16 +12982,16 @@
             "Splash": {
               "kind": "number",
               "value": 24,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:542",
           "figmaName": "line-height/height-2000",
-          "codeSyntax": "line-height-height-2000",
-          "cssVar": "--line-height-height-2000",
-          "scssVar": "$line-height-height-2000",
+          "codeSyntax": "line-height-2000",
+          "cssVar": "--line-height-2000",
+          "scssVar": "$line-height-2000",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14322,16 +13002,16 @@
             "Splash": {
               "kind": "number",
               "value": 32,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:539",
           "figmaName": "line-height/height-2500",
-          "codeSyntax": "line-height-height-2500",
-          "cssVar": "--line-height-height-2500",
-          "scssVar": "$line-height-height-2500",
+          "codeSyntax": "line-height-2500",
+          "cssVar": "--line-height-2500",
+          "scssVar": "$line-height-2500",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14342,16 +13022,16 @@
             "Splash": {
               "kind": "number",
               "value": 40,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
         {
           "id": "VariableID:72782:532",
           "figmaName": "line-height/height-3000",
-          "codeSyntax": "line-height-height-3000",
-          "cssVar": "--line-height-height-3000",
-          "scssVar": "$line-height-height-3000",
+          "codeSyntax": "line-height-3000",
+          "cssVar": "--line-height-3000",
+          "scssVar": "$line-height-3000",
           "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
@@ -14362,7 +13042,7 @@
             "Splash": {
               "kind": "number",
               "value": 48,
-              "unit": ""
+              "unit": "px"
             }
           }
         }
