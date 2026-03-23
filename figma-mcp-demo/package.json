@@ -11,7 +11,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "figma:publish": "dotenv -e .env.local -- npx figma connect publish --dir . --verbose",
-    "figma:publish:dry": "dotenv -e .env.local -- npx figma connect publish --dir . --dry-run --verbose"
+    "figma:publish:dry": "dotenv -e .env.local -- npx figma connect publish --dir . --dry-run --verbose",
+    "tokens:pull": "node scripts/pull-from-figma.mjs",
+    "tokens:build": "node scripts/build-tokens.mjs",
+    "tokens:sync": "node scripts/sync-tokens.mjs",
+    "tokens:pr": "node scripts/create-pr.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -32,11 +36,12 @@
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/browser-playwright": "^4.0.18",
     "@vitest/coverage-v8": "^4.0.18",
+    "dotenv": "^16.6.1",
+    "dotenv-cli": "^7.4.4",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "eslint-plugin-storybook": "^10.2.16",
-    "dotenv-cli": "^7.4.4",
     "globals": "^16.5.0",
     "playwright": "^1.58.2",
     "storybook": "^10.2.16",

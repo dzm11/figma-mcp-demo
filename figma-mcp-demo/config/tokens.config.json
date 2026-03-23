@@ -1,0 +1,64 @@
+{
+  "defaultCollectionMode": {
+    "Primitives": "Splash",
+    "Semantic": "Splash"
+  },
+  "cssSelectorByModeName": {
+    "Splash": ":root",
+    "Light": ":root",
+    "Dark": "[data-theme=\"dark\"]"
+  },
+  "valueFormatting": {
+    "baseFontSizePx": 16,
+    "colorFormat": "oklch",
+    "dimensionFormat": "rem",
+    "lineHeightFormat": "px"
+  },
+  "floatUnitRules": [
+    {
+      "match": "^spacing-",
+      "unit": "px"
+    },
+    {
+      "match": "^radius-",
+      "unit": "px"
+    },
+    {
+      "match": "^border-radius-",
+      "unit": "px"
+    },
+    {
+      "match": "^border-weight-",
+      "unit": "px"
+    },
+    {
+      "match": "^font-size-",
+      "unit": "px"
+    },
+    {
+      "match": "^line-height-",
+      "unit": "px"
+    },
+    {
+      "match": "^border-width-",
+      "unit": "px"
+    },
+    {
+      "match": "^size-",
+      "unit": "px"
+    },
+    {
+      "match": "^opacity-",
+      "unit": ""
+    },
+    {
+      "match": "^z-index-",
+      "unit": ""
+    }
+  ],
+  "output": {
+    "sourceJson": "tokens/tokens.source.json",
+    "scssFile": "src/styles/generated/_tokens.scss",
+    "cssFile": "src/styles/tokens.css"
+  }
+}
