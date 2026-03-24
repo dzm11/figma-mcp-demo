@@ -15,82 +15,22 @@
   --border-weight-1: 1px;
   --border-weight-2: 2px;
   --border-weight-4: 4px;
-  --brand-brand-15: oklch(95.38% 0.0219 274.74);
-  --brand-brand-25: oklch(92.45% 0.0361 273.7);
-  --brand-brand-50: oklch(85.19% 0.0729 272.8);
-  --brand-brand-100: oklch(77.99% 0.1114 271.79);
-  --brand-brand-200: oklch(70.68% 0.1525 270.53);
-  --brand-brand-300: oklch(63.96% 0.1922 268.84);
-  --brand-brand-400: oklch(57.8% 0.2302 266.88);
-  --brand-brand-500: oklch(50.46% 0.1992 266.97);
-  --brand-brand-600: oklch(43.16% 0.1667 267.17);
-  --brand-brand-700: oklch(35.46% 0.1311 267.44);
-  --brand-brand-800: oklch(27.44% 0.0944 268);
-  --brand-brand-900: oklch(18.74% 0.0517 269.18);
+  --brand-15: oklch(95.38% 0.0219 274.74);
+  --brand-25: oklch(92.45% 0.0361 273.7);
+  --brand-50: oklch(85.19% 0.0729 272.8);
+  --brand-100: oklch(77.99% 0.1114 271.79);
+  --brand-200: oklch(70.68% 0.1525 270.53);
+  --brand-300: oklch(63.96% 0.1922 268.84);
+  --brand-400: oklch(57.8% 0.2302 266.88);
+  --brand-500: oklch(50.46% 0.1992 266.97);
+  --brand-600: oklch(43.16% 0.1667 267.17);
+  --brand-700: oklch(35.46% 0.1311 267.44);
+  --brand-800: oklch(27.44% 0.0944 268);
+  --brand-900: oklch(18.74% 0.0517 269.18);
   --color-brand-brand900: oklch(18.74% 0.0517 269.18);
   --color-old-gray-600: oklch(69.06% 0.0384 262.75);
   --color-old-gray-900: oklch(38.48% 0.0356 261.25);
   --color-old-white-0: oklch(100% 0 89.88);
-  --data-vis-1-midnight: oklch(63.76% 0.1862 284.36);
-  --data-vis-2-valencia: oklch(76.81% 0.169 62.07);
-  --data-vis-3-splash: oklch(77.94% 0.1365 213.13);
-  --data-vis-4-crimson: oklch(65.21% 0.2279 4.64);
-  --data-vis-5-lime: oklch(81.06% 0.2105 129.83);
-  --data-vis-6-five-o: oklch(58.32% 0.2002 279.82);
-  --data-vis-7-azure: oklch(65.25% 0.1324 167.84);
-  --data-vis-8-fanta: oklch(68.92% 0.2038 42.19);
-  --data-vis-9-fihalhohi: oklch(66.08% 0.1618 243.89);
-  --data-vis-10-blurple: oklch(56.88% 0.2522 287.48);
-  --data-vis-11-honey: oklch(83.37% 0.1705 82.77);
-  --data-vis-12-cornflower: oklch(78.86% 0.0841 267.16);
-  --data-vis-13-piggy: oklch(75.05% 0.2164 332.79);
-  --data-vis-14-oceanic: oklch(55.6% 0.1754 254.02);
-  --data-vis-15-ramle: oklch(92.6% 0.195 103.58);
-  --data-vis-16-purple: oklch(62.59% 0.2761 325.43);
-  --data-vis-17-cryptonite: oklch(72.69% 0.2347 143.31);
-  --data-vis-18-indigo: oklch(49.95% 0.2164 261.04);
-  --data-vis-19-jade: oklch(67.5% 0.1912 148.73);
-  --data-vis-20-lemongrass: oklch(89.9% 0.2013 115.27);
-  --data-vis-21: oklch(59.77% 0.235 29.61);
-  --data-vis-22: oklch(51.04% 0.0936 266.21);
-  --data-vis-23: oklch(84.96% 0.1231 191.85);
-  --data-vis-24: oklch(59.57% 0.1027 190.51);
-  --data-vis-25: oklch(85.74% 0.1069 67.83);
-  --data-vis-26: oklch(59.04% 0.11 64.57);
-  --data-vis-27: oklch(71.45% 0.2104 325.34);
-  --data-vis-28: oklch(46.45% 0.2013 325.57);
-  --data-vis-29: oklch(73.85% 0.162 358.45);
-  --data-vis-30: oklch(48.35% 0.1653 3.84);
-  --data-vis-31: oklch(92.53% 0.1651 113.65);
-  --data-vis-32: oklch(66.38% 0.1475 115.15);
-  --data-vis-33: oklch(69.63% 0.1451 307.01);
-  --data-vis-34: oklch(41.79% 0.1532 304.46);
-  --data-vis-35: oklch(94.97% 0.1734 106.09);
-  --data-vis-36: oklch(69.13% 0.1469 105.6);
-  --data-vis-37: oklch(78.68% 0.1411 160.59);
-  --data-vis-38: oklch(52.66% 0.1319 154.24);
-  --data-vis-39: oklch(72.37% 0.1556 24.92);
-  --data-vis-40: oklch(47.09% 0.1634 28.42);
-  --data-vis-41: oklch(78.1% 0.1204 229.11);
-  --data-vis-42: oklch(51.92% 0.1117 236.32);
-  --data-vis-43: oklch(79.11% 0.1351 54.9);
-  --data-vis-44: oklch(52.78% 0.1376 48.45);
-  --data-vis-45: oklch(81.9% 0.1748 148.45);
-  --data-vis-46: oklch(56.15% 0.1684 145.43);
-  --data-vis-47: oklch(89.83% 0.1452 93.35);
-  --data-vis-48: oklch(63.54% 0.1275 89.75);
-  --data-vis-49: oklch(68.9% 0.1718 285.91);
-  --data-vis-50: oklch(41.43% 0.1823 279.73);
-  --data-vis-51: oklch(77.55% 0.1107 181.85);
-  --data-vis-52: oklch(51.21% 0.0947 177.39);
-  --data-vis-53: oklch(83.47% 0.1311 333.29);
-  --data-vis-54: oklch(56.83% 0.1403 334.41);
-  --data-vis-55: oklch(72.23% 0.1224 241.76);
-  --data-vis-56: oklch(45.35% 0.122 248.31);
-  --data-vis-57: oklch(86.99% 0.1646 131.21);
-  --data-vis-58: oklch(60.54% 0.1602 133.48);
-  --data-vis-59: oklch(67.51% 0.1466 255.76);
-  --data-vis-60: oklch(40.49% 0.1544 258.66);
   --neutral-neutral-0: oklch(100% 0 89.88);
   --neutral-neutral-50: oklch(97.59% 0.0029 264.54);
   --neutral-neutral-100: oklch(95.15% 0.0046 258.32);
@@ -102,20 +42,20 @@
   --neutral-neutral-700: oklch(56.09% 0.0539 262.89);
   --neutral-neutral-800: oklch(46.75% 0.047 264.62);
   --neutral-neutral-900: oklch(28.86% 0.0236 264.1);
-  --spacing-space-0: 0rem;
-  --spacing-space-2: 0.125rem;
-  --spacing-space-4: 0.25rem;
-  --spacing-space-6: 0.375rem;
-  --spacing-space-8: 0.5rem;
-  --spacing-space-12: 0.75rem;
-  --spacing-space-16: 1rem;
-  --spacing-space-20: 1.25rem;
-  --spacing-space-24: 1.5rem;
-  --spacing-space-32: 2rem;
-  --spacing-space-40: 2.5rem;
-  --spacing-space-48: 3rem;
-  --spacing-space-64: 4rem;
-  --spacing-space-72: 4.5rem;
+  --spacing-0: 0rem;
+  --spacing-2: 0.125rem;
+  --spacing-4: 0.25rem;
+  --spacing-6: 0.375rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-64: 4rem;
+  --spacing-72: 4.5rem;
   --system-black-1: oklch(0% 0 0);
   --system-black-2: oklch(100% 0 89.88);
   --system-black-3: oklch(75.08% 0 89.88);
@@ -515,7 +455,7 @@
   /* Main/On Primary — No description */
   --main-on-primary: var(--neutral-neutral-0);
   /* Main/On Primary Container — No description */
-  --main-on-primary-container: var(--brand-brand-700);
+  --main-on-primary-container: var(--brand-700);
   /* Main/On Secondary — No description */
   --main-on-secondary: var(--neutral-neutral-0);
   /* Main/On Secondary Container — No description */
@@ -525,9 +465,9 @@
   /* Main/On Tertiary Container — No description */
   --main-on-tertiary-container: oklch(100% 0 89.88);
   /* Main/Primary — No description */
-  --main-primary: var(--brand-brand-400);
+  --main-primary: var(--brand-400);
   /* Main/Primary Container — No description */
-  --main-primary-container: var(--brand-brand-25);
+  --main-primary-container: var(--brand-25);
   /* Main/Secondary — No description */
   --main-secondary: var(--neutral-neutral-900);
   /* Main/Secondary Container — No description */
@@ -543,7 +483,7 @@
   /* Outline/Outline Disabled — Outline color during active click or interaction. */
   --outline-outline-disabled: var(--neutral-neutral-300);
   /* Outline/Outline Focused — Outline color when an element receives keyboard focus. */
-  --outline-outline-focused: var(--brand-brand-500);
+  --outline-outline-focused: var(--brand-500);
   /* Outline/Outline Hover — Outline color when hovering over an interactive element. */
   --outline-outline-hover: var(--neutral-neutral-900);
   /* Outline/Outline Variant — Secondary outline variant used for subtle accents. */
@@ -553,7 +493,7 @@
   /* Outline/Outline Variant Disabled — Variant outline color during active state. */
   --outline-outline-variant-disabled: var(--neutral-neutral-300);
   /* Outline/Outline Variant Focused — Variant outline color on keyboard focus. */
-  --outline-outline-variant-focused: var(--brand-brand-500);
+  --outline-outline-variant-focused: var(--brand-500);
   /* Outline/Outline Variant Hover — Variant outline color on hover. */
   --outline-outline-variant-hover: var(--neutral-neutral-400);
   /* State/On Surface Active — No description */
@@ -563,19 +503,19 @@
   /* State/On Surface Hover — No description */
   --state-on-surface-hover: var(--neutral-neutral-800);
   /* State/Primary Active — No description */
-  --state-primary-active: var(--brand-brand-600);
+  --state-primary-active: var(--brand-600);
   /* State/Primary Disabled — No description */
-  --state-primary-disabled: var(--brand-brand-100);
+  --state-primary-disabled: var(--brand-100);
   /* State/Primary Hover — No description */
-  --state-primary-hover: var(--brand-brand-500);
+  --state-primary-hover: var(--brand-500);
   /* State/Primary Pressed — No description */
-  --state-primary-pressed: var(--brand-brand-700);
+  --state-primary-pressed: var(--brand-700);
   /* Surfaces/Background — No description */
   --surfaces-background: var(--neutral-neutral-0);
   /* Surfaces/Background Inverse — No description */
   --surfaces-background-inverse: var(--neutral-neutral-900);
   /* Surfaces/On Surface — No description */
-  --surfaces-on-surface: var(--brand-brand-900);
+  --surfaces-on-surface: var(--brand-900);
   /* Surfaces/On Surface Inverse — No description */
   --surfaces-on-surface-inverse: var(--neutral-neutral-0);
   /* Surfaces/On Surface Weak Inverse — No description */
@@ -589,9 +529,9 @@
   /* Surfaces/Surface Inverse — No description */
   --surfaces-surface-inverse: var(--neutral-neutral-700);
   /* System/Brand — No description */
-  --system-brand: var(--brand-brand-500);
+  --system-brand: var(--brand-500);
   /* System/Brand Container — No description */
-  --system-brand-container: var(--brand-brand-15);
+  --system-brand-container: var(--brand-15);
   /* System/Critical — Use for backgrounds communicating critical, like banners. */
   --system-critical: var(--system-red-1);
   /* System/Critical Container — Critical Container */
@@ -605,9 +545,9 @@
   /* System/Magic (AI) Container — Magic (AI) Container */
   --system-magic-ai-container: oklch(53.32% 0.2596 262.64);
   /* System/On Brand — No description */
-  --system-on-brand: var(--brand-brand-15);
+  --system-on-brand: var(--brand-15);
   /* System/On Brand Container — No description */
-  --system-on-brand-container: var(--brand-brand-500);
+  --system-on-brand-container: var(--brand-500);
   /* System/On Critical — Use for text communicating critical. */
   --system-on-critical: var(--system-red-2);
   /* System/On Critical Container — Use for elements communicating critical inside small containers */
