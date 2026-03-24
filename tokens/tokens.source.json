@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-24T14:16:51.492Z",
+  "generatedAt": "2026-03-24T15:52:07.048Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -600,10 +600,10 @@
         },
         {
           "id": "VariableID:72354:439679",
-          "figmaName": "Neutral/Neutral-0",
-          "codeSyntax": "neutral-neutral-0",
-          "cssVar": "--neutral-neutral-0",
-          "scssVar": "$neutral-neutral-0",
+          "figmaName": "Neutral/0",
+          "codeSyntax": "neutral-0",
+          "cssVar": "--neutral-0",
+          "scssVar": "$neutral-0",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -624,10 +624,10 @@
         },
         {
           "id": "VariableID:72354:439678",
-          "figmaName": "Neutral/Neutral-50",
-          "codeSyntax": "neutral-neutral-50",
-          "cssVar": "--neutral-neutral-50",
-          "scssVar": "$neutral-neutral-50",
+          "figmaName": "Neutral/50",
+          "codeSyntax": "neutral-50",
+          "cssVar": "--neutral-50",
+          "scssVar": "$neutral-50",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -648,10 +648,10 @@
         },
         {
           "id": "VariableID:72354:439677",
-          "figmaName": "Neutral/Neutral-100",
-          "codeSyntax": "neutral-neutral-100",
-          "cssVar": "--neutral-neutral-100",
-          "scssVar": "$neutral-neutral-100",
+          "figmaName": "Neutral/100",
+          "codeSyntax": "neutral-100",
+          "cssVar": "--neutral-100",
+          "scssVar": "$neutral-100",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -672,10 +672,10 @@
         },
         {
           "id": "VariableID:72354:439676",
-          "figmaName": "Neutral/Neutral-200",
-          "codeSyntax": "neutral-neutral-200",
-          "cssVar": "--neutral-neutral-200",
-          "scssVar": "$neutral-neutral-200",
+          "figmaName": "Neutral/200",
+          "codeSyntax": "neutral-200",
+          "cssVar": "--neutral-200",
+          "scssVar": "$neutral-200",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -696,10 +696,10 @@
         },
         {
           "id": "VariableID:72354:439675",
-          "figmaName": "Neutral/Neutral-300",
-          "codeSyntax": "neutral-neutral-300",
-          "cssVar": "--neutral-neutral-300",
-          "scssVar": "$neutral-neutral-300",
+          "figmaName": "Neutral/300",
+          "codeSyntax": "neutral-300",
+          "cssVar": "--neutral-300",
+          "scssVar": "$neutral-300",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -720,10 +720,10 @@
         },
         {
           "id": "VariableID:72354:439674",
-          "figmaName": "Neutral/Neutral-400",
-          "codeSyntax": "neutral-neutral-400",
-          "cssVar": "--neutral-neutral-400",
-          "scssVar": "$neutral-neutral-400",
+          "figmaName": "Neutral/400",
+          "codeSyntax": "neutral-400",
+          "cssVar": "--neutral-400",
+          "scssVar": "$neutral-400",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -744,10 +744,10 @@
         },
         {
           "id": "VariableID:72354:439673",
-          "figmaName": "Neutral/Neutral-500",
-          "codeSyntax": "neutral-neutral-500",
-          "cssVar": "--neutral-neutral-500",
-          "scssVar": "$neutral-neutral-500",
+          "figmaName": "Neutral/500",
+          "codeSyntax": "neutral-500",
+          "cssVar": "--neutral-500",
+          "scssVar": "$neutral-500",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -768,10 +768,10 @@
         },
         {
           "id": "VariableID:72354:439672",
-          "figmaName": "Neutral/Neutral-600",
-          "codeSyntax": "neutral-neutral-600",
-          "cssVar": "--neutral-neutral-600",
-          "scssVar": "$neutral-neutral-600",
+          "figmaName": "Neutral/600",
+          "codeSyntax": "neutral-600",
+          "cssVar": "--neutral-600",
+          "scssVar": "$neutral-600",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -792,10 +792,10 @@
         },
         {
           "id": "VariableID:72354:439671",
-          "figmaName": "Neutral/Neutral-700",
-          "codeSyntax": "neutral-neutral-700",
-          "cssVar": "--neutral-neutral-700",
-          "scssVar": "$neutral-neutral-700",
+          "figmaName": "Neutral/700",
+          "codeSyntax": "neutral-700",
+          "cssVar": "--neutral-700",
+          "scssVar": "$neutral-700",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -816,10 +816,10 @@
         },
         {
           "id": "VariableID:72354:439670",
-          "figmaName": "Neutral/Neutral-800",
-          "codeSyntax": "neutral-neutral-800",
-          "cssVar": "--neutral-neutral-800",
-          "scssVar": "$neutral-neutral-800",
+          "figmaName": "Neutral/800",
+          "codeSyntax": "neutral-800",
+          "cssVar": "--neutral-800",
+          "scssVar": "$neutral-800",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -840,10 +840,10 @@
         },
         {
           "id": "VariableID:72354:439669",
-          "figmaName": "Neutral/Neutral-900",
-          "codeSyntax": "neutral-neutral-900",
-          "cssVar": "--neutral-neutral-900",
-          "scssVar": "$neutral-neutral-900",
+          "figmaName": "Neutral/900",
+          "codeSyntax": "neutral-900",
+          "cssVar": "--neutral-900",
+          "scssVar": "$neutral-900",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": true,
@@ -8372,7 +8372,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439677",
-              "targetCodeSyntax": "neutral-neutral-100"
+              "targetCodeSyntax": "neutral-100"
             }
           }
         },
@@ -8392,7 +8392,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439676",
-              "targetCodeSyntax": "neutral-neutral-200"
+              "targetCodeSyntax": "neutral-200"
             }
           }
         },
@@ -8412,7 +8412,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439675",
-              "targetCodeSyntax": "neutral-neutral-300"
+              "targetCodeSyntax": "neutral-300"
             }
           }
         },
@@ -8432,7 +8432,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439678",
-              "targetCodeSyntax": "neutral-neutral-50"
+              "targetCodeSyntax": "neutral-50"
             }
           }
         },
@@ -8452,7 +8452,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9192,7 +9192,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9232,7 +9232,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9252,7 +9252,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9360,7 +9360,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9380,7 +9380,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439678",
-              "targetCodeSyntax": "neutral-neutral-50"
+              "targetCodeSyntax": "neutral-50"
             }
           }
         },
@@ -9448,7 +9448,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439670",
-              "targetCodeSyntax": "neutral-neutral-800"
+              "targetCodeSyntax": "neutral-800"
             }
           }
         },
@@ -9468,7 +9468,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9488,7 +9488,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439675",
-              "targetCodeSyntax": "neutral-neutral-300"
+              "targetCodeSyntax": "neutral-300"
             }
           }
         },
@@ -9528,7 +9528,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9548,7 +9548,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439675",
-              "targetCodeSyntax": "neutral-neutral-300"
+              "targetCodeSyntax": "neutral-300"
             }
           }
         },
@@ -9568,7 +9568,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439673",
-              "targetCodeSyntax": "neutral-neutral-500"
+              "targetCodeSyntax": "neutral-500"
             }
           }
         },
@@ -9588,7 +9588,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439675",
-              "targetCodeSyntax": "neutral-neutral-300"
+              "targetCodeSyntax": "neutral-300"
             }
           }
         },
@@ -9628,7 +9628,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439674",
-              "targetCodeSyntax": "neutral-neutral-400"
+              "targetCodeSyntax": "neutral-400"
             }
           }
         },
@@ -9648,7 +9648,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9668,7 +9668,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439673",
-              "targetCodeSyntax": "neutral-neutral-500"
+              "targetCodeSyntax": "neutral-500"
             }
           }
         },
@@ -9688,7 +9688,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439670",
-              "targetCodeSyntax": "neutral-neutral-800"
+              "targetCodeSyntax": "neutral-800"
             }
           }
         },
@@ -9788,7 +9788,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9808,7 +9808,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439669",
-              "targetCodeSyntax": "neutral-neutral-900"
+              "targetCodeSyntax": "neutral-900"
             }
           }
         },
@@ -9848,7 +9848,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9868,7 +9868,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439677",
-              "targetCodeSyntax": "neutral-neutral-100"
+              "targetCodeSyntax": "neutral-100"
             }
           }
         },
@@ -9888,7 +9888,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439672",
-              "targetCodeSyntax": "neutral-neutral-600"
+              "targetCodeSyntax": "neutral-600"
             }
           }
         },
@@ -9908,7 +9908,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439675",
-              "targetCodeSyntax": "neutral-neutral-300"
+              "targetCodeSyntax": "neutral-300"
             }
           }
         },
@@ -9928,7 +9928,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -9948,7 +9948,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439671",
-              "targetCodeSyntax": "neutral-neutral-700"
+              "targetCodeSyntax": "neutral-700"
             }
           }
         },
@@ -10048,7 +10048,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439670",
-              "targetCodeSyntax": "neutral-neutral-800"
+              "targetCodeSyntax": "neutral-800"
             }
           }
         },
@@ -10068,7 +10068,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439676",
-              "targetCodeSyntax": "neutral-neutral-200"
+              "targetCodeSyntax": "neutral-200"
             }
           }
         },
@@ -10216,7 +10216,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
+              "targetCodeSyntax": "neutral-0"
             }
           }
         },
@@ -10236,7 +10236,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439670",
-              "targetCodeSyntax": "neutral-neutral-800"
+              "targetCodeSyntax": "neutral-800"
             }
           }
         },
@@ -10464,7 +10464,7 @@
             "Splash": {
               "kind": "alias",
               "targetVariableId": "VariableID:72354:439670",
-              "targetCodeSyntax": "neutral-neutral-800"
+              "targetCodeSyntax": "neutral-800"
             }
           }
         }

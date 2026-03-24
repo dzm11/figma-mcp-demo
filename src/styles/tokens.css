@@ -31,17 +31,17 @@
   --color-old-gray-600: oklch(69.06% 0.0384 262.75);
   --color-old-gray-900: oklch(38.48% 0.0356 261.25);
   --color-old-white-0: oklch(100% 0 89.88);
-  --neutral-neutral-0: oklch(100% 0 89.88);
-  --neutral-neutral-50: oklch(97.59% 0.0029 264.54);
-  --neutral-neutral-100: oklch(95.15% 0.0046 258.32);
-  --neutral-neutral-200: oklch(91.88% 0.0071 268.54);
-  --neutral-neutral-300: oklch(88.81% 0.0101 267.35);
-  --neutral-neutral-400: oklch(78.72% 0.0261 263.3);
-  --neutral-neutral-500: oklch(74.66% 0.0323 265.27);
-  --neutral-neutral-600: oklch(63.92% 0.0466 264.8);
-  --neutral-neutral-700: oklch(56.09% 0.0539 262.89);
-  --neutral-neutral-800: oklch(46.75% 0.047 264.62);
-  --neutral-neutral-900: oklch(28.86% 0.0236 264.1);
+  --neutral-0: oklch(100% 0 89.88);
+  --neutral-50: oklch(97.59% 0.0029 264.54);
+  --neutral-100: oklch(95.15% 0.0046 258.32);
+  --neutral-200: oklch(91.88% 0.0071 268.54);
+  --neutral-300: oklch(88.81% 0.0101 267.35);
+  --neutral-400: oklch(78.72% 0.0261 263.3);
+  --neutral-500: oklch(74.66% 0.0323 265.27);
+  --neutral-600: oklch(63.92% 0.0466 264.8);
+  --neutral-700: oklch(56.09% 0.0539 262.89);
+  --neutral-800: oklch(46.75% 0.047 264.62);
+  --neutral-900: oklch(28.86% 0.0236 264.1);
   --spacing-0: 0rem;
   --spacing-2: 0.125rem;
   --spacing-4: 0.25rem;
@@ -371,15 +371,15 @@
   /* Elevation/Scrim — Dimmed overlay used behind modals and dialogs. */
   --elevation-scrim: oklch(18.74% 0.0517 269.18 / 0.6);
   /* Elevation/Surface Container — Standard surface color for cards and modules. */
-  --elevation-surface-container: var(--neutral-neutral-100);
+  --elevation-surface-container: var(--neutral-100);
   /* Elevation/Surface Container High — Elevated surface for focused content. */
-  --elevation-surface-container-high: var(--neutral-neutral-200);
+  --elevation-surface-container-high: var(--neutral-200);
   /* Elevation/Surface Container Highest — Highly elevated elements like sticky headers or tooltips. */
-  --elevation-surface-container-highest: var(--neutral-neutral-300);
+  --elevation-surface-container-highest: var(--neutral-300);
   /* Elevation/Surface Container Low — Slightly raised surface for containers and sections. */
-  --elevation-surface-container-low: var(--neutral-neutral-50);
+  --elevation-surface-container-low: var(--neutral-50);
   /* Elevation/Surface Container Lowest — Base-level surface behind all other elements. */
-  --elevation-surface-container-lowest: var(--neutral-neutral-0);
+  --elevation-surface-container-lowest: var(--neutral-0);
   /* Label/Black — Use for destructive actions or critical messages. */
   --label-black: var(--system-black-1);
   /* Label/Black Container — Use for success states or confirmations. */
@@ -453,13 +453,13 @@
   /* Label/Yellow Container — Use for warnings or caution messages. */
   --label-yellow-container: var(--system-yellow-3);
   /* Main/On Primary — No description */
-  --main-on-primary: var(--neutral-neutral-0);
+  --main-on-primary: var(--neutral-0);
   /* Main/On Primary Container — No description */
   --main-on-primary-container: var(--brand-700);
   /* Main/On Secondary — No description */
-  --main-on-secondary: var(--neutral-neutral-0);
+  --main-on-secondary: var(--neutral-0);
   /* Main/On Secondary Container — No description */
-  --main-on-secondary-container: var(--neutral-neutral-900);
+  --main-on-secondary-container: var(--neutral-900);
   /* Main/On Tertiary — No description */
   --main-on-tertiary: oklch(100% 0 89.88);
   /* Main/On Tertiary Container — No description */
@@ -469,39 +469,39 @@
   /* Main/Primary Container — No description */
   --main-primary-container: var(--brand-25);
   /* Main/Secondary — No description */
-  --main-secondary: var(--neutral-neutral-900);
+  --main-secondary: var(--neutral-900);
   /* Main/Secondary Container — No description */
-  --main-secondary-container: var(--neutral-neutral-50);
+  --main-secondary-container: var(--neutral-50);
   /* Main/Tertiary — No description */
   --main-tertiary: oklch(100% 0 89.88);
   /* Main/Tertiary Container — No description */
   --main-tertiary-container: oklch(100% 0 89.88);
   /* Outline/Outline — Default outline color for borders and focus rings. */
-  --outline-outline: var(--neutral-neutral-800);
+  --outline-outline: var(--neutral-800);
   /* Outline/Outline Active — Outline color during active click or interaction. */
-  --outline-outline-active: var(--neutral-neutral-900);
+  --outline-outline-active: var(--neutral-900);
   /* Outline/Outline Disabled — Outline color during active click or interaction. */
-  --outline-outline-disabled: var(--neutral-neutral-300);
+  --outline-outline-disabled: var(--neutral-300);
   /* Outline/Outline Focused — Outline color when an element receives keyboard focus. */
   --outline-outline-focused: var(--brand-500);
   /* Outline/Outline Hover — Outline color when hovering over an interactive element. */
-  --outline-outline-hover: var(--neutral-neutral-900);
+  --outline-outline-hover: var(--neutral-900);
   /* Outline/Outline Variant — Secondary outline variant used for subtle accents. */
-  --outline-outline-variant: var(--neutral-neutral-300);
+  --outline-outline-variant: var(--neutral-300);
   /* Outline/Outline Variant Active — Variant outline color during active state. */
-  --outline-outline-variant-active: var(--neutral-neutral-500);
+  --outline-outline-variant-active: var(--neutral-500);
   /* Outline/Outline Variant Disabled — Variant outline color during active state. */
-  --outline-outline-variant-disabled: var(--neutral-neutral-300);
+  --outline-outline-variant-disabled: var(--neutral-300);
   /* Outline/Outline Variant Focused — Variant outline color on keyboard focus. */
   --outline-outline-variant-focused: var(--brand-500);
   /* Outline/Outline Variant Hover — Variant outline color on hover. */
-  --outline-outline-variant-hover: var(--neutral-neutral-400);
+  --outline-outline-variant-hover: var(--neutral-400);
   /* State/On Surface Active — No description */
-  --state-on-surface-active: var(--neutral-neutral-900);
+  --state-on-surface-active: var(--neutral-900);
   /* State/On Surface Disabled — No description */
-  --state-on-surface-disabled: var(--neutral-neutral-500);
+  --state-on-surface-disabled: var(--neutral-500);
   /* State/On Surface Hover — No description */
-  --state-on-surface-hover: var(--neutral-neutral-800);
+  --state-on-surface-hover: var(--neutral-800);
   /* State/Primary Active — No description */
   --state-primary-active: var(--brand-600);
   /* State/Primary Disabled — No description */
@@ -511,23 +511,23 @@
   /* State/Primary Pressed — No description */
   --state-primary-pressed: var(--brand-700);
   /* Surfaces/Background — No description */
-  --surfaces-background: var(--neutral-neutral-0);
+  --surfaces-background: var(--neutral-0);
   /* Surfaces/Background Inverse — No description */
-  --surfaces-background-inverse: var(--neutral-neutral-900);
+  --surfaces-background-inverse: var(--neutral-900);
   /* Surfaces/On Surface — No description */
   --surfaces-on-surface: var(--brand-900);
   /* Surfaces/On Surface Inverse — No description */
-  --surfaces-on-surface-inverse: var(--neutral-neutral-0);
+  --surfaces-on-surface-inverse: var(--neutral-0);
   /* Surfaces/On Surface Weak Inverse — No description */
-  --surfaces-on-surface-weak-inverse: var(--neutral-neutral-100);
+  --surfaces-on-surface-weak-inverse: var(--neutral-100);
   /* Surfaces/On Surface Weakest — No description */
-  --surfaces-on-surface-weakest: var(--neutral-neutral-600);
+  --surfaces-on-surface-weakest: var(--neutral-600);
   /* Surfaces/On Surface Weakest Inverse — No description */
-  --surfaces-on-surface-weakest-inverse: var(--neutral-neutral-300);
+  --surfaces-on-surface-weakest-inverse: var(--neutral-300);
   /* Surfaces/Surface — No description */
-  --surfaces-surface: var(--neutral-neutral-0);
+  --surfaces-surface: var(--neutral-0);
   /* Surfaces/Surface Inverse — No description */
-  --surfaces-surface-inverse: var(--neutral-neutral-700);
+  --surfaces-surface-inverse: var(--neutral-700);
   /* System/Brand — No description */
   --system-brand: var(--brand-500);
   /* System/Brand Container — No description */
@@ -537,9 +537,9 @@
   /* System/Critical Container — Critical Container */
   --system-critical-container: var(--system-red-3);
   /* System/Info — Use for backgrounds communicating Info, like banners. */
-  --system-info: var(--neutral-neutral-800);
+  --system-info: var(--neutral-800);
   /* System/Info Container — Info Container */
-  --system-info-container: var(--neutral-neutral-200);
+  --system-info-container: var(--neutral-200);
   /* System/Magic (AI) — Use for backgrounds communicating AI, like banners. */
   --system-magic-ai: oklch(53.32% 0.2596 262.64);
   /* System/Magic (AI) Container — Magic (AI) Container */
@@ -553,9 +553,9 @@
   /* System/On Critical Container — Use for elements communicating critical inside small containers */
   --system-on-critical-container: var(--system-red-4);
   /* System/On Info — Use for text communicating info. */
-  --system-on-info: var(--neutral-neutral-0);
+  --system-on-info: var(--neutral-0);
   /* System/On Info Container — Use for elements communicating info inside small containers */
-  --system-on-info-container: var(--neutral-neutral-800);
+  --system-on-info-container: var(--neutral-800);
   /* System/On Magic (AI) — Use for text communicating AI. */
   --system-on-magic-ai: oklch(53.32% 0.2596 262.64);
   /* System/On Magic (AI) Container — Use for elements communicating AI inside small containers */
@@ -577,7 +577,7 @@
   /* System/Warning Container — Warning Container */
   --system-warning-container: var(--system-orange-3);
   /* Surfaces/On Surface Weak — No description */
-  --var-on-surface-weak: var(--neutral-neutral-800);
+  --var-on-surface-weak: var(--neutral-800);
 }
 
 /* ── Collection: Shadows ───────────────────────────── */
