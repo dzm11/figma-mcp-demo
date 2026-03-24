@@ -33,3 +33,7 @@ storybook-static
 
 # Local temporary design exports
 .tmp/
+
+# Figma asset cache (downloaded SVGs/PNGs, not source-controlled)
+.figma-assets/
+.figma-assets-2/
