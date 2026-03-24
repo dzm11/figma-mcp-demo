@@ -19,6 +19,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     env:
+      NODE_OPTIONS: --max-old-space-size=4096
       FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
       FIGMA_FILE_KEY: ${{ github.event.inputs.file_key != '' && github.event.inputs.file_key || secrets.FIGMA_FILE_KEY }}
     steps:
@@ -33,9 +34,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Increase Node.js heap memory
-        run: echo "NODE_OPTIONS=--max-old-space-size=4096" >> $GITHUB_ENV
 
       - name: Verify required Figma secrets
         run: |
