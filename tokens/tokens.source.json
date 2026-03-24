@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-23T23:30:27.654Z",
+  "generatedAt": "2026-03-24T10:48:08.176Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -527,268 +527,6 @@
           }
         },
         {
-          "id": "VariableID:56102:225638",
-          "figmaName": "Color/Neutrals/Neutral0",
-          "codeSyntax": "color-neutrals-neutral0",
-          "cssVar": "--color-neutrals-neutral0",
-          "scssVar": "$color-neutrals-neutral0",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189065",
-          "figmaName": "Color/Neutrals/Neutral50",
-          "codeSyntax": "color-neutrals-neutral50",
-          "cssVar": "--color-neutrals-neutral50",
-          "scssVar": "$color-neutrals-neutral50",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.9607843160629272,
-                "g": 0.9686274528503418,
-                "b": 0.9803921580314636,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189064",
-          "figmaName": "Color/Neutrals/Neutral100",
-          "codeSyntax": "color-neutrals-neutral100",
-          "cssVar": "--color-neutrals-neutral100",
-          "scssVar": "$color-neutrals-neutral100",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.9450980424880981,
-                "g": 0.9647058844566345,
-                "b": 0.9960784316062927,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189063",
-          "figmaName": "Color/Neutrals/Neutral200",
-          "codeSyntax": "color-neutrals-neutral200",
-          "cssVar": "--color-neutrals-neutral200",
-          "scssVar": "$color-neutrals-neutral200",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.8784313797950745,
-                "g": 0.9215686321258545,
-                "b": 0.9960784316062927,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189062",
-          "figmaName": "Color/Neutrals/Neutral300",
-          "codeSyntax": "color-neutrals-neutral300",
-          "cssVar": "--color-neutrals-neutral300",
-          "scssVar": "$color-neutrals-neutral300",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.8313725590705872,
-                "g": 0.8509804010391235,
-                "b": 0.8941176533699036,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189061",
-          "figmaName": "Color/Neutrals/Neutral400",
-          "codeSyntax": "color-neutrals-neutral400",
-          "cssVar": "--color-neutrals-neutral400",
-          "scssVar": "$color-neutrals-neutral400",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.6941176652908325,
-                "g": 0.729411780834198,
-                "b": 0.7960784435272217,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:58039:220915",
-          "figmaName": "Color/Neutrals/Neutral500",
-          "codeSyntax": "color-neutrals-neutral500",
-          "cssVar": "--color-neutrals-neutral500",
-          "scssVar": "$color-neutrals-neutral500",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.64000004529953,
-                "g": 0.6815385222434998,
-                "b": 0.7599999904632568,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189060",
-          "figmaName": "Color/Neutrals/Neutral600",
-          "codeSyntax": "color-neutrals-neutral600",
-          "cssVar": "--color-neutrals-neutral600",
-          "scssVar": "$color-neutrals-neutral600",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.5058823823928833,
-                "g": 0.5568627715110779,
-                "b": 0.6509804129600525,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:58039:203735",
-          "figmaName": "Color/Neutrals/Neutral700",
-          "codeSyntax": "color-neutrals-neutral700",
-          "cssVar": "--color-neutrals-neutral700",
-          "scssVar": "$color-neutrals-neutral700",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.5088770389556885,
-                "g": 0.5658822655677795,
-                "b": 0.6711229681968689,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189059",
-          "figmaName": "Color/Neutrals/Neutral800",
-          "codeSyntax": "color-neutrals-neutral800",
-          "cssVar": "--color-neutrals-neutral800",
-          "scssVar": "$color-neutrals-neutral800",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.3843137323856354,
-                "g": 0.4588235318660736,
-                "b": 0.5803921818733215,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189058",
-          "figmaName": "Color/Neutrals/Neutral900",
-          "codeSyntax": "color-neutrals-neutral900",
-          "cssVar": "--color-neutrals-neutral900",
-          "scssVar": "$color-neutrals-neutral900",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.2235294133424759,
-                "g": 0.2666666805744171,
-                "b": 0.34117648005485535,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
           "id": "VariableID:46257:248",
           "figmaName": "Color/[old] Gray/600",
           "codeSyntax": "color-old-gray-600",
@@ -855,30 +593,6 @@
                 "r": 1,
                 "g": 1,
                 "b": 1,
-                "a": 1
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:225345",
-          "figmaName": "Color/Status/Blue2",
-          "codeSyntax": "color-status-blue2",
-          "cssVar": "--color-status-blue2",
-          "scssVar": "$color-status-blue2",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.16078431904315948,
-                "g": 0.7372549176216125,
-                "b": 0.9215686321258545,
                 "a": 1
               }
             }
@@ -10111,163 +9825,6 @@
           }
         },
         {
-          "id": "VariableID:72354:439692",
-          "figmaName": "Surfaces/Background",
-          "codeSyntax": "html-token-name",
-          "cssVar": "--html-token-name",
-          "scssVar": "$html-token-name",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:72354:439679",
-              "targetCodeSyntax": "neutral-neutral-0"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:249166",
-          "figmaName": "Icons/Brand/disabled",
-          "codeSyntax": "icons-brand-disabled",
-          "cssVar": "--icons-brand-disabled",
-          "scssVar": "$icons-brand-disabled",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL",
-            "STROKE_COLOR"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:249164",
-          "figmaName": "Icons/Brand/primary",
-          "codeSyntax": "icons-brand-primary",
-          "cssVar": "--icons-brand-primary",
-          "scssVar": "$icons-brand-primary",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL",
-            "STROKE_COLOR"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:249163",
-          "figmaName": "Icons/Neutral/default",
-          "codeSyntax": "icons-neutral-default",
-          "cssVar": "--icons-neutral-default",
-          "scssVar": "$icons-neutral-default",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:189060",
-              "targetCodeSyntax": "color-neutrals-neutral600"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:249165",
-          "figmaName": "Icons/Neutral/neutral-disabled",
-          "codeSyntax": "icons-neutral-neutral-disabled",
-          "cssVar": "--icons-neutral-neutral-disabled",
-          "scssVar": "$icons-neutral-neutral-disabled",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL",
-            "STROKE_COLOR"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.5607843399047852,
-                "g": 0.6117647290229797,
-                "b": 0.7058823704719543,
-                "a": 0.5
-              }
-            }
-          }
-        },
-        {
-          "id": "VariableID:56149:39222",
-          "figmaName": "Icons/Neutral/white",
-          "codeSyntax": "icons-neutral-white",
-          "cssVar": "--icons-neutral-white",
-          "scssVar": "$icons-neutral-white",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL",
-            "STROKE_COLOR"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:225638",
-              "targetCodeSyntax": "color-neutrals-neutral0"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56156:89687",
-          "figmaName": "Icons/Neutral/white-disabled",
-          "codeSyntax": "icons-neutral-white-disabled",
-          "cssVar": "--icons-neutral-white-disabled",
-          "scssVar": "$icons-neutral-white-disabled",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL",
-            "STROKE_COLOR"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 0.30000001192092896
-              }
-            }
-          }
-        },
-        {
           "id": "VariableID:73400:1912",
           "figmaName": "Label/Black",
           "codeSyntax": "label-black",
@@ -11584,11 +11141,11 @@
           }
         },
         {
-          "id": "VariableID:56102:225510",
-          "figmaName": "Status/blue-elements",
-          "codeSyntax": "status-blue-elements",
-          "cssVar": "--status-blue-elements",
-          "scssVar": "$status-blue-elements",
+          "id": "VariableID:72354:439692",
+          "figmaName": "Surfaces/Background",
+          "codeSyntax": "surfaces-background",
+          "cssVar": "--surfaces-background",
+          "scssVar": "$surfaces-background",
           "type": "COLOR",
           "description": "",
           "hiddenFromPublishing": false,
@@ -11598,164 +11155,8 @@
           "valuesByMode": {
             "Splash": {
               "kind": "alias",
-              "targetVariableId": "VariableID:56102:225345",
-              "targetCodeSyntax": "color-status-blue2"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189054",
-          "figmaName": "Status/error-elements",
-          "codeSyntax": "status-error-elements",
-          "cssVar": "--status-error-elements",
-          "scssVar": "$status-error-elements",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189055",
-          "figmaName": "Status/error-text",
-          "codeSyntax": "status-error-text",
-          "cssVar": "--status-error-text",
-          "scssVar": "$status-error-text",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56112:254430",
-          "figmaName": "Status/purple-elements",
-          "codeSyntax": "status-purple-elements",
-          "cssVar": "--status-purple-elements",
-          "scssVar": "$status-purple-elements",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189048",
-          "figmaName": "Status/success-elements",
-          "codeSyntax": "status-success-elements",
-          "cssVar": "--status-success-elements",
-          "scssVar": "$status-success-elements",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189051",
-          "figmaName": "Status/warning-elements",
-          "codeSyntax": "status-warning-elements",
-          "cssVar": "--status-warning-elements",
-          "scssVar": "$status-warning-elements",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:189052",
-          "figmaName": "Status/warning-text",
-          "codeSyntax": "status-warning-text",
-          "cssVar": "--status-warning-text",
-          "scssVar": "$status-warning-text",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "ALL_SCOPES"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "string",
-              "value": "unresolved-alias"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56394:177333",
-          "figmaName": "Surface/bg-1",
-          "codeSyntax": "surface-bg-1",
-          "cssVar": "--surface-bg-1",
-          "scssVar": "$surface-bg-1",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:225638",
-              "targetCodeSyntax": "color-neutrals-neutral0"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56120:258813",
-          "figmaName": "Surface/card",
-          "codeSyntax": "surface-card",
-          "cssVar": "--surface-card",
-          "scssVar": "$surface-card",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "FRAME_FILL",
-            "SHAPE_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:225638",
-              "targetCodeSyntax": "color-neutrals-neutral0"
+              "targetVariableId": "VariableID:72354:439679",
+              "targetCodeSyntax": "neutral-neutral-0"
             }
           }
         },
@@ -12416,86 +11817,6 @@
           }
         },
         {
-          "id": "VariableID:57766:34770",
-          "figmaName": "Text/Color/Components/Elements/label",
-          "codeSyntax": "text-color-components-elements-label",
-          "cssVar": "--text-color-components-elements-label",
-          "scssVar": "$text-color-components-elements-label",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "TEXT_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:189059",
-              "targetCodeSyntax": "color-neutrals-neutral800"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:225661",
-          "figmaName": "Text/Color/Page Contents/header-page",
-          "codeSyntax": "text-color-page-contents-header-page",
-          "cssVar": "--text-color-page-contents-header-page",
-          "scssVar": "$text-color-page-contents-header-page",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "TEXT_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:189058",
-              "targetCodeSyntax": "color-neutrals-neutral900"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:225662",
-          "figmaName": "Text/Color/Page Contents/header-section",
-          "codeSyntax": "text-color-page-contents-header-section",
-          "cssVar": "--text-color-page-contents-header-section",
-          "scssVar": "$text-color-page-contents-header-section",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "TEXT_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:189058",
-              "targetCodeSyntax": "color-neutrals-neutral900"
-            }
-          }
-        },
-        {
-          "id": "VariableID:56102:225667",
-          "figmaName": "Text/Color/Page Contents/white",
-          "codeSyntax": "text-color-page-contents-white",
-          "cssVar": "--text-color-page-contents-white",
-          "scssVar": "$text-color-page-contents-white",
-          "type": "COLOR",
-          "description": "",
-          "hiddenFromPublishing": false,
-          "scopes": [
-            "TEXT_FILL"
-          ],
-          "valuesByMode": {
-            "Splash": {
-              "kind": "alias",
-              "targetVariableId": "VariableID:56102:225638",
-              "targetCodeSyntax": "color-neutrals-neutral0"
-            }
-          }
-        },
-        {
           "id": "VariableID:72354:439696",
           "figmaName": "Surfaces/On Surface Weak",
           "codeSyntax": "var-on-surface-weak",
@@ -12821,8 +12142,8 @@
           "valuesByMode": {
             "Splash": {
               "kind": "number",
-              "value": -0.33000001311302185,
-              "unit": ""
+              "value": -0.33,
+              "unit": "px"
             }
           }
         },
@@ -12841,8 +12162,8 @@
           "valuesByMode": {
             "Splash": {
               "kind": "number",
-              "value": -0.949999988079071,
-              "unit": ""
+              "value": -0.95,
+              "unit": "px"
             }
           }
         },
@@ -12861,8 +12182,8 @@
           "valuesByMode": {
             "Splash": {
               "kind": "number",
-              "value": -1.2400000095367432,
-              "unit": ""
+              "value": -1.24,
+              "unit": "px"
             }
           }
         },
@@ -12882,7 +12203,7 @@
             "Splash": {
               "kind": "number",
               "value": 0,
-              "unit": ""
+              "unit": "px"
             }
           }
         },
@@ -13073,7 +12394,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15000000596046448), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15000000596046448)"
+              "value": "inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15)"
             }
           }
         },
@@ -13091,7 +12412,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "inset 0px 2px 1px 0px rgba(26, 26, 26, 0.20000000298023224), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099)"
+              "value": "inset 0px 2px 1px 0px rgba(26, 26, 26, 0.2), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.12), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.12)"
             }
           }
         },
@@ -13109,7 +12430,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 1px 3px 2px rgba(26, 26, 26, 0.07999999821186066)"
+              "value": "0px 1px 3px 2px rgba(26, 26, 26, 0.08)"
             }
           }
         },
@@ -13127,7 +12448,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 2px 3px -1px rgba(26, 26, 26, 0.07000000029802322)"
+              "value": "0px 2px 3px -1px rgba(26, 26, 26, 0.07)"
             }
           }
         },
@@ -13145,7 +12466,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 4px 6px -2px rgba(26, 26, 26, 0.20000000298023224)"
+              "value": "0px 4px 6px -2px rgba(26, 26, 26, 0.2)"
             }
           }
         },
@@ -13163,7 +12484,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 8px 16px -4px rgba(26, 26, 26, 0.2199999988079071)"
+              "value": "0px 8px 16px -4px rgba(26, 26, 26, 0.22)"
             }
           }
         },
@@ -13181,7 +12502,7 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 12px 20px -8px rgba(26, 26, 26, 0.23999999463558197)"
+              "value": "0px 12px 20px -8px rgba(26, 26, 26, 0.24)"
             }
           }
         },
@@ -13199,11 +12520,338 @@
           "valuesByMode": {
             "Default": {
               "kind": "string",
-              "value": "0px 20px 20px -8px rgba(26, 26, 26, 0.2800000011920929)"
+              "value": "0px 20px 20px -8px rgba(26, 26, 26, 0.28)"
             }
           }
         }
       ]
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "0ae256879783bbb300b8d632d92f4aa86ab5b371",
+      "figmaName": "Body/body-lg-16/bold",
+      "className": "body-lg-16-bold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "lineHeight": 24,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "2e6fe74f366a48b08a8cdb99d29cf7944e67a7e2",
+      "figmaName": "Body/body-lg-16/medium",
+      "className": "body-lg-16-medium",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": 24,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "a55d21858c3952b1df650087abfc3d389b7a48a0",
+      "figmaName": "Body/body-lg-16/regular",
+      "className": "body-lg-16-regular",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 24,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "5de8148848ed42182865a9bcb594a6a3cb3d93e3",
+      "figmaName": "Body/body-lg-16/semibold",
+      "className": "body-lg-16-semibold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 600,
+        "lineHeight": 24,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "b9951c2398059287ec14451f40bc85c44f83e1cb",
+      "figmaName": "Body/body-lg-16/underline",
+      "className": "body-lg-16-underline",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 24,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "512ef7f83ed1d1964ad3fea681828e0a51a4b127",
+      "figmaName": "Body/body-md-14/bold",
+      "className": "body-md-14-bold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 20,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "6427d4255ad9bde93553c15634cebb0c3f69659c",
+      "figmaName": "Body/body-md-14/medium",
+      "className": "body-md-14-medium",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 20,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "a296dbbab89fff4f6adcded09584671c88da3add",
+      "figmaName": "Body/body-md-14/regular",
+      "className": "body-md-14-regular",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "lineHeight": 20,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "7546690ae3d0dfb890c751409b68c4e69e9b7554",
+      "figmaName": "Body/body-md-14/semibold",
+      "className": "body-md-14-semibold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "lineHeight": 20,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "c0916576ea71266b322ddff24933f5c02212ff1c",
+      "figmaName": "Body/body-md-14/underline",
+      "className": "body-md-14-underline",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "lineHeight": 20,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "386f038a455732522cfa3baaab9bef64bcea923a",
+      "figmaName": "Body/body-sm-12/bold",
+      "className": "body-sm-12-bold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "lineHeight": 18,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "77e6e6541bb908416b618420d805bc0a76e8e4d3",
+      "figmaName": "Body/body-sm-12/medium",
+      "className": "body-sm-12-medium",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 18,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "30d2352a76369449e7f96ecbbbc7477d6a0eb9c2",
+      "figmaName": "Body/body-sm-12/regular",
+      "className": "body-sm-12-regular",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "lineHeight": 18,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "b4d56a5c3c5408a14248c24a4f505d307a3ff97f",
+      "figmaName": "Body/body-sm-12/semibold",
+      "className": "body-sm-12-semibold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "lineHeight": 18,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "c66658b7c58652cc199102a55d8cdea48992d7cc",
+      "figmaName": "Body/body-sm-12/underline",
+      "className": "body-sm-12-underline",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "lineHeight": 18,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "6537407c0b176bed59dcfa7ecfacd9ed3da49636",
+      "figmaName": "Body/body-xs-10/bold",
+      "className": "body-xs-10-bold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 10,
+        "fontWeight": 700,
+        "lineHeight": 16,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "ba0f5074e565ac2b76ae3464f037e432a803536f",
+      "figmaName": "Body/body-xs-10/medium",
+      "className": "body-xs-10-medium",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 10,
+        "fontWeight": 500,
+        "lineHeight": 16,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "96c227b4bb2f39ed784ba4b81d0009ed6f53c9cb",
+      "figmaName": "Body/body-xs-10/regular",
+      "className": "body-xs-10-regular",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 10,
+        "fontWeight": 400,
+        "lineHeight": 16,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "6eb91d7281acc0cf8ee80709194f30a18be7cb46",
+      "figmaName": "Body/body-xs-10/semibold",
+      "className": "body-xs-10-semibold",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "lineHeight": 16,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "df5ee11247d95de9675284bf1e40773669830c51",
+      "figmaName": "Heading/heading-2xl",
+      "className": "heading-2xl",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 32,
+        "fontWeight": 600,
+        "lineHeight": 40,
+        "letterSpacing": -1.2400000095367432
+      }
+    },
+    {
+      "id": "d8b68a1cd0552f779392df785eb5b1042c5eb117",
+      "figmaName": "Heading/heading-3xl",
+      "className": "heading-3xl",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 40,
+        "fontWeight": 600,
+        "lineHeight": 48,
+        "letterSpacing": -1.2400000095367432
+      }
+    },
+    {
+      "id": "c2cf700ee805d2fccb67081a5ef78fb9d67caded",
+      "figmaName": "Heading/heading-lg",
+      "className": "heading-lg",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": 600,
+        "lineHeight": 24,
+        "letterSpacing": -0.949999988079071
+      }
+    },
+    {
+      "id": "e92352e05521060296b1327c5fd79589ebcf807b",
+      "figmaName": "Heading/heading-md",
+      "className": "heading-md",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 600,
+        "lineHeight": 24,
+        "letterSpacing": -0.33000001311302185
+      }
+    },
+    {
+      "id": "21fe8b321aacaee8e87d4966d2ff7ab6ca031313",
+      "figmaName": "Heading/heading-sm",
+      "className": "heading-sm",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "lineHeight": 20,
+        "letterSpacing": -0.33000001311302185
+      }
+    },
+    {
+      "id": "3ea1ee3c57031a9d858a85b8b75f09a570900b41",
+      "figmaName": "Heading/heading-xl",
+      "className": "heading-xl",
+      "description": "",
+      "values": {
+        "fontFamily": "Inter",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "lineHeight": 32,
+        "letterSpacing": -0.949999988079071
+      }
     }
   ]
 }

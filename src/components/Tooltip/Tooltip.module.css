@@ -11,12 +11,6 @@
   max-width: 350px;
 }
 
-.tone-default {
-  --tooltip-surface: var(--surfaces-surface);
-  --tooltip-title: var(--surfaces-on-surface);
-  --tooltip-description: var(--var-on-surface-weak);
-}
-
 .tone-inverse {
   --tooltip-surface: var(--surfaces-background-inverse);
   --tooltip-title: var(--surfaces-on-surface-inverse);
@@ -31,7 +25,7 @@
   padding: var(--spacing-space-12);
   border-radius: var(--border-radius-4);
   background-color: var(--tooltip-surface);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-3);
 }
 
 .arrowSlot {
@@ -58,21 +52,11 @@
 
 .title {
   margin: 0;
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-12);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-1125);
-  letter-spacing: var(--letter-spacing-normal);
   color: var(--tooltip-title);
 }
 
 .description {
   margin: 0;
   max-width: 326px;
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-12);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-1125);
-  letter-spacing: var(--letter-spacing-normal);
   color: var(--tooltip-description);
 }

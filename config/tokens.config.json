@@ -5,6 +5,7 @@
   },
   "cssSelectorByModeName": {
     "Splash": ":root",
+    "Default": ":root, [data-theme=\"default\"]",
     "Light": ":root",
     "Dark": "[data-theme=\"dark\"]"
   },
@@ -40,6 +41,10 @@
       "unit": "px"
     },
     {
+      "match": "^letter-spacing-",
+      "unit": "px"
+    },
+    {
       "match": "^border-width-",
       "unit": "px"
     },
@@ -58,7 +63,7 @@
   ],
   "output": {
     "sourceJson": "tokens/tokens.source.json",
-    "scssFile": "src/styles/generated/_tokens.scss",
-    "cssFile": "src/styles/tokens.css"
+    "cssFile": "src/styles/tokens.css",
+    "typographyCssFile": "src/styles/typography.css"
   }
 }

@@ -39,7 +39,15 @@ export const Avatar: React.FC<AvatarProps> = ({
     .join(' ');
 
   const avatarClassName = [styles.avatar, styles[`avatar-${type}`]].join(' ');
-  const initialsClassName = [styles.initials, styles[`initials-${size}`]].join(' ');
+  const initialsTypographyClassName = {
+    xs: 'body-xs-10-bold',
+    s: 'body-sm-12-bold',
+    m: 'body-md-14-semibold',
+    l: 'body-md-14-semibold',
+    xl: 'body-lg-16-semibold',
+  }[size];
+
+  const initialsClassName = [styles.initials, 'text-inline-center', initialsTypographyClassName].join(' ');
 
   return (
     <div className={rootClassName}>
@@ -56,7 +64,7 @@ export const Avatar: React.FC<AvatarProps> = ({
       </span>
 
       {showText && (
-        <span className={styles.textGroup}>
+          <span className={[styles.textGroup, 'body-md-14-regular'].join(' ')}>
           {showSubtext && <span className={styles.subtext}>{subtext}</span>}
           <span className={styles.text}>{text}</span>
         </span>

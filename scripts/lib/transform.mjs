@@ -32,6 +32,14 @@ function getWebCodeSyntax(variable) {
   );
 }
 
+function roundFloatValue(value, precision = 2) {
+  if (typeof value !== "number") {
+    return value;
+  }
+
+  return Number(value.toFixed(precision));
+}
+
 // ── normalizeModeValue ────────────────────────────────────────────────────
 
 /**
@@ -74,7 +82,7 @@ function normalizeModeValue(rawValue, tokenSyntax, resolvedType, floatUnitRules)
 
     return {
       kind: "number",
-      value: rawValue,
+      value: roundFloatValue(rawValue, 2),
       unit
     };
   }
@@ -242,6 +250,101 @@ export function transformFigmaVariablesToSource(payload, config) {
   };
 }
 
+function normalizeTextStyleClassName(styleName) {
+  const slug = normalizeTokenName(styleName)
+    .replace(/^-+|-+$/g, "")
+    .replace(/^body-body-/, "body-")
+    .replace(/^heading-heading-/, "heading-");
+
+  return slug;
+}
+
+function normalizeLetterSpacing(style) {
+  if (typeof style.letterSpacing !== "number") {
+    return 0;
+  }
+
+  if (style.letterSpacingUnit === "PERCENT") {
+    const fontSize = typeof style.fontSize === "number" ? style.fontSize : 0;
+    return (fontSize * style.letterSpacing) / 100;
+  }
+
+  return style.letterSpacing;
+}
+
+function readLineHeight(style) {
+  if (style.lineHeightUnit === "PIXELS" && typeof style.lineHeightPx === "number") {
+    return style.lineHeightPx;
+  }
+
+  if (style.lineHeightUnit === "FONT_SIZE_%" && typeof style.lineHeightPercentFontSize === "number") {
+    const fontSize = typeof style.fontSize === "number" ? style.fontSize : 0;
+    return (fontSize * style.lineHeightPercentFontSize) / 100;
+  }
+
+  if (style.lineHeightUnit === "INTRINSIC_%" && typeof style.lineHeightPercent === "number") {
+    const fontSize = typeof style.fontSize === "number" ? style.fontSize : 0;
+    return (fontSize * style.lineHeightPercent) / 100;
+  }
+
+  return null;
+}
+
+/**
+ * Transform Figma TEXT styles into normalized typography style definitions.
+ *
+ * Output entries are later translated into reusable CSS utility classes.
+ */
+export function transformFigmaTextStylesToSource(stylesPayload, nodesPayload) {
+  const styles = stylesPayload?.meta?.styles || [];
+  const nodesMap = nodesPayload?.nodes || {};
+  const textStyles = [];
+
+  for (const styleMeta of styles) {
+    if (styleMeta.style_type !== "TEXT") {
+      continue;
+    }
+
+    const nodeData = nodesMap[styleMeta.node_id];
+    const style = nodeData?.document?.style;
+
+    if (!style) {
+      continue;
+    }
+
+    const fontFamily = style.fontFamily || "";
+    const fontSize = typeof style.fontSize === "number" ? style.fontSize : null;
+    const fontWeight = typeof style.fontWeight === "number" ? style.fontWeight : null;
+    const lineHeightPx = readLineHeight(style);
+    const letterSpacingPx = normalizeLetterSpacing(style);
+
+    if (!fontFamily || fontSize === null || fontWeight === null || lineHeightPx === null) {
+      continue;
+    }
+
+    textStyles.push({
+      id: styleMeta.key || styleMeta.node_id,
+      figmaName: styleMeta.name,
+      className: normalizeTextStyleClassName(styleMeta.name),
+      description: styleMeta.description || "",
+      values: {
+        fontFamily,
+        fontSize,
+        fontWeight,
+        lineHeight: lineHeightPx,
+        letterSpacing: letterSpacingPx
+      }
+    });
+  }
+
+  return textStyles.sort((a, b) =>
+    a.figmaName.localeCompare(b.figmaName, "en", {
+      numeric: true,
+      sensitivity: "base"
+    })
+  );
+}
+
 /**
  * Transform Figma Style metadata + Node details into a "Shadows" collection
  * of shadow tokens compatible with the variables schema.
@@ -254,6 +357,18 @@ export function transformFigmaVariablesToSource(payload, config) {
  * Both DROP_SHADOW and INNER_SHADOW effects are extracted.
  */
 export function transformFigmaStylesToSource(stylesPayload, nodesPayload) {
+  const roundToTwoDecimals = (value) =>
+    Math.round((Number(value) + Number.EPSILON) * 100) / 100;
+
+  const formatShadowNumber = (value) => {
+    const rounded = roundToTwoDecimals(value);
+    if (Number.isInteger(rounded)) {
+      return String(rounded);
+    }
+
+    return rounded.toFixed(2).replace(/\.?0+$/, "");
+  };
+
   const styles = stylesPayload?.meta?.styles || [];
   const nodesMap = nodesPayload?.nodes || {};
   const shadowTokens = [];
@@ -282,17 +397,20 @@ export function transformFigmaStylesToSource(stylesPayload, nodesPayload) {
     const shadows = effects
       .filter((e) => e.type === "DROP_SHADOW" || e.type === "INNER_SHADOW")
       .map((effect) => {
-        const offsetX = effect.offset?.x || 0;
-        const offsetY = effect.offset?.y || 0;
-        const blur = effect.radius || 0;
-        const spread = effect.spread || 0;
+        const offsetX = formatShadowNumber(effect.offset?.x || 0);
+        const offsetY = formatShadowNumber(effect.offset?.y || 0);
+        const blur = formatShadowNumber(effect.radius || 0);
+        const spread = formatShadowNumber(effect.spread || 0);
         const color = effect.color || { r: 0, g: 0, b: 0, a: 1 };
 
         // Convert Figma color (0-1 float) to RGB (0-255)
         const r = Math.round(color.r * 255);
         const g = Math.round(color.g * 255);
         const b = Math.round(color.b * 255);
-        const a = typeof color.a === "number" ? color.a : 1;
+        const a =
+          typeof color.a === "number"
+            ? formatShadowNumber(color.a)
+            : "1";
 
         const colorStr =
           a < 1

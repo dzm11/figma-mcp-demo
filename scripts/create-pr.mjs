@@ -40,10 +40,9 @@ function run(command) {
 }
 
 function main() {
-  // Paths that are diffed and committed — source JSON + both generated files.
+  // Paths that are diffed and committed — source JSON + generated CSS file.
   const trackedPaths = [
     config.output.sourceJson,
-    config.output.scssFile,
     config.output.cssFile
   ];
 
@@ -82,7 +81,6 @@ function main() {
     "",
     "**Changed files:**",
     `- \`${config.output.sourceJson}\``,
-    `- \`${config.output.scssFile}\``,
     `- \`${config.output.cssFile}\``,
     "",
     `**Collections:** ${summary.collectionCount}`,

@@ -4,8 +4,7 @@
  * Step 2 of the token pipeline.
  *
  * Reads tokens/tokens.source.json and generates:
- *   - src/styles/generated/_tokens.scss  (internal SCSS variables)
- *   - src/styles/tokens.css              (final app-facing CSS custom properties)
+ *   - src/styles/tokens.css  (final app-facing CSS custom properties)
  *
  * Usage:
  *   npm run tokens:build
@@ -15,7 +14,7 @@
  * existing source JSON without hitting the Figma API.
  */
 import { readJsonFile, writeTextFile, logStep, logSuccess } from "./lib/utils.mjs";
-import { buildCss, buildScss, buildSummary } from "./lib/generate.mjs";
+import { buildCss, buildSummary, buildTypographyCss } from "./lib/generate.mjs";
 
 const config = readJsonFile("config/tokens.config.json");
 
@@ -23,17 +22,17 @@ function main() {
   logStep(`Reading source JSON from ${config.output.sourceJson}`);
   const sourceJson = readJsonFile(config.output.sourceJson);
 
-  logStep("Generating internal SCSS variables file");
-  const scss = buildScss(sourceJson, config);
-
   logStep("Generating final CSS token file");
   const css = buildCss(sourceJson, config);
-
-  logStep(`Writing SCSS → ${config.output.scssFile}`);
-  writeTextFile(config.output.scssFile, scss);
+  const typographyCss = buildTypographyCss(sourceJson, config);
 
   logStep(`Writing CSS  → ${config.output.cssFile}`);
   writeTextFile(config.output.cssFile, css);
+
+  if (config.output.typographyCssFile) {
+    logStep(`Writing typography CSS  → ${config.output.typographyCssFile}`);
+    writeTextFile(config.output.typographyCssFile, typographyCss);
+  }
 
   const summary = buildSummary(sourceJson);
 

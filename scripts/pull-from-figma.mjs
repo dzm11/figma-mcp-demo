@@ -1,7 +1,8 @@
 import { fetchLocalVariables, fetchLocalStyles, fetchNodeDetails } from "./lib/figma.mjs";
 import {
   transformFigmaVariablesToSource,
-  transformFigmaStylesToSource
+  transformFigmaStylesToSource,
+  transformFigmaTextStylesToSource
 } from "./lib/transform.mjs";
 import { readJsonFile, writeJsonFile, logStep, logSuccess } from "./lib/utils.mjs";
 
@@ -17,16 +18,28 @@ async function main() {
   logStep("Transforming API payload into source JSON");
   const sourceJson = transformFigmaVariablesToSource(variablesPayload, config);
 
-  // Extract shadow tokens: first collect EFFECT style node IDs, then fetch node details
-  logStep("Extracting shadow styles");
-  const effectNodeIds = (stylesPayload?.meta?.styles || [])
+  // Extract style-backed artifacts: collect EFFECT + TEXT style node IDs,
+  // fetch details once, then derive shadows and typography styles.
+  const allStyles = stylesPayload?.meta?.styles || [];
+  const effectNodeIds = allStyles
     .filter((style) => style.style_type === "EFFECT")
     .map((style) => style.node_id);
 
-  if (effectNodeIds.length > 0) {
-    logStep(`Fetching details for ${effectNodeIds.length} shadow effect node(s)`);
-    const nodesPayload = await fetchNodeDetails(effectNodeIds);
+  const textNodeIds = allStyles
+    .filter((style) => style.style_type === "TEXT")
+    .map((style) => style.node_id);
 
+  const uniqueNodeIds = [...new Set([...effectNodeIds, ...textNodeIds])];
+
+  let nodesPayload = null;
+  if (uniqueNodeIds.length > 0) {
+    logStep(`Fetching details for ${uniqueNodeIds.length} style node(s)`);
+    nodesPayload = await fetchNodeDetails(uniqueNodeIds);
+  }
+
+  logStep("Extracting shadow styles");
+
+  if (effectNodeIds.length > 0) {
     const shadowsCollection = transformFigmaStylesToSource(
       stylesPayload,
       nodesPayload
@@ -41,6 +54,14 @@ async function main() {
       "No shadow styles found in Figma file (no EFFECT style types detected)"
     );
   }
+
+  logStep("Extracting typography styles");
+  const textStyles = transformFigmaTextStylesToSource(
+    stylesPayload,
+    nodesPayload
+  );
+  sourceJson.textStyles = textStyles;
+  logSuccess(`Found ${textStyles.length} typography style(s)`);
 
   logStep(`Writing source JSON to ${config.output.sourceJson}`);
   writeJsonFile(config.output.sourceJson, sourceJson);

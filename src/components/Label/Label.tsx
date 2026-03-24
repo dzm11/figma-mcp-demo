@@ -26,7 +26,7 @@ export const Label: React.FC<LabelProps> = ({
   type = 'default',
 }) => (
   <span
-    className={styles.label}
+    className={[styles.label, 'body-xs-10-bold'].join(' ')}
     style={
       {
         '--_label-bg': isStrong
@@ -39,7 +39,7 @@ export const Label: React.FC<LabelProps> = ({
     }
   >
     {type === 'icon' && (
-      <span className={styles.iconSlot}>
+      <span className={[styles.iconSlot, 'text-inline-center'].join(' ')}>
         <LockIcon />
       </span>
     )}

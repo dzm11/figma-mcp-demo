@@ -108,6 +108,7 @@ function formatLiteralValue(token, modeValue, config) {
   if (modeValue.kind === "number") {
     const isLineHeight = /^line-height-/.test(token.codeSyntax);
     const isBorderSize = /^border-(radius|weight|width)-/.test(token.codeSyntax);
+    const isLetterSpacing = /^letter-spacing-/.test(token.codeSyntax);
 
     // Keep line-height values as defined in tokens (no rem/percent conversion).
     if (isLineHeight) {
@@ -116,6 +117,11 @@ function formatLiteralValue(token, modeValue, config) {
 
     // Keep border size tokens in px to avoid downstream unit math in components.
     if (isBorderSize && modeValue.unit === "px") {
+      return `${modeValue.value}px`;
+    }
+
+    // Keep letter-spacing in px to match typography token usage in components.
+    if (isLetterSpacing && modeValue.unit === "px") {
       return `${modeValue.value}px`;
     }
 
@@ -384,6 +390,12 @@ export function buildCss(sourceJson, config) {
   lines.push("");
 
   for (const collection of collections) {
+    // Typography tokens are emitted in typography.css together with
+    // typography utility classes to keep all text primitives in one place.
+    if (collection.name === "Typography") {
+      continue;
+    }
+
     lines.push(`/* ── Collection: ${collection.name} ───────────────────────────── */`);
     lines.push("");
 
@@ -399,6 +411,11 @@ export function buildCss(sourceJson, config) {
       const sortedTokens = sortTokensForScss(collection.tokens, mode.name);
 
       for (const token of sortedTokens) {
+        if (collection.name === "Tokens") {
+          const description = safeCommentText(token.description || "No description");
+          lines.push(`  /* ${token.figmaName} — ${description} */`);
+        }
+
         const value = toCssValue(token, token.valuesByMode?.[mode.name], config);
         lines.push(`  --${token.codeSyntax}: ${value};`);
       }
@@ -415,6 +432,281 @@ export function buildCss(sourceJson, config) {
       lines.push("}");
       lines.push("");
     }
+  }
+
+  return lines.join("\n");
+}
+
+function toNumberKey(value) {
+  return String(round(Number(value), 4));
+}
+
+function normalizeFontFamily(value) {
+  return String(value || "")
+    .replace(/["']/g, "")
+    .trim()
+    .toLowerCase();
+}
+
+function buildTypographyTokenIndexes(sourceJson, config) {
+  const collections = (sourceJson.collections || []).map(mapCollectionToShortNames);
+  const tokenMap = new Map();
+
+  for (const collection of collections) {
+    for (const token of collection.tokens || []) {
+      tokenMap.set(token.codeSyntax, token);
+    }
+  }
+
+  function resolveModeValue(token, modeName, seen = new Set()) {
+    if (!token || seen.has(token.codeSyntax)) {
+      return null;
+    }
+
+    const modeValue = token.valuesByMode?.[modeName] || null;
+    if (!modeValue) {
+      return null;
+    }
+
+    if (modeValue.kind !== "alias") {
+      return modeValue;
+    }
+
+    const targetSyntax = modeValue.targetCodeSyntax;
+    const target = tokenMap.get(targetSyntax);
+    seen.add(token.codeSyntax);
+    return resolveModeValue(target, modeName, seen);
+  }
+
+  const byFamily = new Map();
+  const bySize = new Map();
+  const byWeight = new Map();
+  const byLineHeight = new Map();
+  const byLetterSpacing = new Map();
+
+  for (const collection of collections) {
+    const modeName = getDefaultModeForCollection(collection, config);
+
+    for (const token of collection.tokens || []) {
+      const resolved = resolveModeValue(token, modeName);
+      if (!resolved) {
+        continue;
+      }
+
+      if (token.codeSyntax.startsWith("font-family-") && resolved.kind === "string") {
+        const key = normalizeFontFamily(resolved.value);
+        if (!byFamily.has(key)) {
+          byFamily.set(key, []);
+        }
+        byFamily.get(key).push(token.codeSyntax);
+      }
+
+      if (token.codeSyntax.startsWith("font-size-") && resolved.kind === "number") {
+        bySize.set(toNumberKey(resolved.value), token.codeSyntax);
+      }
+
+      if (token.codeSyntax.startsWith("font-weight-") && resolved.kind === "number") {
+        byWeight.set(toNumberKey(resolved.value), token.codeSyntax);
+      }
+
+      if (token.codeSyntax.startsWith("line-height-") && resolved.kind === "number") {
+        byLineHeight.set(toNumberKey(resolved.value), token.codeSyntax);
+      }
+
+      if (token.codeSyntax.startsWith("letter-spacing-") && resolved.kind === "number") {
+        byLetterSpacing.set(toNumberKey(resolved.value), token.codeSyntax);
+      }
+    }
+  }
+
+  return { byFamily, bySize, byWeight, byLineHeight, byLetterSpacing };
+}
+
+function pickFontFamilyToken(figmaStyleName, familyCandidates = []) {
+  if (familyCandidates.length === 0) {
+    return null;
+  }
+
+  const lowerName = String(figmaStyleName || "").toLowerCase();
+
+  if (lowerName.startsWith("body/")) {
+    return (
+      familyCandidates.find((name) => name === "font-family-body") ||
+      familyCandidates[0]
+    );
+  }
+
+  if (lowerName.startsWith("heading/")) {
+    return (
+      familyCandidates.find((name) => name === "font-family-heading") ||
+      familyCandidates[0]
+    );
+  }
+
+  return familyCandidates[0];
+}
+
+function buildTypographyCollectionCss(sourceJson, config) {
+  const lines = [];
+  const collections = (sourceJson.collections || []).map(mapCollectionToShortNames);
+  const typographyCollection = collections.find(
+    (collection) => collection.name === "Typography"
+  );
+
+  if (!typographyCollection) {
+    return lines;
+  }
+
+  lines.push("/* ── Collection: Typography ───────────────────────────── */");
+  lines.push("");
+
+  for (const mode of typographyCollection.modes || []) {
+    const selector =
+      config?.cssSelectorByModeName?.[mode.name] ||
+      `[data-theme="${mode.name.toLowerCase()}"]`;
+
+    lines.push(`${selector} {`);
+
+    const sortedTokens = sortTokensForScss(typographyCollection.tokens, mode.name);
+
+    for (const token of sortedTokens) {
+      const value = toCssValue(token, token.valuesByMode?.[mode.name], config);
+      lines.push(`  --${token.codeSyntax}: ${value};`);
+    }
+
+    const tokenNameSet = new Set(sortedTokens.map((token) => token.codeSyntax));
+    const legacyAliases = buildLegacyTypographyAliases(tokenNameSet);
+    if (legacyAliases.length > 0) {
+      lines.push("");
+      lines.push("  /* Legacy typography aliases (backward compatibility) */");
+      lines.push(...legacyAliases);
+    }
+
+    lines.push("}");
+    lines.push("");
+  }
+
+  return lines;
+}
+
+function buildTextSizingUtilityCss() {
+  const lines = [];
+
+  lines.push("/* Shared text-adjacent sizing utilities */");
+  lines.push(".text-inline-center {");
+  lines.push("  display: inline-flex;");
+  lines.push("  align-items: center;");
+  lines.push("  justify-content: center;");
+  lines.push("  flex-shrink: 0;");
+  lines.push("}");
+  lines.push("");
+
+  lines.push(".text-size-16 {");
+  lines.push("  width: var(--spacing-space-16);");
+  lines.push("  height: var(--spacing-space-16);");
+  lines.push("}");
+  lines.push("");
+
+  lines.push(".text-size-20 {");
+  lines.push("  width: var(--spacing-space-20);");
+  lines.push("  height: var(--spacing-space-20);");
+  lines.push("}");
+  lines.push("");
+
+  lines.push(".text-slot-16 {");
+  lines.push("  display: inline-flex;");
+  lines.push("  align-items: center;");
+  lines.push("  justify-content: center;");
+  lines.push("  flex-shrink: 0;");
+  lines.push("  width: var(--spacing-space-16);");
+  lines.push("  height: var(--spacing-space-16);");
+  lines.push("}");
+  lines.push("");
+
+  lines.push(".text-slot-20 {");
+  lines.push("  display: inline-flex;");
+  lines.push("  align-items: center;");
+  lines.push("  justify-content: center;");
+  lines.push("  flex-shrink: 0;");
+  lines.push("  width: var(--spacing-space-20);");
+  lines.push("  height: var(--spacing-space-20);");
+  lines.push("}");
+  lines.push("");
+
+  return lines;
+}
+
+/**
+ * Build reusable typography utility classes generated from Figma TEXT styles.
+ *
+ * Classes use token variables when a matching token exists. If no token matches
+ * a value, a literal fallback is emitted to keep class coverage complete.
+ */
+export function buildTypographyCss(sourceJson, config) {
+  const lines = [];
+  const textStyles = sourceJson.textStyles || [];
+  const indexes = buildTypographyTokenIndexes(sourceJson, config);
+
+  lines.push("/* AUTO-GENERATED FILE. DO NOT EDIT MANUALLY. */");
+  lines.push("/* Source: Figma Typography + Text Styles REST API */");
+  lines.push("/* Run `npm run tokens:build` to regenerate.      */");
+  lines.push("");
+
+  lines.push(...buildTypographyCollectionCss(sourceJson, config));
+  lines.push(...buildTextSizingUtilityCss());
+
+  if (textStyles.length === 0) {
+    lines.push("/* No typography styles found in source JSON. */");
+    lines.push("");
+    return lines.join("\n");
+  }
+
+  for (const style of textStyles) {
+    const values = style.values || {};
+    const familyToken = pickFontFamilyToken(
+      style.figmaName,
+      indexes.byFamily.get(normalizeFontFamily(values.fontFamily)) || []
+    );
+    const sizeToken = indexes.bySize.get(toNumberKey(values.fontSize));
+    const weightToken = indexes.byWeight.get(toNumberKey(values.fontWeight));
+    const lineHeightToken = indexes.byLineHeight.get(toNumberKey(values.lineHeight));
+    const letterSpacingToken = indexes.byLetterSpacing.get(toNumberKey(values.letterSpacing));
+
+    lines.push(`/* ${style.figmaName} */`);
+    lines.push(`.${style.className} {`);
+
+    if (familyToken) {
+      lines.push(`  font-family: var(--${familyToken});`);
+    } else {
+      lines.push(`  font-family: ${values.fontFamily};`);
+    }
+
+    if (sizeToken) {
+      lines.push(`  font-size: var(--${sizeToken});`);
+    } else {
+      lines.push(`  font-size: ${values.fontSize}px;`);
+    }
+
+    if (weightToken) {
+      lines.push(`  font-weight: var(--${weightToken});`);
+    } else {
+      lines.push(`  font-weight: ${values.fontWeight};`);
+    }
+
+    if (lineHeightToken) {
+      lines.push(`  line-height: var(--${lineHeightToken});`);
+    } else {
+      lines.push(`  line-height: ${values.lineHeight}px;`);
+    }
+
+    if (letterSpacingToken) {
+      lines.push(`  letter-spacing: var(--${letterSpacingToken});`);
+    } else {
+      lines.push(`  letter-spacing: ${values.letterSpacing}px;`);
+    }
+
+    lines.push("}");
+    lines.push("");
   }
 
   return lines.join("\n");

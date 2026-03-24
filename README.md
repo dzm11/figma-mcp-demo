@@ -26,21 +26,24 @@ In short:
 3. The generator produces final token files used by components.
 4. Components (CSS Modules) should use `var(--token)` instead of hardcoded values.
 
-## Most important file: src/styles/tokens.css
+## Most important files: src/styles/tokens.css and src/styles/typography.css
 
-The file [src/styles/tokens.css](src/styles/tokens.css) is the final, app-facing token output.
+The files [src/styles/tokens.css](src/styles/tokens.css) and [src/styles/typography.css](src/styles/typography.css) are generated, app-facing outputs.
 
 That means:
 
-- components and global styles read tokens from this file,
-- Storybook imports the same file, so previews reflect the real design system state,
-- this file should not be edited manually, because it is generated.
+- components and global styles read tokens and typography utilities from these files,
+- Storybook imports the same files, so previews reflect the real design system state,
+- these files should not be edited manually, because they are generated.
+
+`src/styles/typography.css` contains utility classes generated from Figma TEXT styles,
+for example `.body-md-14-regular` and `.heading-xl`.
 
 Related places:
 
-- [src/index.css](src/index.css) imports tokens globally,
-- [.storybook/preview.ts](.storybook/preview.ts) imports tokens for stories,
-- [src/styles/generated/_tokens.scss](src/styles/generated/_tokens.scss) is an internal helper SCSS artifact.
+- [src/index.css](src/index.css) imports generated styles globally,
+- [.storybook/preview.ts](.storybook/preview.ts) imports generated styles for stories,
+- [tokens/tokens.source.json](tokens/tokens.source.json) is the normalized source fetched from Figma.
 
 ## Folder architecture
 
@@ -64,7 +67,7 @@ Related places:
 ### Token pipeline
 
 - `npm run tokens:pull` - fetch Variables from Figma into source JSON
-- `npm run tokens:build` - generate `src/styles/tokens.css` and `src/styles/generated/_tokens.scss`
+- `npm run tokens:build` - generate `src/styles/tokens.css` and `src/styles/typography.css`
 - `npm run tokens:sync` - pull + build
 - `npm run tokens:pr` - sync + commit/push + create PR (requires `gh`)
 

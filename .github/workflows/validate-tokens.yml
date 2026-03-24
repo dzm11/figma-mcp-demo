@@ -39,9 +39,9 @@ jobs:
 
       - name: Check generated files are up to date
         run: |
-          if ! git diff --quiet -- src/styles/generated/_tokens.scss src/styles/tokens.css; then
+          if ! git diff --quiet -- src/styles/tokens.css; then
             echo "Generated token files are out of date."
             echo "Run 'npm run tokens:build' locally and commit the result."
-            git diff -- src/styles/generated/_tokens.scss src/styles/tokens.css
+            git diff -- src/styles/tokens.css
             exit 1
           fi

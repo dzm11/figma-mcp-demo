@@ -40,6 +40,7 @@ export const Button: React.FC<ButtonProps> = ({
       aria-busy={isLoading}
       className={[
         styles.button,
+        'body-md-14-bold',
         styles[`type-${type}`],
         styles[`size-${size}`],
         isLoading && styles.loading,
@@ -53,7 +54,7 @@ export const Button: React.FC<ButtonProps> = ({
     >
       {/* Icon slot — 20×20px, shown before label */}
       {icon && (
-        <span aria-hidden="true" className={styles.iconSlot}>
+        <span aria-hidden="true" className={[styles.iconSlot, 'text-slot-20'].join(' ')}>
           {icon}
         </span>
       )}
@@ -63,7 +64,7 @@ export const Button: React.FC<ButtonProps> = ({
 
       {/* Disclosure slot — chevron shown after label */}
       {disclosure && (
-        <span aria-hidden="true" className={styles.disclosureSlot}>
+        <span aria-hidden="true" className={[styles.disclosureSlot, 'text-slot-20'].join(' ')}>
           <ChevronDown />
         </span>
       )}

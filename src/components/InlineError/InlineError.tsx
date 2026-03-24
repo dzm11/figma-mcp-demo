@@ -20,9 +20,9 @@ const ErrorIcon = () => (
 
 export const InlineError: React.FC<InlineErrorProps> = ({ message }) => (
   <div className={styles.wrapper} role="alert">
-    <span aria-hidden="true" className={styles.iconSlot}>
+    <span aria-hidden="true" className={[styles.iconSlot, 'text-slot-20'].join(' ')}>
       <ErrorIcon />
     </span>
-    <p className={styles.message}>{message}</p>
+    <p className={[styles.message, 'body-md-14-regular'].join(' ')}>{message}</p>
   </div>
 );

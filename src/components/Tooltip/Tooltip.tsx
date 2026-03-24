@@ -24,9 +24,9 @@ export const Tooltip: React.FC<TooltipProps> = ({
 
   const content = (
     <div className={styles.surface}>
-      <p className={styles.title}>{title}</p>
+      <p className={[styles.title, 'body-sm-12-medium'].join(' ')}>{title}</p>
       {showDescription && description ? (
-        <p className={styles.description}>{description}</p>
+        <p className={[styles.description, 'body-sm-12-regular'].join(' ')}>{description}</p>
       ) : null}
     </div>
   );

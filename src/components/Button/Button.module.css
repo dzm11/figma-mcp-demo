@@ -1,9 +1,4 @@
 .button {
-  font-family: var(--font-family-body);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-14);
-  line-height: var(--line-height-1250);
-  letter-spacing: var(--letter-spacing-normal);
   border-radius: var(--border-radius-full);
   border: none;
   cursor: pointer;
@@ -21,12 +16,6 @@
 
 /* Icon slot — 20×20px fixed, shown before label */
 .iconSlot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: var(--spacing-space-20);
-  height: var(--spacing-space-20);
 }
 
 /* Text slot — 6px inner horizontal padding per Figma (spacing/space-6) */
@@ -39,12 +28,6 @@
 
 /* Disclosure slot — 20×20px chevron, shown after label */
 .disclosureSlot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: var(--spacing-space-20);
-  height: var(--spacing-space-20);
 }
 
 /* ============================================

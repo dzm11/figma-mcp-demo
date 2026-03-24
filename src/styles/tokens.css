@@ -28,21 +28,9 @@
   --brand-brand-800: oklch(27.44% 0.0944 268);
   --brand-brand-900: oklch(18.74% 0.0517 269.18);
   --color-brand-brand900: oklch(18.74% 0.0517 269.18);
-  --color-neutrals-neutral0: oklch(100% 0 89.88);
-  --color-neutrals-neutral50: oklch(97.55% 0.0045 258.32);
-  --color-neutrals-neutral100: oklch(97.17% 0.012 259.82);
-  --color-neutrals-neutral200: oklch(93.75% 0.0283 261.48);
-  --color-neutrals-neutral300: oklch(88.47% 0.016 266.27);
-  --color-neutrals-neutral400: oklch(78.72% 0.0261 263.3);
-  --color-neutrals-neutral500: oklch(74.83% 0.0312 263.26);
-  --color-neutrals-neutral600: oklch(64.46% 0.0391 262.72);
-  --color-neutrals-neutral700: oklch(65.21% 0.0436 262.69);
-  --color-neutrals-neutral800: oklch(55.9% 0.0534 260.1);
-  --color-neutrals-neutral900: oklch(38.48% 0.0356 261.25);
   --color-old-gray-600: oklch(69.06% 0.0384 262.75);
   --color-old-gray-900: oklch(38.48% 0.0356 261.25);
   --color-old-white-0: oklch(100% 0 89.88);
-  --color-status-blue2: oklch(74.25% 0.1331 225.65);
   --data-vis-1-midnight: oklch(63.76% 0.1862 284.36);
   --data-vis-2-valencia: oklch(76.81% 0.169 62.07);
   --data-vis-3-splash: oklch(77.94% 0.1365 213.13);
@@ -440,198 +428,227 @@
 /* ── Collection: Tokens ───────────────────────────── */
 
 :root {
+  /* Elevation/Scrim — Dimmed overlay used behind modals and dialogs. */
   --elevation-scrim: oklch(18.74% 0.0517 269.18 / 0.6);
+  /* Elevation/Surface Container — Standard surface color for cards and modules. */
   --elevation-surface-container: var(--neutral-neutral-100);
+  /* Elevation/Surface Container High — Elevated surface for focused content. */
   --elevation-surface-container-high: var(--neutral-neutral-200);
+  /* Elevation/Surface Container Highest — Highly elevated elements like sticky headers or tooltips. */
   --elevation-surface-container-highest: var(--neutral-neutral-300);
+  /* Elevation/Surface Container Low — Slightly raised surface for containers and sections. */
   --elevation-surface-container-low: var(--neutral-neutral-50);
+  /* Elevation/Surface Container Lowest — Base-level surface behind all other elements. */
   --elevation-surface-container-lowest: var(--neutral-neutral-0);
-  --html-token-name: var(--neutral-neutral-0);
-  --icons-brand-disabled: unresolved-alias;
-  --icons-brand-primary: unresolved-alias;
-  --icons-neutral-default: var(--color-neutrals-neutral600);
-  --icons-neutral-neutral-disabled: oklch(69.06% 0.0384 262.75 / 0.5);
-  --icons-neutral-white: var(--color-neutrals-neutral0);
-  --icons-neutral-white-disabled: oklch(100% 0 89.88 / 0.3);
+  /* Label/Black — Use for destructive actions or critical messages. */
   --label-black: var(--system-black-1);
+  /* Label/Black Container — Use for success states or confirmations. */
   --label-black-container: var(--system-black-3);
+  /* Label/Blue — Use for links, primary actions or info. */
   --label-blue: var(--system-blue-1);
+  /* Label/Blue Container — Use for links, primary actions or info. */
   --label-blue-container: var(--system-blue-3);
+  /* Label/Gray — Use for success states or confirmations. */
   --label-gray: var(--system-gray-1);
+  /* Label/Gray Container — Use for destructive actions or critical messages. */
   --label-gray-container: var(--system-gray-3);
+  /* Label/Green — Use for success states or confirmations. */
   --label-green: var(--system-green-1);
+  /* Label/Green Container — Use for success states or confirmations. */
   --label-green-container: var(--system-green-3);
+  /* Label/On Black — Text on red background. */
   --label-on-black: var(--system-black-2);
+  /* Label/On Black Container — Text on green background. */
   --label-on-black-container: var(--system-black-4);
+  /* Label/On Blue — Text on blue background. */
   --label-on-blue: var(--system-blue-2);
+  /* Label/On Blue Container — Text on blue background. */
   --label-on-blue-container: var(--system-blue-4);
+  /* Label/On Gray — Text on green background. */
   --label-on-gray: var(--system-gray-2);
+  /* Label/On Gray Container — Text on red background. */
   --label-on-gray-container: var(--system-gray-4);
+  /* Label/On Green — Text on green background. */
   --label-on-green: var(--system-green-2);
+  /* Label/On Green Container — Text on green background. */
   --label-on-green-container: var(--system-green-4);
+  /* Label/On Orange — Text on orange background. */
   --label-on-orange: var(--system-orange-2);
+  /* Label/On Orange Container — Text on orange background. */
   --label-on-orange-container: var(--system-orange-4);
+  /* Label/On Purple — Text on purple background. */
   --label-on-purple: var(--system-purple-2);
+  /* Label/On Purple Container — Text on purple background. */
   --label-on-purple-container: var(--system-purple-4);
+  /* Label/On Red — Text on red background. */
   --label-on-red: var(--system-red-2);
+  /* Label/On Red Container — Text on red background. */
   --label-on-red-container: var(--system-red-4);
+  /* Label/On Teal — Text on teal background. */
   --label-on-teal: var(--system-teal-2);
+  /* Label/On Teal Container — Text on teal background. */
   --label-on-teal-container: var(--system-teal-4);
+  /* Label/On Yellow — Text on yellow background. */
   --label-on-yellow: var(--system-yellow-2);
+  /* Label/On Yellow Container — Text on yellow background. */
   --label-on-yellow-container: var(--system-yellow-4);
+  /* Label/Orange — Use for highlight or attention-grabbing elements. */
   --label-orange: var(--system-orange-1);
+  /* Label/Orange Container — Use for highlight or attention-grabbing elements. */
   --label-orange-container: var(--system-orange-3);
+  /* Label/Purple — Use for creativity, AI, or branding highlights. */
   --label-purple: var(--system-purple-1);
+  /* Label/Purple Container — Use for creativity, AI, or branding highlights. */
   --label-purple-container: var(--system-purple-3);
+  /* Label/Red — Use for destructive actions or critical messages. */
   --label-red: var(--system-red-1);
+  /* Label/Red Container — Use for destructive actions or critical messages. */
   --label-red-container: var(--system-red-3);
+  /* Label/Teal — Use for neutral status or support information. */
   --label-teal: var(--system-teal-1);
+  /* Label/Teal Container — Use for neutral status or support information. */
   --label-teal-container: var(--system-teal-3);
+  /* Label/Yellow — Use for warnings or caution messages. */
   --label-yellow: var(--system-yellow-1);
+  /* Label/Yellow Container — Use for warnings or caution messages. */
   --label-yellow-container: var(--system-yellow-3);
+  /* Main/On Primary — No description */
   --main-on-primary: var(--neutral-neutral-0);
+  /* Main/On Primary Container — No description */
   --main-on-primary-container: var(--brand-brand-700);
+  /* Main/On Secondary — No description */
   --main-on-secondary: var(--neutral-neutral-0);
+  /* Main/On Secondary Container — No description */
   --main-on-secondary-container: var(--neutral-neutral-900);
+  /* Main/On Tertiary — No description */
   --main-on-tertiary: oklch(100% 0 89.88);
+  /* Main/On Tertiary Container — No description */
   --main-on-tertiary-container: oklch(100% 0 89.88);
+  /* Main/Primary — No description */
   --main-primary: var(--brand-brand-400);
+  /* Main/Primary Container — No description */
   --main-primary-container: var(--brand-brand-25);
+  /* Main/Secondary — No description */
   --main-secondary: var(--neutral-neutral-900);
+  /* Main/Secondary Container — No description */
   --main-secondary-container: var(--neutral-neutral-50);
+  /* Main/Tertiary — No description */
   --main-tertiary: oklch(100% 0 89.88);
+  /* Main/Tertiary Container — No description */
   --main-tertiary-container: oklch(100% 0 89.88);
+  /* Outline/Outline — Default outline color for borders and focus rings. */
   --outline-outline: var(--neutral-neutral-800);
+  /* Outline/Outline Active — Outline color during active click or interaction. */
   --outline-outline-active: var(--neutral-neutral-900);
+  /* Outline/Outline Disabled — Outline color during active click or interaction. */
   --outline-outline-disabled: var(--neutral-neutral-300);
+  /* Outline/Outline Focused — Outline color when an element receives keyboard focus. */
   --outline-outline-focused: var(--brand-brand-500);
+  /* Outline/Outline Hover — Outline color when hovering over an interactive element. */
   --outline-outline-hover: var(--neutral-neutral-900);
+  /* Outline/Outline Variant — Secondary outline variant used for subtle accents. */
   --outline-outline-variant: var(--neutral-neutral-300);
+  /* Outline/Outline Variant Active — Variant outline color during active state. */
   --outline-outline-variant-active: var(--neutral-neutral-500);
+  /* Outline/Outline Variant Disabled — Variant outline color during active state. */
   --outline-outline-variant-disabled: var(--neutral-neutral-300);
+  /* Outline/Outline Variant Focused — Variant outline color on keyboard focus. */
   --outline-outline-variant-focused: var(--brand-brand-500);
+  /* Outline/Outline Variant Hover — Variant outline color on hover. */
   --outline-outline-variant-hover: var(--neutral-neutral-400);
+  /* State/On Surface Active — No description */
   --state-on-surface-active: var(--neutral-neutral-900);
+  /* State/On Surface Disabled — No description */
   --state-on-surface-disabled: var(--neutral-neutral-500);
+  /* State/On Surface Hover — No description */
   --state-on-surface-hover: var(--neutral-neutral-800);
+  /* State/Primary Active — No description */
   --state-primary-active: var(--brand-brand-600);
+  /* State/Primary Disabled — No description */
   --state-primary-disabled: var(--brand-brand-100);
+  /* State/Primary Hover — No description */
   --state-primary-hover: var(--brand-brand-500);
+  /* State/Primary Pressed — No description */
   --state-primary-pressed: var(--brand-brand-700);
-  --status-blue-elements: var(--color-status-blue2);
-  --status-error-elements: unresolved-alias;
-  --status-error-text: unresolved-alias;
-  --status-purple-elements: unresolved-alias;
-  --status-success-elements: unresolved-alias;
-  --status-warning-elements: unresolved-alias;
-  --status-warning-text: unresolved-alias;
-  --surface-bg-1: var(--color-neutrals-neutral0);
-  --surface-card: var(--color-neutrals-neutral0);
+  /* Surfaces/Background — No description */
+  --surfaces-background: var(--neutral-neutral-0);
+  /* Surfaces/Background Inverse — No description */
   --surfaces-background-inverse: var(--neutral-neutral-900);
+  /* Surfaces/On Surface — No description */
   --surfaces-on-surface: var(--brand-brand-900);
+  /* Surfaces/On Surface Inverse — No description */
   --surfaces-on-surface-inverse: var(--neutral-neutral-0);
+  /* Surfaces/On Surface Weak Inverse — No description */
   --surfaces-on-surface-weak-inverse: var(--neutral-neutral-100);
+  /* Surfaces/On Surface Weakest — No description */
   --surfaces-on-surface-weakest: var(--neutral-neutral-600);
+  /* Surfaces/On Surface Weakest Inverse — No description */
   --surfaces-on-surface-weakest-inverse: var(--neutral-neutral-300);
+  /* Surfaces/Surface — No description */
   --surfaces-surface: var(--neutral-neutral-0);
+  /* Surfaces/Surface Inverse — No description */
   --surfaces-surface-inverse: var(--neutral-neutral-700);
+  /* System/Brand — No description */
   --system-brand: var(--brand-brand-500);
+  /* System/Brand Container — No description */
   --system-brand-container: var(--brand-brand-15);
+  /* System/Critical — Use for backgrounds communicating critical, like banners. */
   --system-critical: var(--system-red-1);
+  /* System/Critical Container — Critical Container */
   --system-critical-container: var(--system-red-3);
+  /* System/Info — Use for backgrounds communicating Info, like banners. */
   --system-info: var(--neutral-neutral-800);
+  /* System/Info Container — Info Container */
   --system-info-container: var(--neutral-neutral-200);
+  /* System/Magic (AI) — Use for backgrounds communicating AI, like banners. */
   --system-magic-ai: oklch(53.32% 0.2596 262.64);
+  /* System/Magic (AI) Container — Magic (AI) Container */
   --system-magic-ai-container: oklch(53.32% 0.2596 262.64);
+  /* System/On Brand — No description */
   --system-on-brand: var(--brand-brand-15);
+  /* System/On Brand Container — No description */
   --system-on-brand-container: var(--brand-brand-500);
+  /* System/On Critical — Use for text communicating critical. */
   --system-on-critical: var(--system-red-2);
+  /* System/On Critical Container — Use for elements communicating critical inside small containers */
   --system-on-critical-container: var(--system-red-4);
+  /* System/On Info — Use for text communicating info. */
   --system-on-info: var(--neutral-neutral-0);
+  /* System/On Info Container — Use for elements communicating info inside small containers */
   --system-on-info-container: var(--neutral-neutral-800);
+  /* System/On Magic (AI) — Use for text communicating AI. */
   --system-on-magic-ai: oklch(53.32% 0.2596 262.64);
+  /* System/On Magic (AI) Container — Use for elements communicating AI inside small containers */
   --system-on-magic-ai-container: oklch(53.32% 0.2596 262.64);
+  /* System/On Success — Use for text communicating success. */
   --system-on-success: var(--system-green-2);
+  /* System/On Success Container — Use for elements communicating success inside small containers */
   --system-on-success-container: var(--system-green-4);
+  /* System/On Warning — Use for text communicating warning. */
   --system-on-warning: var(--system-orange-2);
+  /* System/On Warning Container — Use for elements communicating warning inside small containers */
   --system-on-warning-container: var(--system-orange-4);
+  /* System/Success — Use for backgrounds communicating success, like banners. */
   --system-success: var(--system-green-1);
+  /* System/Success Container — Success Container */
   --system-success-container: var(--system-green-3);
+  /* System/Warning — Use for backgrounds communicating warning, like banners. */
   --system-warning: var(--system-orange-1);
+  /* System/Warning Container — Warning Container */
   --system-warning-container: var(--system-orange-3);
-  --text-color-components-elements-label: var(--color-neutrals-neutral800);
-  --text-color-page-contents-header-page: var(--color-neutrals-neutral900);
-  --text-color-page-contents-header-section: var(--color-neutrals-neutral900);
-  --text-color-page-contents-white: var(--color-neutrals-neutral0);
+  /* Surfaces/On Surface Weak — No description */
   --var-on-surface-weak: var(--neutral-neutral-800);
-}
-
-/* ── Collection: Typography ───────────────────────────── */
-
-:root {
-  --font-family-body: Inter;
-  --font-family-heading: Inter;
-  --font-size-10: 0.625rem;
-  --font-size-12: 0.75rem;
-  --font-size-14: 0.875rem;
-  --font-size-16: 1rem;
-  --font-size-20: 1.25rem;
-  --font-size-24: 1.5rem;
-  --font-size-32: 2rem;
-  --font-size-40: 2.5rem;
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --letter-spacing-dense: -0.33000001311302185;
-  --letter-spacing-denser: -0.949999988079071;
-  --letter-spacing-densest: -1.2400000095367432;
-  --letter-spacing-normal: 0;
-  --line-height-750: 12px;
-  --line-height-1000: 16px;
-  --line-height-1125: 18px;
-  --line-height-1250: 20px;
-  --line-height-1500: 24px;
-  --line-height-2000: 32px;
-  --line-height-2500: 40px;
-  --line-height-3000: 48px;
-
-  /* Legacy typography aliases (backward compatibility) */
-  --font-size-font-size-10: var(--font-size-10);
-  --font-size-font-size-12: var(--font-size-12);
-  --font-size-font-size-14: var(--font-size-14);
-  --font-size-font-size-16: var(--font-size-16);
-  --font-size-font-size-20: var(--font-size-20);
-  --font-size-font-size-24: var(--font-size-24);
-  --font-size-font-size-32: var(--font-size-32);
-  --font-size-font-size-40: var(--font-size-40);
-  --font-weight-weight-bold: var(--font-weight-bold);
-  --font-weight-weight-medium: var(--font-weight-medium);
-  --font-weight-weight-regular: var(--font-weight-regular);
-  --font-weight-weight-semibold: var(--font-weight-semibold);
-  --letter-spacing-spacing-dense: var(--letter-spacing-dense);
-  --letter-spacing-spacing-denser: var(--letter-spacing-denser);
-  --letter-spacing-spacing-densest: var(--letter-spacing-densest);
-  --letter-spacing-spacing-normal: var(--letter-spacing-normal);
-  --line-height-height-750: var(--line-height-750);
-  --line-height-height-1000: var(--line-height-1000);
-  --line-height-height-1125: var(--line-height-1125);
-  --line-height-height-1250: var(--line-height-1250);
-  --line-height-height-1500: var(--line-height-1500);
-  --line-height-height-2000: var(--line-height-2000);
-  --line-height-height-2500: var(--line-height-2500);
-  --line-height-height-3000: var(--line-height-3000);
 }
 
 /* ── Collection: Shadows ───────────────────────────── */
 
-[data-theme="default"] {
-  --inset-100: inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15000000596046448), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15000000596046448);
-  --inset-200: inset 0px 2px 1px 0px rgba(26, 26, 26, 0.20000000298023224), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.11999999731779099);
-  --shadow-1: 0px 1px 3px 2px rgba(26, 26, 26, 0.07999999821186066);
-  --shadow-2: 0px 2px 3px -1px rgba(26, 26, 26, 0.07000000029802322);
-  --shadow-3: 0px 4px 6px -2px rgba(26, 26, 26, 0.20000000298023224);
-  --shadow-4: 0px 8px 16px -4px rgba(26, 26, 26, 0.2199999988079071);
-  --shadow-5: 0px 12px 20px -8px rgba(26, 26, 26, 0.23999999463558197);
-  --shadow-6: 0px 20px 20px -8px rgba(26, 26, 26, 0.2800000011920929);
+:root, [data-theme="default"] {
+  --inset-100: inset 0px 1px 2px 0px rgba(26, 26, 26, 0.15), inset 0px 1px 1px 0px rgba(26, 26, 26, 0.15);
+  --inset-200: inset 0px 2px 1px 0px rgba(26, 26, 26, 0.2), inset 1px 0px 1px 0px rgba(26, 26, 26, 0.12), inset -1px 0px 1px 0px rgba(26, 26, 26, 0.12);
+  --shadow-1: 0px 1px 3px 2px rgba(26, 26, 26, 0.08);
+  --shadow-2: 0px 2px 3px -1px rgba(26, 26, 26, 0.07);
+  --shadow-3: 0px 4px 6px -2px rgba(26, 26, 26, 0.2);
+  --shadow-4: 0px 8px 16px -4px rgba(26, 26, 26, 0.22);
+  --shadow-5: 0px 12px 20px -8px rgba(26, 26, 26, 0.24);
+  --shadow-6: 0px 20px 20px -8px rgba(26, 26, 26, 0.28);
 }

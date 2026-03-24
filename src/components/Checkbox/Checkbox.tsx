@@ -72,23 +72,23 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         />
 
         {/* Custom visual box — styled via CSS using :checked/:indeterminate on the adjacent input */}
-        <span aria-hidden="true" className={styles.box}>
+        <span aria-hidden="true" className={[styles.box, 'text-inline-center', 'text-size-16'].join(' ')}>
           <img
             alt=""
-            className={styles.icon}
+            className={[styles.icon, 'text-size-16'].join(' ')}
             src={indeterminate ? dashIcon : tickIcon}
           />
         </span>
 
-        {label && <span className={styles.label}>{label}</span>}
+        {label && <span className={[styles.label, 'body-md-14-regular'].join(' ')}>{label}</span>}
       </label>
 
       {critical && errorMessage && (
         <div className={styles.errorRow}>
-          <span className={styles.errorIcon}>
+          <span className={[styles.errorIcon, 'text-slot-20'].join(' ')}>
             <ErrorIcon />
           </span>
-          <span className={styles.errorMessage}>{errorMessage}</span>
+          <span className={[styles.errorMessage, 'body-md-14-regular'].join(' ')}>{errorMessage}</span>
         </div>
       )}
     </div>
