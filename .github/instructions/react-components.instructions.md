@@ -145,7 +145,10 @@ useEffect(() => {
 
 - One `.module.css` per component — no global class names
 - Use the `[styles.base, condition && styles.modifier].filter(Boolean).join(' ')` pattern for conditionals
-- **Never** use hardcoded colours, sizes, or spacing — always `var(--token-name)` from `src/styles/tokens.css`
+- **Never** use hardcoded colours, sizes, or spacing — always `var(--token-name)` from `src/styles/tokens.css` or `src/styles/typography.css`
+- **Never** write font properties in `.module.css` — apply the matching text-style global class in JSX instead (e.g. `'body-md-14-bold'`)
+- **Never** hardcode icon slot `width`/`height` — use global sizing utility classes in JSX (e.g. `'text-slot-20'`, `'text-slot-16'`)
+- Compose local + global classes: `[styles.localClass, 'global-utility'].filter(Boolean).join(' ')`
 - Class names in `camelCase`: `.iconSlot`, `.textSlot`, `.sizeL`
 
 ---
@@ -271,7 +274,9 @@ figma.connect(
 | Default exports | Named exports |
 | Inline styles | CSS Modules with token variables |
 | `any` type | Explicit TypeScript types |
-| Hardcoded hex/px values | `var(--token)` from `tokens.css` |
+| Hardcoded hex/px values | `var(--token)` from `tokens.css` / `typography.css` |
+| `font-*` in `.module.css` | Global text-style class in JSX: `'body-md-14-bold'` |
+| `width`/`height` for icon slots in `.module.css` | Global sizing class in JSX: `'text-slot-20'` |
 | `enum` for variants | Union string literals |
 | Business logic in JSX | Derive variables above the `return` |
 | `outline` for focus | `box-shadow` with `--color-outline-focused` |
