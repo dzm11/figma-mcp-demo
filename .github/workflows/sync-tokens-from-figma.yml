@@ -44,6 +44,56 @@ jobs:
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: npm run tokens:sync
 
+      - name: Show changed tokens summary
+        run: |
+          TARGET_FILES="tokens/tokens.source.json src/styles/tokens.css src/styles/typography.css"
+
+          echo "Changed files:"
+          CHANGED_FILES=$(git diff --name-only -- $TARGET_FILES)
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "- none"
+            {
+              echo "## Token sync summary"
+              echo
+              echo "No token changes were produced by this run."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "$CHANGED_FILES" | sed 's/^/- /'
+
+          CSS_VAR_CHANGES=$(git diff -U0 -- src/styles/tokens.css src/styles/typography.css \
+            | grep -E '^[+-][[:space:]]*--[a-z0-9-]+:' || true)
+
+          FIGMA_NAME_CHANGES=$(git diff -U0 -- tokens/tokens.source.json \
+            | grep -E '^[+-][[:space:]]*"name"[[:space:]]*:' || true)
+
+          {
+            echo "## Token sync summary"
+            echo
+            echo "### Changed files"
+            echo "$CHANGED_FILES" | sed 's/^/- /'
+            echo
+            echo "### Changed CSS variables"
+            if [ -n "$CSS_VAR_CHANGES" ]; then
+              echo '```diff'
+              echo "$CSS_VAR_CHANGES"
+              echo '```'
+            else
+              echo "No CSS variable value changes detected."
+            fi
+            echo
+            echo "### Changed token names in source JSON"
+            if [ -n "$FIGMA_NAME_CHANGES" ]; then
+              echo '```diff'
+              echo "$FIGMA_NAME_CHANGES"
+              echo '```'
+            else
+              echo "No token name changes detected in source JSON."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Commit synced files
         run: |
           git config user.name "github-actions[bot]"
