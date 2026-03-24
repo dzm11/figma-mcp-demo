@@ -1,0 +1,60 @@
+name: Sync tokens from Figma
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: Commit message for synced token changes
+        required: false
+        default: "chore: sync tokens from figma"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify required Figma secrets
+        run: |
+          if [ -z "${{ secrets.FIGMA_TOKEN }}" ]; then
+            echo "Missing repository secret: FIGMA_TOKEN"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FIGMA_FILE_KEY }}" ]; then
+            echo "Missing repository secret: FIGMA_FILE_KEY"
+            exit 1
+          fi
+
+      - name: Sync tokens (pull + build)
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+        run: npm run tokens:sync
+
+      - name: Commit synced files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add tokens/tokens.source.json src/styles/tokens.css src/styles/typography.css
+
+          if git diff --cached --quiet; then
+            echo "No token changes to commit."
+          else
+            git commit -m "${{ github.event.inputs.commit_message }}"
+            git push
+            echo "Token changes committed and pushed."
+          fi
