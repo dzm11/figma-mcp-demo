@@ -1,7 +1,7 @@
 .root {
   display: inline-flex;
   align-items: center;
-  padding: var(--spacing-space-4);
+  padding: var(--spacing-4);
   border-radius: var(--border-radius-full);
   white-space: nowrap;
 }
@@ -11,7 +11,7 @@
 }
 
 .withText {
-  gap: var(--spacing-space-8);
+  gap: var(--spacing-8);
   overflow: hidden;
 }
 
@@ -21,38 +21,38 @@
 }
 
 .size-xs {
-  --avatar-size: var(--spacing-space-20);
-  --company-logo-width: var(--spacing-space-12);
-  --company-logo-height: var(--spacing-space-12);
-  --text-padding-right: var(--spacing-space-6);
+  --avatar-size: var(--spacing-20);
+  --company-logo-width: var(--spacing-12);
+  --company-logo-height: var(--spacing-12);
+  --text-padding-right: var(--spacing-6);
 }
 
 .size-s {
-  --avatar-size: var(--spacing-space-24);
-  --company-logo-width: var(--spacing-space-16);
-  --company-logo-height: var(--spacing-space-16);
-  --text-padding-right: var(--spacing-space-6);
+  --avatar-size: var(--spacing-24);
+  --company-logo-width: var(--spacing-16);
+  --company-logo-height: var(--spacing-16);
+  --text-padding-right: var(--spacing-6);
 }
 
 .size-m {
-  --avatar-size: calc(var(--spacing-space-24) + var(--spacing-space-4));
-  --company-logo-width: var(--spacing-space-16);
-  --company-logo-height: var(--spacing-space-16);
-  --text-padding-right: var(--spacing-space-6);
+  --avatar-size: calc(var(--spacing-24) + var(--spacing-4));
+  --company-logo-width: var(--spacing-16);
+  --company-logo-height: var(--spacing-16);
+  --text-padding-right: var(--spacing-6);
 }
 
 .size-l {
-  --avatar-size: var(--spacing-space-32);
-  --company-logo-width: var(--spacing-space-20);
-  --company-logo-height: var(--spacing-space-20);
-  --text-padding-right: var(--spacing-space-6);
+  --avatar-size: var(--spacing-32);
+  --company-logo-width: var(--spacing-20);
+  --company-logo-height: var(--spacing-20);
+  --text-padding-right: var(--spacing-6);
 }
 
 .size-xl {
-  --avatar-size: var(--spacing-space-40);
-  --company-logo-width: var(--spacing-space-24);
-  --company-logo-height: var(--spacing-space-24);
-  --text-padding-right: var(--spacing-space-8);
+  --avatar-size: var(--spacing-40);
+  --company-logo-width: var(--spacing-24);
+  --company-logo-height: var(--spacing-24);
+  --text-padding-right: var(--spacing-8);
 }
 
 .avatar {
@@ -105,7 +105,7 @@
 .textGroup {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-space-4);
+  gap: var(--spacing-4);
   padding-right: var(--text-padding-right);
 }
 

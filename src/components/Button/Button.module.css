@@ -9,7 +9,7 @@
     box-shadow 0.15s ease;
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-space-0); /* spacing/space-0 per Figma — slots handle their own spacing */
+  gap: var(--spacing-0); /* spacing/space-0 per Figma — slots handle their own spacing */
   outline: none;
   white-space: nowrap;
 }
@@ -20,7 +20,7 @@
 
 /* Text slot — 6px inner horizontal padding per Figma (spacing/space-6) */
 .textSlot {
-  padding: 0 var(--spacing-space-6);
+  padding: 0 var(--spacing-6);
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -35,15 +35,15 @@
    L: 12px all  |  M: 8px 12px  |  S: 4px 12px
    ============================================ */
 .size-l {
-  padding: var(--spacing-space-12);
+  padding: var(--spacing-12);
 }
 
 .size-m {
-  padding: var(--spacing-space-8) var(--spacing-space-12);
+  padding: var(--spacing-8) var(--spacing-12);
 }
 
 .size-s {
-  padding: var(--spacing-space-4) var(--spacing-space-12);
+  padding: var(--spacing-4) var(--spacing-12);
 }
 
 /* ============================================
@@ -207,8 +207,8 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: var(--spacing-space-16);
-  height: var(--spacing-space-16);
+  width: var(--spacing-16);
+  height: var(--spacing-16);
   border: var(--border-weight-2) solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;

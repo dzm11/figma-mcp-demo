@@ -7,7 +7,7 @@
 .wrapper {
   display: inline-flex;
   align-items: flex-start;
-  gap: var(--spacing-space-4);
+  gap: var(--spacing-4);
 }
 
 /* 20×20 icon container — centres the 16×16 SVG, inherits critical colour */

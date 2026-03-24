@@ -529,7 +529,7 @@
   /* Surfaces/Surface Inverse — No description */
   --surfaces-surface-inverse: var(--neutral-neutral-700);
   /* System/Brand — No description */
-  --system-brand: var(--brand-900);
+  --system-brand: var(--brand-500);
   /* System/Brand Container — No description */
   --system-brand-container: var(--brand-15);
   /* System/Critical — Use for backgrounds communicating critical, like banners. */

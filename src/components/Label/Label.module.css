@@ -11,8 +11,8 @@
 .label {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-space-4);
-  padding: var(--spacing-space-0) var(--spacing-space-4);
+  gap: var(--spacing-4);
+  padding: var(--spacing-0) var(--spacing-4);
   background-color: var(--_label-bg);
   color: var(--_label-color);
   border-radius: var(--border-radius-2);
@@ -22,8 +22,8 @@
 /* Icon slot matches Figma "Other / label / locked" container:
  * 12px tall, 3px horizontal padding, 1px vertical padding */
 .iconSlot {
-  height: var(--spacing-space-12);
-  padding: var(--border-weight-1) calc(var(--spacing-space-2) + var(--border-weight-1));
+  height: var(--spacing-12);
+  padding: var(--border-weight-1) calc(var(--spacing-2) + var(--border-weight-1));
 }
 
 .text {

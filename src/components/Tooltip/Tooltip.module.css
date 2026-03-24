@@ -20,9 +20,9 @@
 .surface {
   display: inline-flex;
   flex-direction: column;
-  gap: var(--spacing-space-2);
+  gap: var(--spacing-2);
   width: 100%;
-  padding: var(--spacing-space-12);
+  padding: var(--spacing-12);
   border-radius: var(--border-radius-4);
   background-color: var(--tooltip-surface);
   box-shadow: var(--shadow-3);
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 var(--spacing-space-16);
+  padding: 0 var(--spacing-16);
 }
 
 .arrow {
