@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-24T14:16:51.492Z",
+  "generatedAt": "2026-03-24T14:26:05.273Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -9319,8 +9319,8 @@
           "valuesByMode": {
             "Splash": {
               "kind": "alias",
-              "targetVariableId": "VariableID:72354:439685",
-              "targetCodeSyntax": "brand-400"
+              "targetVariableId": "VariableID:73204:1085810",
+              "targetCodeSyntax": "system-green-4"
             }
           }
         },

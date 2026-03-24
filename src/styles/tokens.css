@@ -465,7 +465,7 @@
   /* Main/On Tertiary Container — No description */
   --main-on-tertiary-container: oklch(100% 0 89.88);
   /* Main/Primary — No description */
-  --main-primary: var(--brand-400);
+  --main-primary: var(--system-green-4);
   /* Main/Primary Container — No description */
   --main-primary-container: var(--brand-25);
   /* Main/Secondary — No description */
