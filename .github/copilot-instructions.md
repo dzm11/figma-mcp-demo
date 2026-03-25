@@ -242,21 +242,22 @@ This rule is required to keep Storybook navigation compact and consistent.
 
 ## 5. Icon System
 
-- **Format**: Inline SVG in JSX — no icon library, no sprite sheets
+- **Source of truth**: Use icon components from `src/assets/icons/SVGR`
+- **Raw SVG sources**: Store source SVGs in `src/assets/icons/raw`
+- **Format**: React icon components only — no icon library, no sprite sheets, no local inline SVG definitions inside `src/components`
 - **Size**: `20×20px` for action icons (matches Figma icon slot); `16×16px` for inline/decorative icons inside components (e.g. Checkbox tick)
-- **Color**: Always use `stroke="currentColor"` or `fill="currentColor"` so icons inherit the component's text color automatically
-- **Naming**: Descriptive PascalCase inline components, e.g. `ChevronDown`, `CheckIcon`, `ErrorIcon`
+- **Color**: Prefer icons that inherit via `currentColor`; preserve non-currentColor fills only when the design explicitly requires it, such as white glyphs inside filled controls
+- **Naming**: Descriptive PascalCase component names, e.g. `IconReset`, `IconTick`, `IconViewError`
 - **Accessibility**: Always add `aria-hidden="true"` on the wrapping `<span>` or directly on the `<svg>` when decorative
+- **Rule**: If a needed icon does not exist yet, add it to `src/assets/icons/raw` and create a matching component in `src/assets/icons/SVGR` instead of creating SVG markup inside the component using it
 
 ```tsx
-/** Inline icon pattern */
-const ChevronDown = () => (
-  <svg aria-hidden="true" fill="none" height="20" viewBox="0 0 20 20" width="20"
-    xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor"
-      strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
-  </svg>
-);
+/** Repo icon component pattern */
+import { IconReset } from '../assets/icons/SVGR/index';
+
+<span aria-hidden="true" className={[styles.iconSlot, 'text-slot-20'].join(' ')}>
+  <IconReset height={20} width={20} />
+</span>
 ```
 
 ---

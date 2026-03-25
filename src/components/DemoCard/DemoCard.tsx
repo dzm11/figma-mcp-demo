@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { IconReset } from '../../assets/icons/SVGR/index';
 import { Avatar } from '../Avatar/Avatar';
 import { Button } from '../Button/Button';
 import { Label } from '../Label/Label';
 import { Tooltip } from '../Tooltip/Tooltip';
-import resetIcon from '../../assets/reset.svg';
 import styles from './DemoCard.module.css';
 import type { DemoCardProps } from './DemoCard.types.ts';
 
 const UndoIcon = () => (
-  <img alt="" aria-hidden="true" height="20" src={resetIcon} width="20" />
+  <IconReset aria-hidden="true" height={20} width={20} />
 );
 
 export const DemoCard: React.FC<DemoCardProps> = ({ resetDelayMs = 2200 }) => {

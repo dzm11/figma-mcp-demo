@@ -22,7 +22,10 @@ Every time a component is implemented from a Figma selection, follow this exact 
 ### Asset handling rules
 
 - If the Figma MCP server returns a `localhost` source for an image or SVG, **use that source directly** — do not re-export or recreate it
-- **Never** install or import new icon packages — all icon assets come from the Figma payload as inline SVG
+- **Never** install or import new icon packages
+- **Always** use existing icon components from `src/assets/icons/SVGR` when an icon already exists in the repo
+- If an icon is missing, add its source SVG to `src/assets/icons/raw` and create a matching React icon component in `src/assets/icons/SVGR` instead of defining SVG markup inside a component file
+- **Never** create local inline icon components inside files under `src/components`
 - **Never** use placeholder images or colours when a real asset source is provided
 
 ### Selection size
@@ -169,29 +172,23 @@ Follow WCAG 2.1 AA as a minimum baseline.
 
 ---
 
-## 7. Inline SVG icons
+## 7. Icon components
 
 ```tsx
-// ✅ Correct icon pattern
-const ChevronDown = () => (
-  <svg
-    aria-hidden="true"
-    fill="none"
-    height="20"
-    viewBox="0 0 20 20"
-    width="20"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor"
-      strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
-  </svg>
-);
+// ✅ Correct icon usage
+import { IconReset } from '../../assets/icons/SVGR/index';
+
+<span aria-hidden="true" className={[styles.iconSlot, 'text-slot-20'].join(' ')}>
+  <IconReset height={20} width={20} />
+</span>
 ```
 
-- Always inline SVGs — no external icon libraries
-- `20×20` for action icons, `16×16` for inline/decorative icons
-- Always `stroke="currentColor"` or `fill="currentColor"` — never hardcoded colours
-- Always `aria-hidden="true"`
+- Always import icons from `src/assets/icons/SVGR`
+- Prefer importing from the generated barrel when the icon is part of the synced set
+- For repo-local icons that are not part of the synced barrel yet, import the component directly from its file in `src/assets/icons/SVGR`
+- `20×20` for action icons, `16×16` for inline/decorative icons unless the design requires otherwise
+- Decorative icons must remain `aria-hidden="true"`
+- Never define new icon JSX directly inside a file in `src/components`
 
 ---
 

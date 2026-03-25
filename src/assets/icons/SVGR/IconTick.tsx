@@ -1,0 +1,19 @@
+import type { SVGProps } from 'react';
+
+export const IconTick = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden={true} {...props}>
+    <g clipPath="url(#clip0_tick)">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.70711 10.7071C7.31658 11.0976 6.68342 11.0976 6.29289 10.7071L4.29289 8.70711C3.90237 8.31658 3.90237 7.68342 4.29289 7.29289C4.68342 6.90237 5.31658 6.90237 5.70711 7.29289L7 8.58579L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z"
+        fill="white"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_tick">
+        <rect width={16} height={16} fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

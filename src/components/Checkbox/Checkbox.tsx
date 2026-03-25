@@ -1,24 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import dashIcon from '../../assets/dash.svg';
-import tickIcon from '../../assets/tick.svg';
+import { IconDash } from '../../assets/icons/SVGR/IconDash';
+import { IconTick } from '../../assets/icons/SVGR/IconTick';
+import { IconViewError } from '../../assets/icons/SVGR/index';
 import styles from './Checkbox.module.css';
 import type { CheckboxProps } from './Checkbox.types.ts';
-
-/** Error icon for critical inline message (16×16) */
-const ErrorIcon = () => (
-  <svg
-    aria-hidden="true"
-    fill="none"
-    height="16"
-    viewBox="0 0 16 16"
-    width="16"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M8 5V9" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" />
-    <circle cx="8" cy="11.5" fill="currentColor" r="0.75" />
-  </svg>
-);
 
 export const Checkbox: React.FC<CheckboxProps> = ({
   checked,
@@ -73,11 +58,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
         {/* Custom visual box — styled via CSS using :checked/:indeterminate on the adjacent input */}
         <span aria-hidden="true" className={[styles.box, 'text-inline-center', 'text-size-16'].join(' ')}>
-          <img
-            alt=""
-            className={[styles.icon, 'text-size-16'].join(' ')}
-            src={indeterminate ? dashIcon : tickIcon}
-          />
+          {indeterminate ? (
+            <IconDash className={[styles.icon, 'text-size-16'].join(' ')} height={16} width={16} />
+          ) : (
+            <IconTick className={[styles.icon, 'text-size-16'].join(' ')} height={16} width={16} />
+          )}
         </span>
 
         {label && <span className={[styles.label, 'body-md-14-regular'].join(' ')}>{label}</span>}
@@ -86,7 +71,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       {critical && errorMessage && (
         <div className={styles.errorRow}>
           <span className={[styles.errorIcon, 'text-slot-20'].join(' ')}>
-            <ErrorIcon />
+            <IconViewError height={16} width={16} />
           </span>
           <span className={[styles.errorMessage, 'body-md-14-regular'].join(' ')}>{errorMessage}</span>
         </div>

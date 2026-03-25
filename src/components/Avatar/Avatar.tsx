@@ -1,6 +1,6 @@
 import React from 'react';
 import companyPlaceholder from '../../assets/Company Logo.svg';
-import defaultAvatarImage from '../../assets/744e135796b12c1fe8d1607f7527ec1648d1e574.png';
+import defaultAvatarImage from '../../assets/image-placeholder.png';
 import styles from './Avatar.module.css';
 import type { AvatarProps, AvatarSize } from './Avatar.types.ts';
 
