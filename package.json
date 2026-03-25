@@ -12,6 +12,7 @@
     "build-storybook": "storybook build",
     "figma:publish": "dotenv -e .env.local -- npx figma connect publish --dir . --verbose",
     "figma:publish:dry": "dotenv -e .env.local -- npx figma connect publish --dir . --dry-run --verbose",
+    "tokens:add-dimensions": "node scripts/add-dimension-tokens.mjs",
     "tokens:pull": "node scripts/pull-from-figma.mjs",
     "tokens:build": "node scripts/build-tokens.mjs",
     "tokens:sync": "node scripts/sync-tokens.mjs",

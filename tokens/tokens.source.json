@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-24T15:55:50.924Z",
+  "generatedAt": "2026-03-25T15:24:55.630Z",
   "source": "figma-rest-api",
   "collections": [
     {
@@ -527,74 +527,662 @@
           }
         },
         {
-          "id": "VariableID:46257:248",
-          "figmaName": "Color/[old] Gray/600",
-          "codeSyntax": "color-old-gray-600",
-          "cssVar": "--color-old-gray-600",
-          "scssVar": "$color-old-gray-600",
-          "type": "COLOR",
+          "id": "VariableID:111558:2717",
+          "figmaName": "Height/h-0",
+          "codeSyntax": "h-0",
+          "cssVar": "--h-0",
+          "scssVar": "$h-0",
+          "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
           "scopes": [
-            "ALL_SCOPES"
+            "WIDTH_HEIGHT"
           ],
           "valuesByMode": {
             "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.5607843399047852,
-                "g": 0.6117647290229797,
-                "b": 0.7058823704719543,
-                "a": 1
-              }
+              "kind": "number",
+              "value": 0,
+              "unit": "px"
             }
           }
         },
         {
-          "id": "VariableID:46257:246",
-          "figmaName": "Color/[old] Gray/900",
-          "codeSyntax": "color-old-gray-900",
-          "cssVar": "--color-old-gray-900",
-          "scssVar": "$color-old-gray-900",
-          "type": "COLOR",
+          "id": "VariableID:111558:2718",
+          "figmaName": "Height/h-1",
+          "codeSyntax": "h-1",
+          "cssVar": "--h-1",
+          "scssVar": "$h-1",
+          "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
           "scopes": [
-            "ALL_SCOPES"
+            "WIDTH_HEIGHT"
           ],
           "valuesByMode": {
             "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 0.2235294133424759,
-                "g": 0.2666666805744171,
-                "b": 0.34117648005485535,
-                "a": 1
-              }
+              "kind": "number",
+              "value": 1,
+              "unit": "px"
             }
           }
         },
         {
-          "id": "VariableID:46257:253",
-          "figmaName": "Color/[old] White/0",
-          "codeSyntax": "color-old-white-0",
-          "cssVar": "--color-old-white-0",
-          "scssVar": "$color-old-white-0",
-          "type": "COLOR",
+          "id": "VariableID:111558:2719",
+          "figmaName": "Height/h-2",
+          "codeSyntax": "h-2",
+          "cssVar": "--h-2",
+          "scssVar": "$h-2",
+          "type": "FLOAT",
           "description": "",
           "hiddenFromPublishing": false,
           "scopes": [
-            "ALL_SCOPES"
+            "WIDTH_HEIGHT"
           ],
           "valuesByMode": {
             "Splash": {
-              "kind": "color",
-              "value": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
-              }
+              "kind": "number",
+              "value": 2,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2720",
+          "figmaName": "Height/h-4",
+          "codeSyntax": "h-4",
+          "cssVar": "--h-4",
+          "scssVar": "$h-4",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 4,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2721",
+          "figmaName": "Height/h-6",
+          "codeSyntax": "h-6",
+          "cssVar": "--h-6",
+          "scssVar": "$h-6",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 6,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2722",
+          "figmaName": "Height/h-8",
+          "codeSyntax": "h-8",
+          "cssVar": "--h-8",
+          "scssVar": "$h-8",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 8,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2723",
+          "figmaName": "Height/h-10",
+          "codeSyntax": "h-10",
+          "cssVar": "--h-10",
+          "scssVar": "$h-10",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 10,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2724",
+          "figmaName": "Height/h-12",
+          "codeSyntax": "h-12",
+          "cssVar": "--h-12",
+          "scssVar": "$h-12",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 12,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2725",
+          "figmaName": "Height/h-16",
+          "codeSyntax": "h-16",
+          "cssVar": "--h-16",
+          "scssVar": "$h-16",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 16,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2726",
+          "figmaName": "Height/h-20",
+          "codeSyntax": "h-20",
+          "cssVar": "--h-20",
+          "scssVar": "$h-20",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 20,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2727",
+          "figmaName": "Height/h-24",
+          "codeSyntax": "h-24",
+          "cssVar": "--h-24",
+          "scssVar": "$h-24",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 24,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2728",
+          "figmaName": "Height/h-28",
+          "codeSyntax": "h-28",
+          "cssVar": "--h-28",
+          "scssVar": "$h-28",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 28,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2729",
+          "figmaName": "Height/h-32",
+          "codeSyntax": "h-32",
+          "cssVar": "--h-32",
+          "scssVar": "$h-32",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 32,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2730",
+          "figmaName": "Height/h-36",
+          "codeSyntax": "h-36",
+          "cssVar": "--h-36",
+          "scssVar": "$h-36",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 36,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2731",
+          "figmaName": "Height/h-40",
+          "codeSyntax": "h-40",
+          "cssVar": "--h-40",
+          "scssVar": "$h-40",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 40,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2732",
+          "figmaName": "Height/h-44",
+          "codeSyntax": "h-44",
+          "cssVar": "--h-44",
+          "scssVar": "$h-44",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 44,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2733",
+          "figmaName": "Height/h-48",
+          "codeSyntax": "h-48",
+          "cssVar": "--h-48",
+          "scssVar": "$h-48",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 48,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2734",
+          "figmaName": "Height/h-56",
+          "codeSyntax": "h-56",
+          "cssVar": "--h-56",
+          "scssVar": "$h-56",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 56,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2735",
+          "figmaName": "Height/h-64",
+          "codeSyntax": "h-64",
+          "cssVar": "--h-64",
+          "scssVar": "$h-64",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 64,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2736",
+          "figmaName": "Height/h-72",
+          "codeSyntax": "h-72",
+          "cssVar": "--h-72",
+          "scssVar": "$h-72",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 72,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2737",
+          "figmaName": "Height/h-80",
+          "codeSyntax": "h-80",
+          "cssVar": "--h-80",
+          "scssVar": "$h-80",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 80,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2738",
+          "figmaName": "Height/h-96",
+          "codeSyntax": "h-96",
+          "cssVar": "--h-96",
+          "scssVar": "$h-96",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 96,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2739",
+          "figmaName": "Height/h-112",
+          "codeSyntax": "h-112",
+          "cssVar": "--h-112",
+          "scssVar": "$h-112",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2740",
+          "figmaName": "Height/h-128",
+          "codeSyntax": "h-128",
+          "cssVar": "--h-128",
+          "scssVar": "$h-128",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 128,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2741",
+          "figmaName": "Height/h-144",
+          "codeSyntax": "h-144",
+          "cssVar": "--h-144",
+          "scssVar": "$h-144",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 144,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2742",
+          "figmaName": "Height/h-176",
+          "codeSyntax": "h-176",
+          "cssVar": "--h-176",
+          "scssVar": "$h-176",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 176,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2743",
+          "figmaName": "Height/h-192",
+          "codeSyntax": "h-192",
+          "cssVar": "--h-192",
+          "scssVar": "$h-192",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 192,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2744",
+          "figmaName": "Height/h-208",
+          "codeSyntax": "h-208",
+          "cssVar": "--h-208",
+          "scssVar": "$h-208",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 208,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2745",
+          "figmaName": "Height/h-224",
+          "codeSyntax": "h-224",
+          "cssVar": "--h-224",
+          "scssVar": "$h-224",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 224,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2746",
+          "figmaName": "Height/h-256",
+          "codeSyntax": "h-256",
+          "cssVar": "--h-256",
+          "scssVar": "$h-256",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 256,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2747",
+          "figmaName": "Height/h-288",
+          "codeSyntax": "h-288",
+          "cssVar": "--h-288",
+          "scssVar": "$h-288",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 288,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2748",
+          "figmaName": "Height/h-320",
+          "codeSyntax": "h-320",
+          "cssVar": "--h-320",
+          "scssVar": "$h-320",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 320,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2749",
+          "figmaName": "Height/h-394",
+          "codeSyntax": "h-394",
+          "cssVar": "--h-394",
+          "scssVar": "$h-394",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 394,
+              "unit": "px"
             }
           }
         },
@@ -2003,6 +2591,666 @@
                 "b": 0,
                 "a": 1
               }
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2750",
+          "figmaName": "Width/w-0",
+          "codeSyntax": "w-0",
+          "cssVar": "--w-0",
+          "scssVar": "$w-0",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 0,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2751",
+          "figmaName": "Width/w-1",
+          "codeSyntax": "w-1",
+          "cssVar": "--w-1",
+          "scssVar": "$w-1",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 1,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2752",
+          "figmaName": "Width/w-2",
+          "codeSyntax": "w-2",
+          "cssVar": "--w-2",
+          "scssVar": "$w-2",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 2,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2753",
+          "figmaName": "Width/w-4",
+          "codeSyntax": "w-4",
+          "cssVar": "--w-4",
+          "scssVar": "$w-4",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 4,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2754",
+          "figmaName": "Width/w-6",
+          "codeSyntax": "w-6",
+          "cssVar": "--w-6",
+          "scssVar": "$w-6",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 6,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2755",
+          "figmaName": "Width/w-8",
+          "codeSyntax": "w-8",
+          "cssVar": "--w-8",
+          "scssVar": "$w-8",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 8,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2756",
+          "figmaName": "Width/w-10",
+          "codeSyntax": "w-10",
+          "cssVar": "--w-10",
+          "scssVar": "$w-10",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 10,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2757",
+          "figmaName": "Width/w-12",
+          "codeSyntax": "w-12",
+          "cssVar": "--w-12",
+          "scssVar": "$w-12",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 12,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2758",
+          "figmaName": "Width/w-16",
+          "codeSyntax": "w-16",
+          "cssVar": "--w-16",
+          "scssVar": "$w-16",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 16,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2759",
+          "figmaName": "Width/w-20",
+          "codeSyntax": "w-20",
+          "cssVar": "--w-20",
+          "scssVar": "$w-20",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 20,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2760",
+          "figmaName": "Width/w-24",
+          "codeSyntax": "w-24",
+          "cssVar": "--w-24",
+          "scssVar": "$w-24",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 24,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2761",
+          "figmaName": "Width/w-28",
+          "codeSyntax": "w-28",
+          "cssVar": "--w-28",
+          "scssVar": "$w-28",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 28,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2762",
+          "figmaName": "Width/w-32",
+          "codeSyntax": "w-32",
+          "cssVar": "--w-32",
+          "scssVar": "$w-32",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 32,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2763",
+          "figmaName": "Width/w-36",
+          "codeSyntax": "w-36",
+          "cssVar": "--w-36",
+          "scssVar": "$w-36",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 36,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2764",
+          "figmaName": "Width/w-40",
+          "codeSyntax": "w-40",
+          "cssVar": "--w-40",
+          "scssVar": "$w-40",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 40,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2765",
+          "figmaName": "Width/w-44",
+          "codeSyntax": "w-44",
+          "cssVar": "--w-44",
+          "scssVar": "$w-44",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 44,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2766",
+          "figmaName": "Width/w-48",
+          "codeSyntax": "w-48",
+          "cssVar": "--w-48",
+          "scssVar": "$w-48",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 48,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2767",
+          "figmaName": "Width/w-56",
+          "codeSyntax": "w-56",
+          "cssVar": "--w-56",
+          "scssVar": "$w-56",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 56,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2768",
+          "figmaName": "Width/w-64",
+          "codeSyntax": "w-64",
+          "cssVar": "--w-64",
+          "scssVar": "$w-64",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 64,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2769",
+          "figmaName": "Width/w-72",
+          "codeSyntax": "w-72",
+          "cssVar": "--w-72",
+          "scssVar": "$w-72",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 72,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2770",
+          "figmaName": "Width/w-80",
+          "codeSyntax": "w-80",
+          "cssVar": "--w-80",
+          "scssVar": "$w-80",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 80,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2771",
+          "figmaName": "Width/w-96",
+          "codeSyntax": "w-96",
+          "cssVar": "--w-96",
+          "scssVar": "$w-96",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 96,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2772",
+          "figmaName": "Width/w-112",
+          "codeSyntax": "w-112",
+          "cssVar": "--w-112",
+          "scssVar": "$w-112",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2773",
+          "figmaName": "Width/w-128",
+          "codeSyntax": "w-128",
+          "cssVar": "--w-128",
+          "scssVar": "$w-128",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 128,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2774",
+          "figmaName": "Width/w-144",
+          "codeSyntax": "w-144",
+          "cssVar": "--w-144",
+          "scssVar": "$w-144",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 144,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2775",
+          "figmaName": "Width/w-176",
+          "codeSyntax": "w-176",
+          "cssVar": "--w-176",
+          "scssVar": "$w-176",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 176,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2776",
+          "figmaName": "Width/w-192",
+          "codeSyntax": "w-192",
+          "cssVar": "--w-192",
+          "scssVar": "$w-192",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 192,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2777",
+          "figmaName": "Width/w-208",
+          "codeSyntax": "w-208",
+          "cssVar": "--w-208",
+          "scssVar": "$w-208",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 208,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2778",
+          "figmaName": "Width/w-224",
+          "codeSyntax": "w-224",
+          "cssVar": "--w-224",
+          "scssVar": "$w-224",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 224,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2779",
+          "figmaName": "Width/w-256",
+          "codeSyntax": "w-256",
+          "cssVar": "--w-256",
+          "scssVar": "$w-256",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 256,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2780",
+          "figmaName": "Width/w-288",
+          "codeSyntax": "w-288",
+          "cssVar": "--w-288",
+          "scssVar": "$w-288",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 288,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2781",
+          "figmaName": "Width/w-320",
+          "codeSyntax": "w-320",
+          "cssVar": "--w-320",
+          "scssVar": "$w-320",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 320,
+              "unit": "px"
+            }
+          }
+        },
+        {
+          "id": "VariableID:111558:2782",
+          "figmaName": "Width/w-394",
+          "codeSyntax": "w-394",
+          "cssVar": "--w-394",
+          "scssVar": "$w-394",
+          "type": "FLOAT",
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "valuesByMode": {
+            "Splash": {
+              "kind": "number",
+              "value": 394,
+              "unit": "px"
             }
           }
         }

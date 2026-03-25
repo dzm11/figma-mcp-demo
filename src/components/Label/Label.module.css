@@ -19,13 +19,9 @@
   white-space: nowrap;
 }
 
-/* Icon slot matches Figma "Other / label / locked" container:
- * 12px tall, 3px horizontal padding, 1px vertical padding */
+/* Label uses a dedicated small lock glyph from Figma inside a 12x12 container. */
 .iconSlot {
-  height: var(--spacing-12);
-  padding: var(--border-weight-1) calc(var(--spacing-2) + var(--border-weight-1));
-}
-
-.text {
-  /* inherits all typography from .label */
+  width: var(--w-12);
+  height: var(--h-12);
+  flex-shrink: 0;
 }

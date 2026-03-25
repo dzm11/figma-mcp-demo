@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-24);
-  width: 227px;
+  width: var(--w-224);
   padding: var(--spacing-16);
   border: 1px solid var(--outline-outline-variant);
   border-radius: var(--border-radius-8);
@@ -37,8 +37,8 @@
   left: 50%;
   bottom: calc(100% + 4px);
   transform: translateX(-50%);
-  width: 350px;
-  max-width: 350px;
+  width: var(--w-320);
+  max-width: var(--w-320);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

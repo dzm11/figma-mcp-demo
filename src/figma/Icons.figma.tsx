@@ -67,6 +67,7 @@ import {
   IconLineChart,
   IconLink,
   IconList,
+  IconLocked,
   IconLockOff,
   IconLockOn,
   IconLookALikeAudience,
@@ -589,6 +590,14 @@ figma.connect(
   'https://www.figma.com/design/H3scHHO8gzcKecmO2Sa9aN/Demo-Design-System?node-id=4212-47678',
   {
     example: () => <IconList />,
+  }
+);
+
+figma.connect(
+  IconLocked,
+  'https://www.figma.com/design/H3scHHO8gzcKecmO2Sa9aN/Demo-Design-System?node-id=111560-729',
+  {
+    example: () => <IconLocked />,
   }
 );
 

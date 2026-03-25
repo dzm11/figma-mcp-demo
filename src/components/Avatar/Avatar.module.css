@@ -21,43 +21,48 @@
 }
 
 .size-xs {
-  --avatar-size: var(--spacing-20);
-  --company-logo-width: var(--spacing-12);
-  --company-logo-height: var(--spacing-12);
+  --avatar-width: var(--w-20);
+  --avatar-height: var(--h-20);
+  --company-logo-width: var(--w-12);
+  --company-logo-height: var(--h-12);
   --text-padding-right: var(--spacing-6);
 }
 
 .size-s {
-  --avatar-size: var(--spacing-24);
-  --company-logo-width: var(--spacing-16);
-  --company-logo-height: var(--spacing-16);
+  --avatar-width: var(--w-24);
+  --avatar-height: var(--h-24);
+  --company-logo-width: var(--w-16);
+  --company-logo-height: var(--h-16);
   --text-padding-right: var(--spacing-6);
 }
 
 .size-m {
-  --avatar-size: calc(var(--spacing-24) + var(--spacing-4));
-  --company-logo-width: var(--spacing-16);
-  --company-logo-height: var(--spacing-16);
+  --avatar-width: var(--w-28);
+  --avatar-height: var(--h-28);
+  --company-logo-width: var(--w-16);
+  --company-logo-height: var(--h-16);
   --text-padding-right: var(--spacing-6);
 }
 
 .size-l {
-  --avatar-size: var(--spacing-32);
-  --company-logo-width: var(--spacing-20);
-  --company-logo-height: var(--spacing-20);
+  --avatar-width: var(--w-32);
+  --avatar-height: var(--h-32);
+  --company-logo-width: var(--w-20);
+  --company-logo-height: var(--h-20);
   --text-padding-right: var(--spacing-6);
 }
 
 .size-xl {
-  --avatar-size: var(--spacing-40);
-  --company-logo-width: var(--spacing-24);
-  --company-logo-height: var(--spacing-24);
+  --avatar-width: var(--w-40);
+  --avatar-height: var(--h-40);
+  --company-logo-width: var(--w-24);
+  --company-logo-height: var(--h-24);
   --text-padding-right: var(--spacing-8);
 }
 
 .avatar {
-  width: var(--avatar-size);
-  height: var(--avatar-size);
+  width: var(--avatar-width);
+  height: var(--avatar-height);
   display: inline-flex;
   align-items: center;
   justify-content: center;

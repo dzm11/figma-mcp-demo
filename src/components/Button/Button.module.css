@@ -207,8 +207,8 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: var(--spacing-16);
-  height: var(--spacing-16);
+  width: var(--w-16);
+  height: var(--h-16);
   border: var(--border-weight-2) solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;

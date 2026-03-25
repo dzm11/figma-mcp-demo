@@ -58,6 +58,7 @@ export { IconLabel } from './IconLabel';
 export { IconLineChart } from './IconLineChart';
 export { IconLink } from './IconLink';
 export { IconList } from './IconList';
+export { IconLocked } from './IconLocked';
 export { IconLockOff } from './IconLockOff';
 export { IconLockOn } from './IconLockOn';
 export { IconLookALikeAudience } from './IconLookALikeAudience';

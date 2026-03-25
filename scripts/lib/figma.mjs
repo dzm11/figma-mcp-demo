@@ -72,6 +72,42 @@ async function figmaGet(pathname) {
 }
 
 /**
+ * Internal: perform an authenticated POST request to the Figma REST API.
+ */
+async function figmaPost(pathname, body) {
+  const { token } = getFigmaEnv();
+  const url = `https://api.figma.com${pathname}`;
+
+  logInfo(`Posting: ${url}`);
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "X-Figma-Token": token,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(body)
+  });
+
+  const text = await response.text();
+
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error(`Figma returned a non-JSON response:\n${text}`);
+  }
+
+  if (!response.ok) {
+    throw new Error(
+      `Figma API error ${response.status}: ${data?.message ?? "Unknown error"}`
+    );
+  }
+
+  return data;
+}
+
+/**
  * Fetch local variables (collections + variables) for the configured Figma file.
  * Uses the Figma Variables REST API endpoint.
  */
@@ -105,4 +141,12 @@ export async function fetchNodeDetails(nodeIds) {
     : nodeIds;
 
   return figmaGet(`/v1/files/${fileKey}/nodes?ids=${encodeURIComponent(idsParam)}`);
+}
+
+/**
+ * Bulk create, update, and delete variables in the configured Figma file.
+ */
+export async function postVariables(body) {
+  const { fileKey } = getFigmaEnv();
+  return figmaPost(`/v1/files/${fileKey}/variables`, body);
 }

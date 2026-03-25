@@ -68,13 +68,13 @@
 }
 
 .text-size-16 {
-  width: var(--spacing-space-16);
-  height: var(--spacing-space-16);
+  width: var(--w-16);
+  height: var(--h-16);
 }
 
 .text-size-20 {
-  width: var(--spacing-space-20);
-  height: var(--spacing-space-20);
+  width: var(--w-20);
+  height: var(--h-20);
 }
 
 .text-slot-16 {
@@ -82,8 +82,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: var(--spacing-space-16);
-  height: var(--spacing-space-16);
+  width: var(--w-16);
+  height: var(--h-16);
 }
 
 .text-slot-20 {
@@ -91,8 +91,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: var(--spacing-space-20);
-  height: var(--spacing-space-20);
+  width: var(--w-20);
+  height: var(--h-20);
 }
 
 /* Body/body-lg-16/bold */

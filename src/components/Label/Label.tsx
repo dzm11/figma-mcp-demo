@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconLockOn } from '../../assets/icons/SVGR/index';
+import { IconLocked } from '../../assets/icons/SVGR/IconLocked';
 import styles from './Label.module.css';
 import type { LabelProps } from './Label.types.ts';
 
@@ -24,7 +24,7 @@ export const Label: React.FC<LabelProps> = ({
   >
     {type === 'icon' && (
       <span className={[styles.iconSlot, 'text-inline-center'].join(' ')}>
-        <IconLockOn aria-hidden="true" height={10} width={10} />
+        <IconLocked aria-hidden="true" height={12} width={12} />
       </span>
     )}
     <span className={styles.text}>{children}</span>

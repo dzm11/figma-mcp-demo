@@ -29,8 +29,8 @@
 
 .input {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: var(--w-1);
+  height: var(--h-1);
   margin: -1px;
   padding: 0;
   overflow: hidden;
@@ -43,6 +43,10 @@
 
 .box {
   /* Size + shape */
+  width: var(--w-16);
+  height: var(--h-16);
+  flex-shrink: 0;
+  box-sizing: border-box;
   border-radius: var(--border-radius-2);
   position: relative; /* needed for focus ring ::after */
 

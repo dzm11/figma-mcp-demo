@@ -7,8 +7,8 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  min-width: 60px;
-  max-width: 350px;
+  min-width: var(--w-64);
+  max-width: var(--w-320);
 }
 
 .tone-inverse {
@@ -37,8 +37,8 @@
 }
 
 .arrow {
-  width: 8px;
-  height: 4px;
+  width: var(--w-8);
+  height: var(--h-4);
   background-color: var(--tooltip-surface);
 }
 
@@ -57,6 +57,6 @@
 
 .description {
   margin: 0;
-  max-width: 326px;
+  max-width: var(--w-320);
   color: var(--tooltip-description);
 }
