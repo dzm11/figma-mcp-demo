@@ -14,13 +14,11 @@ figma.connect(
         Default: 'default',
         Inverse: 'inverse',
       }),
-      showDescription: figma.boolean('secondLine'),
     },
-    example: ({ arrow, tone, showDescription }) => (
+    example: ({ arrow, tone }) => (
       <Tooltip
         arrow={arrow}
         tone={tone}
-        showDescription={showDescription}
       />
     ),
   },
