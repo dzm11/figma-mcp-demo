@@ -15,7 +15,9 @@
     "tokens:pull": "node scripts/pull-from-figma.mjs",
     "tokens:build": "node scripts/build-tokens.mjs",
     "tokens:sync": "node scripts/sync-tokens.mjs",
-    "tokens:pr": "node scripts/create-pr.mjs"
+    "tokens:pr": "node scripts/create-pr.mjs",
+    "icons:sync": "node scripts/sync-icons.mjs",
+    "icons:pr": "node scripts/create-icons-pr.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -30,6 +32,9 @@
     "@storybook/addon-onboarding": "^10.2.16",
     "@storybook/addon-vitest": "^10.2.16",
     "@storybook/react-vite": "^10.2.16",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
